@@ -16,3 +16,8 @@ This repository contains the Python source, tests, numerical protocols, and mach
 The tested environment is Python 3.12 on Windows. Install the pinned environment from `requirements-lock-windows-py312.txt`, then install the package in editable mode with its verification extra. Run software tests with `python -m unittest discover -s tests -v`. Analysis scripts use the saved numerical outputs; simulation scripts can generate new outputs locally.
 
 No manuscript document or rendered figure files are included in this repository. API credentials and author contact configuration are also excluded.
+
+
+## License and archive
+
+This repository is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), consistent with the archived release at Zenodo: https://doi.org/10.5281/zenodo.24491826.

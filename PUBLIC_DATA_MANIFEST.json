@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "file_count": 1776,
+  "file_count": 1777,
   "files": [
     {
       "path": ".gitignore",
@@ -8,9 +8,14 @@
       "sha256": "1931fb570f7cbf39aa9aeb8a657be87006090daeeca56f5fe334f14cf2312649"
     },
     {
+      "path": "LICENSE",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    {
       "path": "README.md",
-      "bytes": 1209,
-      "sha256": "1e8982e9fb5635eb2e0c5c15f51c2c81d0d65ee72b210ed323cb48e55c969f6d"
+      "bytes": 1418,
+      "sha256": "3d9861c3554292f6dd6959b6207c74d13e88dc9e0ca388b2ab4cff2876d4d4e4"
     },
     {
       "path": "benchmarks/distinct_family_audit/audit_saved_campaign.py",
