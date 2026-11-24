@@ -1,0 +1,19 @@
+# NON-EXECUTABLE TEMPLATE. Confirm FQDN/auth/TLS/port and inventory first.
+# Keep authentication in the reverse proxy; never expose the demo directly.
+server {
+    listen 443 ssl;
+    server_name CONFIRMED_FQDN_REQUIRED;
+    # ssl_certificate and ssl_certificate_key: verified project TLS assets
+    auth_basic "NanoporeOS restricted research demo";
+    auth_basic_user_file /etc/nanoporeos/demo.htpasswd;
+    client_max_body_size 8k;
+    # Add project-scoped rate and connection zones after nginx inventory.
+    location / {
+        proxy_pass http://127.0.0.1:8765;
+        # The demo validates loopback Host/Origin. Preserve Origin; do not
+        # deploy until the confirmed public origin is explicitly allowlisted
+        # and tested in staging. Cross-origin writes must stay rejected.
+        proxy_set_header Host 127.0.0.1:8765;
+        proxy_read_timeout 65s;
+    }
+}

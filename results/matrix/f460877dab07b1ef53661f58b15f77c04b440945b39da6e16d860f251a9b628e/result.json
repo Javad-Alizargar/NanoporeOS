@@ -1,0 +1,233 @@
+{
+  "status": "PASS",
+  "diagnostics": {
+    "coupled_residual_max": 5.768602379611727e-13,
+    "poisson_scaled": 6.322149071176776e-15,
+    "plus_scaled": 5.768602379611727e-13,
+    "minus_scaled": 8.152101319479292e-16,
+    "poisson_integrated_charge_residual_C": 2.59929741627901e-32,
+    "species_max_local_imbalance_mol_s": [
+      1.1889431661415984e-26,
+      1.654254511151976e-29
+    ],
+    "species_global_imbalance_mol_s": [
+      4.776488538027479e-27,
+      9.375611398354521e-30
+    ],
+    "species_boundary_fluxes": [
+      {
+        "left_outward_mol_s": 2.5212754529345096e-15,
+        "right_outward_mol_s": -2.521275452929733e-15
+      },
+      {
+        "left_outward_mol_s": -3.766748058084091e-15,
+        "right_outward_mol_s": 3.766748058084081e-15
+      }
+    ],
+    "current_A": -6.067020368598039e-10,
+    "section_currents_A": [
+      -6.067020368598116e-10,
+      -6.067020368598109e-10,
+      -6.067020368598102e-10,
+      -6.06702036859811e-10,
+      -6.067020368598104e-10,
+      -6.067020368598107e-10,
+      -6.06702036859811e-10,
+      -6.067020368598109e-10,
+      -6.067020368598114e-10,
+      -6.067020368598112e-10,
+      -6.067020368598108e-10,
+      -6.067020368598104e-10,
+      -6.067020368598108e-10,
+      -6.067020368598108e-10,
+      -6.067020368598108e-10,
+      -6.06702036859811e-10,
+      -6.067020368598117e-10,
+      -6.067020368598106e-10,
+      -6.067020368598115e-10,
+      -6.067020368598106e-10,
+      -6.067020368598108e-10,
+      -6.067020368598112e-10,
+      -6.067020368598102e-10,
+      -6.067020368598111e-10,
+      -6.067020368598114e-10,
+      -6.067020368598102e-10,
+      -6.06702036859811e-10,
+      -6.067020368598105e-10,
+      -6.067020368598104e-10,
+      -6.067020368598114e-10,
+      -6.067020368598108e-10,
+      -6.067020368598104e-10,
+      -6.067020368598116e-10,
+      -6.067020368598116e-10,
+      -6.067020368598205e-10,
+      -6.067020368599992e-10,
+      -6.067020368593499e-10
+    ],
+    "current_spread_A": 6.493367808541267e-22,
+    "current_consistent": true,
+    "positive": true,
+    "min_concentration_mol_m3": 59.57049277206132,
+    "boundary_conditions": "end Dirichlet face values; axis/wall ion flux zero by construction",
+    "debye_length_nm": 0.9607567658493302,
+    "radial_cells_per_debye_length": 3.458724357057589
+  },
+  "history": [
+    {
+      "fraction": 0.25,
+      "iteration": 0,
+      "residual": 0.7306104401654709,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 1,
+      "residual": 0.01515125788611086,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 2,
+      "residual": 0.00037306456781748166,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 3,
+      "residual": 1.7523281661893048e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 4,
+      "residual": 2.8948590476696434e-14
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 0,
+      "residual": 0.7306104401654714,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 1,
+      "residual": 0.01681573561948064,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 2,
+      "residual": 0.000483064211416707,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 3,
+      "residual": 3.045064569091762e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 4,
+      "residual": 9.057797418493528e-14
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 0,
+      "residual": 0.730610440165472,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 1,
+      "residual": 0.01829057678263996,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 2,
+      "residual": 0.0006011432101389679,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 3,
+      "residual": 4.891830341801387e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 4,
+      "residual": 2.423630177635582e-13
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 0,
+      "residual": 0.7306104401654735,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 1,
+      "residual": 0.019589885808468318,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 2,
+      "residual": 0.0007256791285397229,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 3,
+      "residual": 7.400613089140367e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 4,
+      "residual": 5.768602379611727e-13
+    }
+  ],
+  "seconds": 0.4279258996248245,
+  "scenario": {
+    "nx": 36,
+    "nr": 18,
+    "length_nm": 20.0,
+    "radius_nm": 5.0,
+    "salt_mM": 100.0,
+    "voltage_mV": 100.0,
+    "wall_offset_mV": 15.0,
+    "model": "axisym-pnp-ramp-offset-v1"
+  },
+  "identity": "f460877dab07b1ef53661f58b15f77c04b440945b39da6e16d860f251a9b628e",
+  "dataset_class": "exploratory_numerical_simulation",
+  "training_qualified": false,
+  "schema_version": "1.0",
+  "model_equations": "steady monovalent PNP; no flow",
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "D:\\nanopore OS complete\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.3.2",
+    "scipy": "1.16.3"
+  },
+  "source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+  "units": {
+    "x_nm": "nm",
+    "r_nm": "nm",
+    "potential_V": "V",
+    "cplus_mol_m3": "mol/m^3",
+    "cminus_mol_m3": "mol/m^3"
+  },
+  "field_layout": "[axial_cell, radial_cell]",
+  "experimental_validation": "NOT_PERFORMED",
+  "unsupported": [
+    "fluid coupling",
+    "molecule feedback",
+    "physical time dependence",
+    "instrument calibration"
+  ],
+  "license": "UNRESOLVED: user approval required before redistribution"
+}

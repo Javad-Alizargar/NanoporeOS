@@ -1,0 +1,28 @@
+{
+  "design": {
+    "repetition": 3,
+    "case": "v5_polynomial_01",
+    "policy": "uniform_finest"
+  },
+  "source_identity": "dffe2f66c53d9dd3cd69507f5b138dd2f179fb43f647289cf83f866a5fe3ac95",
+  "wall_seconds": 9.704816699959338,
+  "attempted_cells": 8192,
+  "selected_grid": [
+    128,
+    64
+  ],
+  "exact_accuracy_pass": true,
+  "errors": {
+    "max_phi_error_VT": 0.00011163344889220106,
+    "max_plus_relative_error": 0.0001388582321306675,
+    "max_minus_relative_error": 0.00011527829656277078,
+    "mid_current_absolute_error_A": 1.5509435930453747e-15,
+    "mid_current_relative_error": 2.8452079750066195e-05,
+    "exact_mid_current_A": -5.451072844830496e-11,
+    "exact_current_quadrature_change_A": 3.2311742677852644e-26
+  },
+  "decision_file": "attempt_062_decision.json",
+  "decision_before_scoring_sha256": "26e3ad81662b113c8b08608e61bb0937839b8c82ca374848ed69d21dde5e50de",
+  "selected_fields": "attempt_062_fields.npz",
+  "selected_fields_sha256": "7efba3fd8dff91000595cca682db726513fddde64715c6c308243cf80b110a5d"
+}

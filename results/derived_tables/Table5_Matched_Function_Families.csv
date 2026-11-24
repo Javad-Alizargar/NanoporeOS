@@ -1,0 +1,13 @@
+Family,Policy,Accurate,Inaccurate,Unresolved,Cells
+Polynomial,Residual,0,8,0,256
+Polynomial,Current,3,5,0,"5,376"
+Polynomial,Fields,8,0,0,"17,664"
+Polynomial,Finest,8,0,0,"65,536"
+Oscillatory,Residual,0,8,0,256
+Oscillatory,Current,7,1,0,"15,616"
+Oscillatory,Fields,8,0,0,"38,144"
+Oscillatory,Finest,8,0,0,"65,536"
+Localized,Residual,0,8,0,256
+Localized,Current,2,6,0,"4,352"
+Localized,Fields,8,0,0,"21,760"
+Localized,Finest,8,0,0,"65,536"

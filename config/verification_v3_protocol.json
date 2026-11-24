@@ -1,0 +1,181 @@
+{
+  "version": "verification-v3-frozen-20261121",
+  "declared_utc": "2026-11-21T02:35:48.537747+00:00",
+  "status": "FROZEN_BEFORE_HOLDOUT_CAMPAIGN",
+  "purpose": "Code verification and prospective deterministic qualification-policy evaluation, not physical validation or production training data",
+  "model": "axisym-forced-pnp-manufactured-v1",
+  "legacy_core_changes": false,
+  "development_cases": [
+    {
+      "name": "development_a",
+      "length_nm": 20,
+      "radius_nm": 7,
+      "salt_mM": 30,
+      "drive_VT": 2,
+      "amplitude_psi": 0.6,
+      "bplus": 0.4,
+      "bminus": -0.25,
+      "wall_amplitude": 0.3
+    },
+    {
+      "name": "development_b",
+      "length_nm": 30,
+      "radius_nm": 10,
+      "salt_mM": 100,
+      "drive_VT": -2,
+      "amplitude_psi": 1.1,
+      "bplus": 0.65,
+      "bminus": -0.4,
+      "wall_amplitude": -0.4
+    }
+  ],
+  "held_out_cases": [
+    {
+      "name": "holdout_01",
+      "length_nm": 12,
+      "radius_nm": 3,
+      "salt_mM": 5,
+      "drive_VT": 2,
+      "amplitude_psi": 0.25,
+      "bplus": 0.15,
+      "bminus": -0.08,
+      "wall_amplitude": -0.2
+    },
+    {
+      "name": "holdout_02",
+      "length_nm": 20,
+      "radius_nm": 7,
+      "salt_mM": 30,
+      "drive_VT": -2.5,
+      "amplitude_psi": 0.6,
+      "bplus": 0.4,
+      "bminus": -0.25,
+      "wall_amplitude": 0.4
+    },
+    {
+      "name": "holdout_03",
+      "length_nm": 28,
+      "radius_nm": 12,
+      "salt_mM": 150,
+      "drive_VT": 1,
+      "amplitude_psi": 1,
+      "bplus": 0.65,
+      "bminus": -0.45,
+      "wall_amplitude": -0.6
+    },
+    {
+      "name": "holdout_04",
+      "length_nm": 50,
+      "radius_nm": 5,
+      "salt_mM": 80,
+      "drive_VT": -1.2,
+      "amplitude_psi": 1.4,
+      "bplus": 0.8,
+      "bminus": -0.55,
+      "wall_amplitude": 0.75
+    },
+    {
+      "name": "holdout_05",
+      "length_nm": 16,
+      "radius_nm": 9,
+      "salt_mM": 60,
+      "drive_VT": 3,
+      "amplitude_psi": -0.85,
+      "bplus": -0.35,
+      "bminus": 0.6,
+      "wall_amplitude": 0.5
+    },
+    {
+      "name": "holdout_06",
+      "length_nm": 35,
+      "radius_nm": 15,
+      "salt_mM": 15,
+      "drive_VT": -3,
+      "amplitude_psi": -1.3,
+      "bplus": 0.7,
+      "bminus": -0.9,
+      "wall_amplitude": -0.9
+    },
+    {
+      "name": "holdout_07",
+      "length_nm": 22,
+      "radius_nm": 6,
+      "salt_mM": 200,
+      "drive_VT": 0.7,
+      "amplitude_psi": 0.9,
+      "bplus": -0.6,
+      "bminus": 0.35,
+      "wall_amplitude": 0.8
+    },
+    {
+      "name": "holdout_08",
+      "length_nm": 40,
+      "radius_nm": 11,
+      "salt_mM": 10,
+      "drive_VT": -0.8,
+      "amplitude_psi": -0.4,
+      "bplus": 0.25,
+      "bminus": 0.55,
+      "wall_amplitude": -0.3
+    }
+  ],
+  "mesh_ladder": [
+    [
+      12,
+      6
+    ],
+    [
+      24,
+      12
+    ],
+    [
+      48,
+      24
+    ],
+    [
+      96,
+      48
+    ]
+  ],
+  "exact_evaluation_tolerances": {
+    "max_phi_error_VT": 0.005,
+    "max_plus_relative_error": 0.01,
+    "max_minus_relative_error": 0.01,
+    "mid_current_relative_error": 0.01
+  },
+  "current_relative_denominator_floor_A": 1e-15,
+  "order_verification": {
+    "cases": "development cases only",
+    "observables": [
+      "max_phi_error_VT",
+      "max_plus_relative_error",
+      "max_minus_relative_error"
+    ],
+    "last_pair_order_interval": [
+      1.7,
+      2.3
+    ],
+    "interpretation": "observed smooth-solution order, not proof for corner-singular legacy model"
+  },
+  "policies": {
+    "residual_only": "Return first mesh with discrete PASS",
+    "current_mesh": "Return first successive pair whose mid-plane current difference / max(abs(fine current),1e-15) <= 0.01 and both solves PASS",
+    "field_controller": "Require two consecutive passing refinement pairs. At each pair interpolate fine psi and log concentrations to coarse centres; max absolute psi difference and max relative concentration differences and mid-current difference are multiplied by safety/(2^p-1), with p=2 and safety=2. Compare to the same observable budgets. Emit fine mesh as ESTIMATED_ACCEPT, never certified error bound.",
+    "uniform_finest": "Attempt 96x48 directly; discrete PASS gives baseline accepted output, independently evaluated afterwards"
+  },
+  "controller_assumed_order": 2,
+  "controller_safety_factor": 2,
+  "controller_consecutive_pairs": 2,
+  "cost_estimand": "Single execution of each grid cached across policy replay; sum construction-plus-solve observed costs for all meshes a policy would require, including failed attempts. Selection/check overhead reported separately. These are deterministic retrospective replays of frozen prospective rules, not separate randomized wall-clock trials.",
+  "evaluation_separation": "Exact fields/analytic current used only after policy decisions to score actual error; controller receives numerical arrays/current/status only",
+  "failure_handling": "Preserve failed solves; no fallback to exact initialization. Budget exhaustion yields UNRESOLVED; manufactured cases never become physical training targets.",
+  "scope_limits": [
+    "Eight fixed holdout scenarios are not random population sampling",
+    "No physical/experimental validation",
+    "No proof of reliable error bounds",
+    "No cross-package superiority claim",
+    "Legacy charged-wall HOLD unchanged"
+  ],
+  "maximum_campaign_minutes": 25,
+  "threads": 2
+}

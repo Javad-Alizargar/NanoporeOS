@@ -1,0 +1,155 @@
+{
+  "status": "PASS_INDEPENDENT_CONTINUOUS_DERIVATIVE_AND_BOUNDARY_CHECKS",
+  "parameters": {
+    "length_nm": 20.0,
+    "radius_nm": 10.0,
+    "bulk_mol_m3": 100.0,
+    "applied_thermal_voltages": 1.3,
+    "potential_amplitude": 0.3,
+    "plus_mu_amplitude": 0.17,
+    "minus_mu_amplitude": -0.11,
+    "wall_amplitude": 0.2
+  },
+  "finite_difference_records": [
+    {
+      "relative_step": 0.002,
+      "poisson": {
+        "max_absolute": 2.111825396777789e-07,
+        "relative_L2": 6.15115255212561e-07
+      },
+      "plus": {
+        "max_absolute": 5.282830655151116e-07,
+        "relative_L2": 1.670209203926683e-05
+      },
+      "plus_NP_values_only": {
+        "max_absolute": 2.8909605200022614e-07,
+        "relative_L2": 9.612661159834516e-06
+      },
+      "minus": {
+        "max_absolute": 4.461986929903128e-07,
+        "relative_L2": 2.0470378393157294e-05
+      },
+      "minus_NP_values_only": {
+        "max_absolute": 2.1786479905208656e-07,
+        "relative_L2": 1.0824579370590744e-05
+      }
+    },
+    {
+      "relative_step": 0.001,
+      "poisson": {
+        "max_absolute": 5.2794606686390466e-08,
+        "relative_L2": 1.5377013064558768e-07
+      },
+      "plus": {
+        "max_absolute": 1.3207231649992046e-07,
+        "relative_L2": 4.1755509365824616e-06
+      },
+      "plus_NP_values_only": {
+        "max_absolute": 7.22732299840434e-08,
+        "relative_L2": 2.403099832139833e-06
+      },
+      "minus": {
+        "max_absolute": 1.1155096185308522e-07,
+        "relative_L2": 5.117628500464238e-06
+      },
+      "minus_NP_values_only": {
+        "max_absolute": 5.4464402644144316e-08,
+        "relative_L2": 2.7062211239918494e-06
+      }
+    },
+    {
+      "relative_step": 0.0005,
+      "poisson": {
+        "max_absolute": 1.3200192411355616e-08,
+        "relative_L2": 3.83918065733781e-08
+      },
+      "plus": {
+        "max_absolute": 3.301817608908353e-08,
+        "relative_L2": 1.0438894763705867e-06
+      },
+      "plus_NP_values_only": {
+        "max_absolute": 1.806209097218736e-08,
+        "relative_L2": 6.003976716665865e-07
+      },
+      "minus": {
+        "max_absolute": 2.7887821028166337e-08,
+        "relative_L2": 1.2794092427672984e-06
+      },
+      "minus_NP_values_only": {
+        "max_absolute": 1.3604640702186144e-08,
+        "relative_L2": 6.773820191384555e-07
+      }
+    }
+  ],
+  "boundary_checks": {
+    "wall_potential_trace_error": 0.0,
+    "left_potential_error": 0.0,
+    "right_potential_error": 0.0,
+    "axis_radial_potential_derivative": 0.0,
+    "plus": {
+      "wall_ionic_normal_flux": 0.0,
+      "axis_ionic_normal_flux": 0.0,
+      "left_density_error": 0.0,
+      "right_density_error": 1.1102230246251565e-16
+    },
+    "minus": {
+      "wall_ionic_normal_flux": 0.0,
+      "axis_ionic_normal_flux": 0.0,
+      "left_density_error": 0.0,
+      "right_density_error": 0.0
+    }
+  },
+  "integral_balance_checks": {
+    "1.0": {
+      "plus": {
+        "integrated_source_nm": 1.1013412404281553e-13,
+        "boundary_outward_flux_nm": 4.702515447382883e-15,
+        "absolute_imbalance_nm": 1.0543160859543264e-13
+      },
+      "minus": {
+        "integrated_source_nm": -8.615330671091215e-14,
+        "boundary_outward_flux_nm": -4.268306678241666e-15,
+        "absolute_imbalance_nm": 8.188500003267049e-14
+      },
+      "poisson": {
+        "integrated_negative_laplacian_nm": 9.869604401089607,
+        "negative_outward_gradient_flux_nm": 9.869604401089374,
+        "absolute_imbalance_nm": 2.327027459614328e-13
+      }
+    },
+    "0.37": {
+      "plus": {
+        "integrated_source_nm": 3.2295334012196504,
+        "boundary_outward_flux_nm": 3.2295334012196166,
+        "absolute_imbalance_nm": 3.375077994860476e-14
+      },
+      "minus": {
+        "integrated_source_nm": 2.693666962397769,
+        "boundary_outward_flux_nm": 2.6936669623977867,
+        "absolute_imbalance_nm": 1.7763568394002505e-14
+      },
+      "poisson": {
+        "integrated_negative_laplacian_nm": -4.219676057555907,
+        "negative_outward_gradient_flux_nm": -4.21967605755594,
+        "absolute_imbalance_nm": 3.2862601528904634e-14
+      }
+    }
+  },
+  "physical_constants": {
+    "e_C": 1.602176634e-19,
+    "kB_J_K": 1.380649e-23,
+    "NA_per_mol": 6.02214076e+23,
+    "epsilon0_F_m": 8.8541878188e-12,
+    "VT_V": 0.02569257912108585,
+    "alpha_nm2_per_mol_m3": 0.0054168037476298265
+  },
+  "proposed_species_sign": "div(-q*grad(mu))=f_species; subtract volume*f from the raw outward-flux residual",
+  "proposed_poisson_sign": "-lap(psi)-alpha*cb*(qplus-qminus)=f_poisson; subtract volume*f from raw Poisson residual",
+  "distinction": "These are continuous forced-equation verification checks; no discrete PNP assembly or PDE solve was used.",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "numpy": "2.3.2",
+  "sources": {
+    "manufactured_math.py": "9f586efbdb65f64e95bc42347a68adf8df0b8be5c189a8d795e84eecfc957017",
+    "check_derivatives.py": "dfc2210a2ff61c418d60c6d699d8a4d7c6c0dc89db319bff2621668f2d8017ac"
+  }
+}

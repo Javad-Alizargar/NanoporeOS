@@ -1,0 +1,25 @@
+[Unit]
+Description=NanoporeOS bounded demo
+After=network.target
+
+[Service]
+User=nanoporeos
+Group=nanoporeos
+WorkingDirectory=/opt/nanoporeos/current
+Environment=OPENBLAS_NUM_THREADS=2
+Environment=OMP_NUM_THREADS=2
+ExecStart=/opt/nanoporeos/current/.venv/bin/python -m nanoporeos.cli serve --port 8765 --workspace /var/lib/nanoporeos
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/nanoporeos
+MemoryMax=2G
+CPUQuota=100%
+TasksMax=32
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

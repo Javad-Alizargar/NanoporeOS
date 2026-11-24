@@ -1,0 +1,110 @@
+{
+  "status": "LIMITED_NEUTRAL_BASELINE_DEMONSTRATION",
+  "protocol_sha256": "a31d0956cfe9a4504c5e34a32a34acbcd132a473071cfa77120d13d78bf4509b",
+  "train_groups": 7,
+  "validation_groups": 2,
+  "locked_test_groups": 3,
+  "test": [
+    {
+      "group": "f5fef3196fd8d459698ec93f2462a30643e89af5eb5ba9975b534908204477fb",
+      "split": "test",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "target_A": 5.884185762868277e-10
+    },
+    {
+      "group": "ee8c7649875a4bca60393c5077491a6c09411e93bc27d7195bbdea52b26c336e",
+      "split": "test",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "target_A": 2.3536743051473005e-10
+    },
+    {
+      "group": "f20a60372a56a925ab58c5d0b7eea672c102d898368981dc11c62979c2ea4852",
+      "split": "test",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "target_A": 0.0
+    }
+  ],
+  "methods": [
+    {
+      "method": "analytical",
+      "coefficients": [],
+      "fit_seconds": 0,
+      "total_test_inference_seconds": 7.329974323511124e-05,
+      "MAE_A": 1.981786884241629e-24,
+      "max_absolute_error_A": 4.963083675318166e-24,
+      "normalized_MAE": 3.367988306466376e-15,
+      "test_predictions_A": [
+        5.884185762868227e-10,
+        2.3536743051472907e-10,
+        -0.0
+      ]
+    },
+    {
+      "method": "raw_linear_regression",
+      "coefficients": [
+        -3.207146294175904e-10,
+        9.446503630118134e-11,
+        -4.664940064255892e-12,
+        -1.1275372178036689e-11
+      ],
+      "fit_seconds": 0.0004294002428650856,
+      "total_test_inference_seconds": 3.510061651468277e-05,
+      "MAE_A": 6.17044344862935e-10,
+      "max_absolute_error_A": 1.469456120240603e-09,
+      "normalized_MAE": 1.048648648648634,
+      "test_predictions_A": [
+        8.12653763466396e-10,
+        1.704823550755333e-09,
+        1.5744172716863384e-10
+      ]
+    },
+    {
+      "method": "physical_feature_regression",
+      "coefficients": [
+        -4.707348610294586e-14
+      ],
+      "fit_seconds": 6.62999227643013e-05,
+      "total_test_inference_seconds": 1.1499971151351929e-05,
+      "MAE_A": 1.7405258722469956e-24,
+      "max_absolute_error_A": 4.446095792472524e-24,
+      "normalized_MAE": 2.957972338722643e-15,
+      "test_predictions_A": [
+        5.884185762868232e-10,
+        2.353674305147293e-10,
+        0.0
+      ]
+    }
+  ],
+  "charged_wall_surrogate": "NOT_EVALUABLE_DOMAIN_HOLD",
+  "neural_PINN": "NOT_IMPLEMENTED",
+  "OOD_policy": "ABSTAIN for charged-wall or out-of-range cases; lookup inside tested neutral domain only",
+  "break_even_claim": "NONE: analytical baseline already solves this limit directly",
+  "interpretation": "Small deterministic numerical exercise, no performance/generalization/experimental claim"
+}

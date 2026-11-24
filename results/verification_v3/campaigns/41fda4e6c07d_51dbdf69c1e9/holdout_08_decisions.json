@@ -1,0 +1,212 @@
+{
+  "case": {
+    "name": "holdout_08",
+    "length_nm": 40,
+    "radius_nm": 11,
+    "salt_mM": 10,
+    "drive_VT": -0.8,
+    "amplitude_psi": -0.4,
+    "bplus": 0.25,
+    "bminus": 0.55,
+    "wall_amplitude": -0.3
+  },
+  "policies": [
+    {
+      "policy": "residual_only",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 0,
+      "selected_grid": [
+        12,
+        6
+      ],
+      "visited_indices": [
+        0
+      ],
+      "attempted_solve_seconds": 0.13357499986886978,
+      "attempted_cells": 72,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 0.00010329950600862503,
+      "solve_plus_selection_seconds": 0.1336782993748784
+    },
+    {
+      "policy": "current_mesh",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 2,
+      "selected_grid": [
+        48,
+        24
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2
+      ],
+      "attempted_solve_seconds": 1.2375005995854735,
+      "attempted_cells": 1512,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.03325537710390989
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.03325537710390989
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.0076526740057308315
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.0076526740057308315
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 5.829986184835434e-05,
+      "solve_plus_selection_seconds": 1.237558899447322
+    },
+    {
+      "policy": "field_controller",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attempted_solve_seconds": 6.4066583989188075,
+      "attempted_cells": 6120,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.007136334821820078,
+            "max_plus_relative_error": 0.018000958267018818,
+            "max_minus_relative_error": 0.03626455974858758,
+            "mid_current_relative_error": 0.03325537710390989
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.004757556547880052,
+            "max_plus_relative_error": 0.012000638844679211,
+            "max_minus_relative_error": 0.024176373165725053,
+            "mid_current_relative_error": 0.022170251402606592
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.002031428345749986,
+            "max_plus_relative_error": 0.0045866075666168024,
+            "max_minus_relative_error": 0.008965173650553788,
+            "mid_current_relative_error": 0.0076526740057308315
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.001354285563833324,
+            "max_plus_relative_error": 0.003057738377744535,
+            "max_minus_relative_error": 0.005976782433702525,
+            "mid_current_relative_error": 0.0051017826704872205
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        },
+        {
+          "coarse_grid": [
+            48,
+            24
+          ],
+          "fine_grid": [
+            96,
+            48
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.0005583718788025882,
+            "max_plus_relative_error": 0.0011499508236982193,
+            "max_minus_relative_error": 0.0022329382851201457,
+            "mid_current_relative_error": 0.001872856706099911
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.00037224791920172545,
+            "max_plus_relative_error": 0.0007666338824654795,
+            "max_minus_relative_error": 0.0014886255234134304,
+            "mid_current_relative_error": 0.0012485711373999406
+          },
+          "pair_pass": true,
+          "consecutive_passes": 2
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 0.0022812997922301292,
+      "solve_plus_selection_seconds": 6.408939698711038
+    },
+    {
+      "policy": "uniform_finest",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        3
+      ],
+      "attempted_solve_seconds": 5.169157799333334,
+      "attempted_cells": 4608,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 2.8099864721298218e-05,
+      "solve_plus_selection_seconds": 5.169185899198055
+    }
+  ],
+  "decision_seconds": 0.002470999024808407,
+  "decision_inputs": "Numerical snapshots, budgets and fixed policy parameters only"
+}

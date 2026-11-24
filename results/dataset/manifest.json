@@ -1,0 +1,9 @@
+{
+  "files": {
+    "dataset_card.json": "c5db66b821fad371a09e744a207fd5e5abbd13d726d17ffe770590f7bd260c55",
+    "example_dataset.zip": "b0b7eb95242ccac517f798a032a9416149b154658d89fe548b21d360ce4c255f",
+    "failure_records.json": "e59550700b08a3e7e45f1a042f4c6d348e821c259018ca975ea0a7df001acc81",
+    "records.csv": "cbbd4da7339f964f1516ecd2cfb7cf1b875ee7640ae44d914f116213286f11cf",
+    "splits.json": "8e4ccaf8238d64ceaf59ff3fee10d88875292d73f495fe5e6eaa1d1572191285"
+  }
+}

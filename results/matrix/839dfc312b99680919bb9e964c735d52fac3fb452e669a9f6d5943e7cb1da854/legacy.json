@@ -1,0 +1,74 @@
+{
+  "scenario": {
+    "nx": 16,
+    "nr": 8,
+    "length_nm": 20.0,
+    "radius_nm": 5.0,
+    "salt_mM": 100.0,
+    "voltage_mV": 0.0,
+    "wall_offset_mV": 0.0,
+    "model": "axisym-pnp-ramp-offset-v1"
+  },
+  "reported_converged": true,
+  "iterations": 1,
+  "update_error": 1.8474111129762605e-15,
+  "history": [
+    1.8474111129762605e-15
+  ],
+  "diagnostics": {
+    "coupled_residual_max": 2.220446049250313e-16,
+    "poisson_scaled": 0.0,
+    "plus_scaled": 2.220446049250313e-16,
+    "minus_scaled": 2.220446049250313e-16,
+    "poisson_integrated_charge_residual_C": 0.0,
+    "species_max_local_imbalance_mol_s": [
+      4.229912520959968e-30,
+      4.3809808252799664e-30
+    ],
+    "species_global_imbalance_mol_s": [
+      1.324518062118778e-29,
+      1.37182227862302e-29
+    ],
+    "species_boundary_fluxes": [
+      {
+        "left_outward_mol_s": 7.776202816310245e-30,
+        "right_outward_mol_s": 5.468977804877534e-30
+      },
+      {
+        "left_outward_mol_s": 8.053924345464182e-30,
+        "right_outward_mol_s": 5.6642984407660185e-30
+      }
+    ],
+    "current_A": 2.3383757511688105e-28,
+    "section_currents_A": [
+      2.679605397821111e-26,
+      2.4145894793552748e-26,
+      8.392170751417816e-27,
+      1.5312030844692024e-26,
+      9.42278821211824e-27,
+      4.71139410605912e-27,
+      0.0,
+      -1.3250795923291188e-27,
+      -5.8892426325739e-28,
+      -5.005856237687809e-27,
+      -3.386314513729984e-27,
+      -6.183704764202589e-27,
+      -6.478166895831301e-27,
+      -1.4723106581434692e-26,
+      -9.42278821211824e-27,
+      -1.884557642423648e-26,
+      -1.884557642423648e-26
+    ],
+    "current_spread_A": 4.564163040244759e-26,
+    "current_consistent": true,
+    "positive": true,
+    "min_concentration_mol_m3": 100.00000000000003,
+    "boundary_conditions": "end Dirichlet face values; axis/wall ion flux zero by construction",
+    "debye_length_nm": 0.9607567658493302,
+    "radial_cells_per_debye_length": 1.5372108253589285
+  },
+  "seconds": 0.02400560025125742,
+  "legacy_kernel_sha256": "0cc2d53432c6a2d7a972d5cd101666d6a62cfdaf2290da49fb19dddcada1a1f7",
+  "supplied_notebook_sha256": "f115c53261fda1f9434f6c20b7b72874b7e5bf04874f2bc0ded191731764ee01",
+  "historical_executed_source_identity": "UNRESOLVED"
+}

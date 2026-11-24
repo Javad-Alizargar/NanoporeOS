@@ -1,0 +1,181 @@
+{
+  "version": "verification-v4-new-holdout-after-v3-development",
+  "output_family": "verification_v4",
+  "declared_utc": "2026-11-21T08:47:02.991611+00:00",
+  "status": "FROZEN_BEFORE_NEW_HOLDOUT_CAMPAIGN",
+  "purpose": "Evaluate one-pair smooth-error controller after the two-pair v3 rule proved conservative; retain v3 negative results",
+  "controller_design_history": "v3 was held out for its original frozen rules. Its observed six accurate accepts/two unresolved at higher work than finest-uniform motivated removing the consecutive-pair requirement. Those eight cases are now exposed development evidence, not independent tests of v4. v4 uses eight new physical-parameter/amplitude tuples; no v4 outcomes were seen before this protocol.",
+  "model": "axisym-forced-pnp-manufactured-v1",
+  "legacy_core_changes": false,
+  "development_cases": [
+    {
+      "name": "development_a",
+      "length_nm": 20,
+      "radius_nm": 7,
+      "salt_mM": 30,
+      "drive_VT": 2,
+      "amplitude_psi": 0.6,
+      "bplus": 0.4,
+      "bminus": -0.25,
+      "wall_amplitude": 0.3
+    },
+    {
+      "name": "development_b",
+      "length_nm": 30,
+      "radius_nm": 10,
+      "salt_mM": 100,
+      "drive_VT": -2,
+      "amplitude_psi": 1.1,
+      "bplus": 0.65,
+      "bminus": -0.4,
+      "wall_amplitude": -0.4
+    }
+  ],
+  "held_out_cases": [
+    {
+      "name": "v4_holdout_01",
+      "length_nm": 14,
+      "radius_nm": 4,
+      "salt_mM": 8,
+      "drive_VT": 1.6,
+      "amplitude_psi": 0.45,
+      "bplus": 0.2,
+      "bminus": -0.15,
+      "wall_amplitude": 0.25
+    },
+    {
+      "name": "v4_holdout_02",
+      "length_nm": 24,
+      "radius_nm": 8,
+      "salt_mM": 45,
+      "drive_VT": -2.1,
+      "amplitude_psi": 0.75,
+      "bplus": 0.5,
+      "bminus": -0.3,
+      "wall_amplitude": -0.5
+    },
+    {
+      "name": "v4_holdout_03",
+      "length_nm": 32,
+      "radius_nm": 13,
+      "salt_mM": 120,
+      "drive_VT": 1.4,
+      "amplitude_psi": -1.1,
+      "bplus": -0.65,
+      "bminus": 0.4,
+      "wall_amplitude": 0.65
+    },
+    {
+      "name": "v4_holdout_04",
+      "length_nm": 45,
+      "radius_nm": 6,
+      "salt_mM": 90,
+      "drive_VT": -1.5,
+      "amplitude_psi": 1.25,
+      "bplus": 0.6,
+      "bminus": -0.7,
+      "wall_amplitude": -0.8
+    },
+    {
+      "name": "v4_holdout_05",
+      "length_nm": 18,
+      "radius_nm": 10,
+      "salt_mM": 70,
+      "drive_VT": 2.7,
+      "amplitude_psi": -0.65,
+      "bplus": 0.45,
+      "bminus": 0.75,
+      "wall_amplitude": -0.35
+    },
+    {
+      "name": "v4_holdout_06",
+      "length_nm": 38,
+      "radius_nm": 16,
+      "salt_mM": 20,
+      "drive_VT": -2.8,
+      "amplitude_psi": 1.15,
+      "bplus": -0.8,
+      "bminus": 0.55,
+      "wall_amplitude": 0.95
+    },
+    {
+      "name": "v4_holdout_07",
+      "length_nm": 26,
+      "radius_nm": 5,
+      "salt_mM": 175,
+      "drive_VT": 0.9,
+      "amplitude_psi": -0.95,
+      "bplus": 0.55,
+      "bminus": -0.5,
+      "wall_amplitude": -0.65
+    },
+    {
+      "name": "v4_holdout_08",
+      "length_nm": 48,
+      "radius_nm": 12,
+      "salt_mM": 12,
+      "drive_VT": -1.1,
+      "amplitude_psi": 0.55,
+      "bplus": -0.3,
+      "bminus": 0.65,
+      "wall_amplitude": 0.4
+    }
+  ],
+  "mesh_ladder": [
+    [
+      12,
+      6
+    ],
+    [
+      24,
+      12
+    ],
+    [
+      48,
+      24
+    ],
+    [
+      96,
+      48
+    ]
+  ],
+  "exact_evaluation_tolerances": {
+    "max_phi_error_VT": 0.005,
+    "max_plus_relative_error": 0.01,
+    "max_minus_relative_error": 0.01,
+    "mid_current_relative_error": 0.01
+  },
+  "current_relative_denominator_floor_A": 1e-15,
+  "order_verification": {
+    "cases": "two original development cases only",
+    "observables": [
+      "max_phi_error_VT",
+      "max_plus_relative_error",
+      "max_minus_relative_error"
+    ],
+    "last_pair_order_interval": [
+      1.7,
+      2.3
+    ]
+  },
+  "policies": {
+    "residual_only": "First discrete PASS",
+    "current_mesh": "First successive current-difference pair <=1%",
+    "field_controller": "First passing field/current pair, estimated error=2*difference/3; smooth p=2 assumption, no certification",
+    "uniform_finest": "96x48 direct baseline"
+  },
+  "controller_assumed_order": 2,
+  "controller_safety_factor": 2,
+  "controller_consecutive_pairs": 1,
+  "cost_estimand": "Cached-grid replay of frozen selection rules. Sum all construction-plus-solve costs required by each policy, plus its own measured selection time. File I/O, reference evaluation and plotting excluded. No randomized repeated-runtime or universal speedup claim.",
+  "evaluation_separation": "Numerical-only selection decisions saved before exact scoring",
+  "failure_handling": "Retain failed/unresolved records; no exact initialization; never qualify physical training data",
+  "scope_limits": [
+    "Only eight fixed new tuples from one smooth manufactured function family",
+    "Not an independent random sample or generalization proof",
+    "Shared mesh-independent bias is invisible to refinement",
+    "No physical validation or legacy HOLD release"
+  ],
+  "maximum_campaign_minutes": 25,
+  "threads": 2
+}

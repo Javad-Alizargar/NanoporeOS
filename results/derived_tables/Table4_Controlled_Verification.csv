@@ -1,0 +1,9 @@
+Set,Policy,Accurate (n/8),Inaccurate (n/8),Unresolved (n/8),Cells / finest
+First,Residual only,0,8,0,0.016
+First,Current mesh,6,0,2,0.672
+First,Field controller,6,0,2,1.328
+First,Finest uniform,8,0,0,1.000
+New,Residual only,0,8,0,0.016
+New,Current mesh,5,0,3,0.797
+New,Field controller,6,0,2,0.703
+New,Finest uniform,6,2,0,1.000

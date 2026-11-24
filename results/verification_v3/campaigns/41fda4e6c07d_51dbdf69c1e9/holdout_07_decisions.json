@@ -1,0 +1,231 @@
+{
+  "case": {
+    "name": "holdout_07",
+    "length_nm": 22,
+    "radius_nm": 6,
+    "salt_mM": 200,
+    "drive_VT": 0.7,
+    "amplitude_psi": 0.9,
+    "bplus": -0.6,
+    "bminus": 0.35,
+    "wall_amplitude": 0.8
+  },
+  "policies": [
+    {
+      "policy": "residual_only",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 0,
+      "selected_grid": [
+        12,
+        6
+      ],
+      "visited_indices": [
+        0
+      ],
+      "attempted_solve_seconds": 0.1315708002075553,
+      "attempted_cells": 72,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 9.409990161657333e-05,
+      "solve_plus_selection_seconds": 0.13166490010917187
+    },
+    {
+      "policy": "current_mesh",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attempted_solve_seconds": 7.193777299486101,
+      "attempted_cells": 6120,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.052457528307906884
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.052457528307906884
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.013113343071327369
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.013113343071327369
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            48,
+            24
+          ],
+          "fine_grid": [
+            96,
+            48
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.0032795332654369123
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.0032795332654369123
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 5.920045077800751e-05,
+      "solve_plus_selection_seconds": 7.193836499936879
+    },
+    {
+      "policy": "field_controller",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attempted_solve_seconds": 7.193777299486101,
+      "attempted_cells": 6120,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.022929789209023,
+            "max_plus_relative_error": 0.017422482446347497,
+            "max_minus_relative_error": 0.013449982612028994,
+            "mid_current_relative_error": 0.052457528307906884
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.015286526139348666,
+            "max_plus_relative_error": 0.011614988297564997,
+            "max_minus_relative_error": 0.008966655074685996,
+            "mid_current_relative_error": 0.03497168553860459
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.005658370630968301,
+            "max_plus_relative_error": 0.00624089727013605,
+            "max_minus_relative_error": 0.005042199175757406,
+            "mid_current_relative_error": 0.013113343071327369
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.0037722470873122007,
+            "max_plus_relative_error": 0.0041605981800907,
+            "max_minus_relative_error": 0.0033614661171716036,
+            "mid_current_relative_error": 0.008742228714218245
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        },
+        {
+          "coarse_grid": [
+            48,
+            24
+          ],
+          "fine_grid": [
+            96,
+            48
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.0014048843507006303,
+            "max_plus_relative_error": 0.0018595368371114463,
+            "max_minus_relative_error": 0.0015618676216448738,
+            "mid_current_relative_error": 0.0032795332654369123
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.0009365895671337535,
+            "max_plus_relative_error": 0.0012396912247409641,
+            "max_minus_relative_error": 0.0010412450810965825,
+            "mid_current_relative_error": 0.0021863555102912746
+          },
+          "pair_pass": true,
+          "consecutive_passes": 2
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 0.002075900323688984,
+      "solve_plus_selection_seconds": 7.19585319980979
+    },
+    {
+      "policy": "uniform_finest",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        3
+      ],
+      "attempted_solve_seconds": 5.851143099367619,
+      "attempted_cells": 4608,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 2.6499852538108826e-05,
+      "solve_plus_selection_seconds": 5.851169599220157
+    }
+  ],
+  "decision_seconds": 0.0022557005286216736,
+  "decision_inputs": "Numerical snapshots, budgets and fixed policy parameters only"
+}

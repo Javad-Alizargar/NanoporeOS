@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "frozen_before_repeated_timing": true,
+  "scope": "full original 36 scenario x 3 mesh matrix, 3 repeated ordered randomized runs",
+  "seeds": [20261109, 20261110, 20261111],
+  "ordering": "randomized case and method order per repetition",
+  "threads": 2,
+  "timing": "perf_counter, construction plus solve, excludes disk exports, independent audit after legacy timer separately",
+  "warmup": "one untimed small solve for each method",
+  "comparison": "same final BVP, different stopping criteria retained and explicit; failures reported, no speedup-to-equal-accuracy claim",
+  "uncertainty_unit": "physical scenario; meshes aggregated within scenario; seeded bootstrap mean paired time difference",
+  "failed_runtime": "included in coverage and total attempted compute, never treated as successful solution runtime"
+}

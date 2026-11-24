@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-11-21T10:13:54.423512+00:00",
+  "sources": {
+    "scripts\\driven_refinement_v2.py": "50773c1c8eba469e2595982a0ab50f784c88a2c5eac8afdeba88def84cae3001",
+    "config\\driven_refinement_v2_protocol.json": "74ac1ff0160b737072fb1f573f4a82a3926ca9a894308fd638174a6d19a81602",
+    "benchmarks\\independent\\nodal_pnp.py": "5964679b4ab79322fb0f1172c28bfc955b3647db3ce3c67082a8a8c1e8091e18",
+    "scripts\\noneq_reference.py": "fd63e47d534cfac9e371cd4a8e83006f0e3bdb27ef26d00227d47aaa7a3c12b2"
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "D:\\nanopore OS complete\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.3.2",
+    "scipy": "1.16.3"
+  }
+}

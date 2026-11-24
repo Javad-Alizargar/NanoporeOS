@@ -1,0 +1,2244 @@
+{
+  "status": "PASS_RETROSPECTIVE_AUDIT",
+  "plan_sha256": "76f0292149468b96a867f2604225d4628b07348fc7e7fb5aa7da38a805bfd0a9",
+  "matrix_sha256": "0507a24a50b11c946db4dd5970d2390e63015f0cfe13c32fc9419defad8f5a83",
+  "original_verification_protocol_sha256": "a3991fb9e0b731233dc20aae1d7ccbf465e8a01419181671a92457d96c79f471",
+  "records": [
+    {
+      "case_id": "f169f4ca959f6e2822b1a9a4fcbc9e641d284c2e1c99832b5fbfb173fec1893a",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "20967f9483c83bb10a0ece4e227bf9c3e8b9277b72d4952e6128adf0cc351062",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "7a27c25d33b06dea36452751e52958d5caec962d61e66eb129c60955dd6ecd7e",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "e49048687e0099f1cf6e5cf166d4bdd30b46fac9974490c7f3e3fdd4d9f9b68f",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 5.401477112286085e-15,
+        "max_normalized_concentration_error": 5.995204332975845e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "3e95912ce87d153e57282ce7fdc02663fd026e4bd41343f0f89fd3d32e82e226",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 5.941624823514694e-15,
+        "max_normalized_concentration_error": 6.772360450213455e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "a827bc5dd590316239b858624fce6ea9608ab7ff4e0ea51958065f5ada1343a3",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 6.481772534743302e-15,
+        "max_normalized_concentration_error": 2.1094237467877974e-14,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "2d9d3fde67f2737ae18c1524af8761348b652320e15f05376325af95db70c6b0",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "37baa59e8a11c5d190c762e2f26ddbd4289e76c00919bcd57706e2bb493c925d",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "8f249f6987459a3d6aed12bc3c73a56176cc4ecf36882d7924d022ad48e5e0e2",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "093d6e0662ff2221a96c3968e6dd0147a336014a393acc8f1083ae48d7223524",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "f118a313917188c6613fecc767fbf210a3be8ed046b8ee4eb4313c9711b247e9",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "e39aa763fc3062144f5680982703b1233e8d92bfb8db5ad3aaa0158b3b891255",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "c25f18dc03b9aabb5fa8ffc9e8e5eca12f69be0dbd846cbd96cdfd47b538d474",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "c42f3a1023adb60f6efe0d9ff13bdba5beffa6c52b9ac00a823a492a00b8fd9b",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "81368a4471d922cf8046381ae2c9fb6dd3d7a950fd8dd1f5ddaef7a3b3c33617",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "9a4be90d2c31e63d34430c69a4d8adf101b68d05e6ab7c589b99809dffad4168",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "225cbb55b27c6e2c5a14a64ecec4360ad19ba02a86903fda18aba712d56abd67",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "b07a6f3d31367f3b94ca2fea1c363b1d34d272403b8866b532ac667a3d5118ff",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "b6497189f35eb5b02b2e25b99a7588eb887f925de6af7600c24fa1a04f535390",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "d9ed65efed13b0241ad76f511d19045fc72c2f39210136272f5abe3cfd3b8abc",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "b87f8522fca841264ced990782b5d9af539789e457c0328b94e91d59592fa3a6",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "353f45760000110761b162d07a0a803ba4ff51c5c4bab121ec8db4a323f5bd89",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 5.401477112286085e-15,
+        "max_normalized_concentration_error": 5.10702591327572e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "7ccb3cf0f8e59585fe4a5d09dcb380fb3f0f6e857b5e2af4724d53ae5422b731",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 3.240886267371651e-15,
+        "max_normalized_concentration_error": 4.218847493575595e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "1e3363569882a9cc75a8efeb098429471d0376c31cbb1de7ec0a57a38a005bdb",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 7.021920245971911e-15,
+        "max_normalized_concentration_error": 1.3100631690576847e-14,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "78e712dbf50f3e2a9d43696ad7bb09ae265500905184220338c769cc2d6cef22",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "d704bb4f743db60949a6e62730b55562a2b8a0a8b82ffefff47778c729da7ff3",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "58e9c38be79e712cef74f72a59e455fe8f0f0431433b2bfc66b2124f92177a6a",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "afd8fff5789c53bafdde6ee52b6a7fde78e660ea2079c1562df5f7680413f1f9",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "57f17a5f835a0811c9cdda2940070c2ccb816632373ba61fd6a3ceab3e24d6e2",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "8bbbcc1e479942243b4de4a45cf4a828a6bff703abf2931dca9dc58905c171b3",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "6a7938eb96b7aca77b701bb8237fe109a6645a44f981276a892e6b5e35f233ba",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 4.321181689828869e-15,
+        "max_normalized_concentration_error": 3.774758283725532e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "96baabdb34ceee87960b2b47a967a6eef2f13d25b002af9a2c452d722e92af73",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 4.321181689828869e-15,
+        "max_normalized_concentration_error": 6.772360450213455e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "ef9d551b91bee77b883bcdfd469baa211c65492342e75446bb622ef9da896582",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 9.722658802114955e-15,
+        "max_normalized_concentration_error": 1.532107773982716e-14,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "f15000ec11c4187045b26e59a2df36f063b079ec5a3eb3540bdc149cb4f854ad",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "f43203a882041b72915b037ad8f823991cf7466fce9f09d96d81de201b673585",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "84df24e8ca702108ddeb40a904dadbdb383121f95da84ed4f3fc829d33d8ecf3",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "b037145a4123f2f23bdd18a727b7e71a6284401135adfcdb884d7377cedb2734",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "c5698242fa431cbc47da5ba35200421b4ed2100916c4c60fe782dc68faaa5345",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "5127e13d5cc32206d478c4f42f635bf6b14496e8f29f727287cd1b4f331d7ce8",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "839dfc312b99680919bb9e964c735d52fac3fb452e669a9f6d5943e7cb1da854",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "05ca6a351728d709e4318503401f7dde556f4125e1b260cfae2a4c9e1a37fcdb",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "de7e98419c0bd0a3ea268c5b4e22f7c3d9e2d5c9a4080bd92a1b94bf92c98604",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "6242102c1a1d08b403cdd83e18a8e8ba5b6daf151ea07c9432b983400de886b1",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "871d7af4faf3013610c33a64c4a31665460414b81b8fbed0d475924dd85d5828",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "9fc685243f6b434263d3321e3c1678b9a8778eecafe7cc341c8e8eb17c645351",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "38afb61b827e7edb64bb791658251914923087014f918b618be1ab5791d27f61",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "60b74ac6cf93ae5e82cb71db97e6f9c09e70bb1cfe9d0935aa4e94de72f90a20",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "ac9bf2a5e19a045711a6db56aee066de3bee1adecddaa447e8c6b5f3fdfaee33",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "a7f34a966617cbb068d907653f46e946128355e1f68c8976443afe783c844e94",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 2.1605908449144343e-15,
+        "max_normalized_concentration_error": 2.4424906541753444e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "ff1d7f69f3ac3a39eeaf1288063cc9cd458c11b8fb23bdf7de5256bd8020f094",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 5.401477112286085e-15,
+        "max_normalized_concentration_error": 6.8833827526759706e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "d452f9a0d2e09b6a5847835d6f58c92ed7c903f8b9d977cd16632b4c033793ba",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 3.5109601229859554e-15,
+        "max_normalized_concentration_error": 4.6629367034256575e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "571683ec410122e43a2cef7172ee82222939974946079c8fdc197ef740ae958f",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "d7f8d2d8eb8865265d9d492979fafe01b6b01466b32985af3bfef06911ff49a3",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "f460877dab07b1ef53661f58b15f77c04b440945b39da6e16d860f251a9b628e",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 5.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "4b435498d49a922fe917481100192208f0881bcabb064a4cb006079e8d3500e6",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "d2abf44233a2dfcb99720a65ccb23ce4febc0a71a01bcfbbca9f425f356cad7f",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "1ffb2755f9b5e6e4178f199c3481e37fd7b4239238580f559608a3a866796d0b",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "a7e5e52d4f7eb39d845d3bfdd59869ee55b3f6391c1dae27d7466d18c9f25130",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 1.6204431336858256e-15,
+        "max_normalized_concentration_error": 1.5543122344752192e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "2a3e42cd86b2c366c1d8d0e3baa70ea8c6315cd06509ba761675bce0c462dcf2",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 3.78103397860026e-15,
+        "max_normalized_concentration_error": 3.3306690738754696e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "b5643ed5889f94387ce0162d213cc1dd7310f0a7ba38a7510a08f2053086ac03",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 3.240886267371651e-15,
+        "max_normalized_concentration_error": 7.105427357601002e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "6e491d34adb5794af4287decedad1c1fd54a3884129c04fbf463f2e4dec5f415",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "4dbd2dcd809da8eb6e9780e8d31b67d1da920b522d3ae693238f4262cf847db2",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "0284be07d6a3f6169b8e985c13664a22490164bca864ce72e000d6b8c65b6f7f",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "518106918702fa10637cbd00c8c0ca7999e795829a58018bee9dc204d5bc7eaa",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "96eebd22711f620c5288dcf961c1746a134cc6a5c9e851a1a98cbdfffc7fe9bf",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "c69b6194e3152370110115689c52714be6fdc41499ad8c9240325a179db9d7d8",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "1164f8aec12a5c02a68df7145b690c96c041e44eacec87c6d21a009eb6d4d31c",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "221c7cbf226fa4244c49b1a70a81b3975889488b8f7bdf5de7143d0c4167e753",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "5f0aa20869296027457b178b786d37b256967559970abbe63efd666bcd3c1aff",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "a8aa5644f9946d82e48de4263556cb6541c96cf5d85722f0aceb2fcc10ea7368",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "bd20b04dd511b55113255be8a6be079911fd843bda9fd48b5f627ae974584844",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "e2042e050a619b2f3c3915a3d4521ef427c3313895b5e038c0358b085d37781d",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "1f3b99297d703b02733a616c7fb83ef097a8763b1b1cc193f2e75a4cacdbb073",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "aba8f00d60440717bfbb7d7648e208400bd74255a54cb65fa46df062e965a656",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "34b157b3e4e5105baa31ca814eec86cce74578130f4ff78dbceaf38bc1d3391f",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "4d906eb811f025aac2727d449c0b61a43b52e72581620f74e91dde9edc6f2e0c",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 1.6204431336858256e-15,
+        "max_normalized_concentration_error": 2.4424906541753444e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "b6830226d4234b71c376119ad0ec330e618b142842abf00b5854288d374ae21a",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 5.941624823514694e-15,
+        "max_normalized_concentration_error": 3.3306690738754696e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "23b925b06e9930367518dceaa67758b6d1698405be677b36bfdb3ebac727e303",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 4.861329401057477e-15,
+        "max_normalized_concentration_error": 4.884981308350689e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "16ab540504206c93f03bee4be75f7dd7117cc8ce9688ba967c1ae16dba07806c",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "baea15d9a1a10168cee7cbba213f6139073076de9bc380e35a8aabd5aa140bd6",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "f67959bea13659022d9704b8817e9260202a43ea33583c05ade24e262393b809",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 10.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "d64efe5316a258b8cade91ccac6916bb7486861414c4253962fa9e2f5e6b9902",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "93b7347b958f6a2402ffa10f8e53050d22f2180bc604b5fce169a9c53369dd93",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "b843b759e607a8a6d00ba7d9bdd716d76bd68d54e7b6e2ad6bafbec7b418ef4d",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "2f5c2e4234fa0101f3adfb7642e4cb1531b4714c5d83455e85d4595b11523136",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 1.0802954224572172e-15,
+        "max_normalized_concentration_error": 1.7763568394002505e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "f66d850f36264cd273f003f91fd85ff247b7ca800e2180282d2f7d67419a2912",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 3.240886267371651e-15,
+        "max_normalized_concentration_error": 1.6653345369377348e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "3fb15bf8fef06f67c94a4452dad19002c0ada68c83dd322d67636b7a92e0617b",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 2.7007385561430425e-15,
+        "max_normalized_concentration_error": 5.10702591327572e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "004dd7def87c498cdeee995772928e11d202001ccbe61c933c7014554e75aa87",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "d8b3213c728379f5bf63915058cff1e227a77d6d87c7e70972ea6fe8c635f3b4",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "2bfe12e336fe9477a386f2972ed54e686f9915783b679f6fb4f68108dcf50faf",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "6f2cd0b9c7a909afaa86b97322a279315aebca0f09fdfe356654ffb1563f633b",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "35cddaf1f6d2ce6cff0fa45a22d8dd1fab5abcd3734ffae029543fa11fec010c",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "8e875db23f7a2929536410061294d71a8e9081fc295c76d97808892552b1b6a7",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "9cd8457d2101af55fe20195fa00a504aa8f6fe60b9bd3e34fd3b2a3b4b9e6512",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "b7a8561147391fb470632c09721d3c8a0f8165d84d4eb878186958918e4c5201",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "ba316955b0d360af8a11c539e056ea77b1a235ee103da6dd1e66e4271e69d78a",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 0.0,
+        "max_normalized_concentration_error": 0.0,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "bf3f1051846d52e62fa620d3901731c5d058e7cf467687f7e092c52cf8c39379",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "cf31d64eb7f35cc80efc91674c759c684eed5fdd118dbf7d1b8304226433ef21",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "4ec357682b3704f0e9f9558e701a10a19969fa53c050aaa6e441be55d61846da",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 0.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "aea088e5da00841008849ee37ce8e979f21557e1e09cb7ac8d4e7ccbc86551e1",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "f435598fab0dd87241d3f1bcbb60ada7c63be802e787043de0d7877262ef5bd9",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "1e1692a9a5fab88a43c79567ae9a17715b2c8fb79b3af4173044962c5e95a043",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "2107f5c7d22fec0a78ba2e9b208faeb4a712ef1971f0779b3a401bbf53518477",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 1.0802954224572172e-15,
+        "max_normalized_concentration_error": 1.3322676295501878e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "429169fa16e1caa5e1b6ca9d20da83940a65994cc80ba8ad4bf856c70d45ac8f",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 1.6204431336858256e-15,
+        "max_normalized_concentration_error": 3.219646771412954e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "563f3880edcb5809168de8b77f3f62b5975dec4ecde9e620bb8fc719586f62e1",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 0.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": true,
+      "legacy_strict": true,
+      "candidate_discrete": true,
+      "mesh_field_gate": true,
+      "neutral_full_field_audit": {
+        "max_phi_error_VT": 3.78103397860026e-15,
+        "max_normalized_concentration_error": 2.6645352591003757e-15,
+        "passed": true
+      },
+      "qualified": true
+    },
+    {
+      "case_id": "521a936fdebc195b59f2727306e92eefddc00144692746b81514d204fb99c0dd",
+      "scenario": {
+        "nx": 16,
+        "nr": 8,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "3bb050baa6403944ce770cf9c52d9459b88ceb60a2c5f8a7976a02774536bb04",
+      "scenario": {
+        "nx": 24,
+        "nr": 12,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    },
+    {
+      "case_id": "06eb68a35c917d99cdf87926cb75f54da0fb5c5f61bc48d310ffdc872c06d16e",
+      "scenario": {
+        "nx": 36,
+        "nr": 18,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": 15.0,
+        "model": "axisym-pnp-ramp-offset-v1"
+      },
+      "legacy_reported": false,
+      "legacy_strict": false,
+      "candidate_discrete": true,
+      "mesh_field_gate": false,
+      "neutral_full_field_audit": null,
+      "qualified": false
+    }
+  ],
+  "policies": [
+    {
+      "policy": "Legacy update-success flag",
+      "selected_mesh_records": 90,
+      "total_mesh_records": 108,
+      "selected_from_field_gate_failed_scenarios": 18,
+      "selected_non_neutral_records": 54,
+      "interpretation": "Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability"
+    },
+    {
+      "policy": "Candidate discrete gate",
+      "selected_mesh_records": 108,
+      "total_mesh_records": 108,
+      "selected_from_field_gate_failed_scenarios": 36,
+      "selected_non_neutral_records": 72,
+      "interpretation": "Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability"
+    },
+    {
+      "policy": "Candidate plus scenario mesh field gate",
+      "selected_mesh_records": 72,
+      "total_mesh_records": 108,
+      "selected_from_field_gate_failed_scenarios": 0,
+      "selected_non_neutral_records": 36,
+      "interpretation": "Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability"
+    },
+    {
+      "policy": "Conservative neutral analytical policy",
+      "selected_mesh_records": 36,
+      "total_mesh_records": 108,
+      "selected_from_field_gate_failed_scenarios": 0,
+      "selected_non_neutral_records": 0,
+      "interpretation": "Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability"
+    }
+  ],
+  "neutral_cases": 36,
+  "neutral_full_field_passes": 36,
+  "neutral_max_phi_error_VT": 9.722658802114955e-15,
+  "neutral_max_normalized_concentration_error": 2.1094237467877974e-14,
+  "original_gates_changed": false,
+  "experimental_validation": "NOT_PERFORMED"
+}

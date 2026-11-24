@@ -1,0 +1,219 @@
+{
+  "status": "PASS",
+  "jacobian_max_absolute_error": 1.8823964609282484e-10,
+  "records": [
+    {
+      "voltage_mV": 100,
+      "wall_offset_mV": 0,
+      "audit": {
+        "coupled_scaled_residual_max": 8.963951276794652e-14,
+        "poisson_scaled_residual_max": 7.292526663876445e-16,
+        "current_A": -2.3536743051472926e-09,
+        "section_current_spread_A": 7.237830359838992e-23,
+        "section_currents_A": [
+          -2.3536743051472918e-09,
+          -2.353674305147292e-09,
+          -2.353674305147292e-09,
+          -2.353674305147292e-09,
+          -2.353674305147292e-09,
+          -2.3536743051472918e-09,
+          -2.353674305147293e-09,
+          -2.3536743051472913e-09,
+          -2.3536743051472926e-09,
+          -2.353674305147293e-09,
+          -2.353674305147331e-09,
+          -2.3536743051472587e-09
+        ],
+        "species": [
+          {
+            "max_local_imbalance_mol_s": 2.1819559492541885e-27,
+            "global_imbalance_mol_s": 3.7076462545387555e-28,
+            "left_outward_mol_s": 1.1983074124276092e-14,
+            "right_outward_mol_s": -1.1983074124275721e-14,
+            "section_fluxes_mol_s": [
+              -1.1983074124276092e-14,
+              -1.1983074124276095e-14,
+              -1.1983074124276095e-14,
+              -1.1983074124276096e-14,
+              -1.1983074124276095e-14,
+              -1.1983074124276092e-14,
+              -1.1983074124276095e-14,
+              -1.1983074124276095e-14,
+              -1.1983074124276092e-14,
+              -1.1983074124276096e-14,
+              -1.1983074124276529e-14,
+              -1.1983074124275721e-14
+            ]
+          },
+          {
+            "max_local_imbalance_mol_s": 1.1394973853384725e-28,
+            "global_imbalance_mol_s": 2.8398992587956425e-29,
+            "left_outward_mol_s": -1.2411041057285943e-14,
+            "right_outward_mol_s": 1.2411041057285971e-14,
+            "section_fluxes_mol_s": [
+              1.2411041057285943e-14,
+              1.2411041057285943e-14,
+              1.2411041057285943e-14,
+              1.2411041057285943e-14,
+              1.241104105728594e-14,
+              1.2411041057285943e-14,
+              1.241104105728595e-14,
+              1.2411041057285935e-14,
+              1.241104105728595e-14,
+              1.2411041057285947e-14,
+              1.2411041057285916e-14,
+              1.2411041057285971e-14
+            ]
+          }
+        ],
+        "positive": true,
+        "min_concentration_mol_m3": 99.99999999999999,
+        "ion_wall_flux": "zero by omitted exterior face; electrochemical potential at wall is solved",
+        "potential_end_wall_rim": "Dirichlet jump preserved; endpoint corner potential takes reservoir value"
+      },
+      "ohmic_relative_error": 7.028845161321191e-16
+    },
+    {
+      "voltage_mV": 0,
+      "wall_offset_mV": -15,
+      "audit": {
+        "coupled_scaled_residual_max": 2.4348727276644863e-11,
+        "poisson_scaled_residual_max": 2.4348727276644863e-11,
+        "current_A": 0.0,
+        "section_current_spread_A": 0.0,
+        "section_currents_A": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "species": [
+          {
+            "max_local_imbalance_mol_s": 0.0,
+            "global_imbalance_mol_s": 0.0,
+            "left_outward_mol_s": -0.0,
+            "right_outward_mol_s": 0.0,
+            "section_fluxes_mol_s": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "max_local_imbalance_mol_s": 0.0,
+            "global_imbalance_mol_s": 0.0,
+            "left_outward_mol_s": -0.0,
+            "right_outward_mol_s": 0.0,
+            "section_fluxes_mol_s": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "positive": true,
+        "min_concentration_mol_m3": 55.77601947737727,
+        "ion_wall_flux": "zero by omitted exterior face; electrochemical potential at wall is solved",
+        "potential_end_wall_rim": "Dirichlet jump preserved; endpoint corner potential takes reservoir value"
+      },
+      "boltzmann_max_log_error": 1.457167719820518e-16
+    },
+    {
+      "voltage_mV": -100,
+      "wall_offset_mV": 0,
+      "audit": {
+        "coupled_scaled_residual_max": 8.963951276794652e-14,
+        "poisson_scaled_residual_max": 7.292526663876445e-16,
+        "current_A": 2.3536743051472926e-09,
+        "section_current_spread_A": 7.610061635487855e-23,
+        "section_currents_A": [
+          2.353674305147292e-09,
+          2.353674305147292e-09,
+          2.353674305147292e-09,
+          2.3536743051472926e-09,
+          2.3536743051472913e-09,
+          2.353674305147292e-09,
+          2.353674305147293e-09,
+          2.3536743051472918e-09,
+          2.3536743051472926e-09,
+          2.3536743051472926e-09,
+          2.3536743051473335e-09,
+          2.3536743051472574e-09
+        ],
+        "species": [
+          {
+            "max_local_imbalance_mol_s": 1.100204372050939e-28,
+            "global_imbalance_mol_s": 2.524354896707238e-29,
+            "left_outward_mol_s": -1.1983074124276085e-14,
+            "right_outward_mol_s": 1.198307412427611e-14,
+            "section_fluxes_mol_s": [
+              1.1983074124276085e-14,
+              1.198307412427608e-14,
+              1.1983074124276085e-14,
+              1.1983074124276085e-14,
+              1.198307412427608e-14,
+              1.1983074124276087e-14,
+              1.198307412427609e-14,
+              1.1983074124276076e-14,
+              1.1983074124276092e-14,
+              1.1983074124276085e-14,
+              1.1983074124276063e-14,
+              1.198307412427611e-14
+            ]
+          },
+          {
+            "max_local_imbalance_mol_s": 2.259882947441838e-27,
+            "global_imbalance_mol_s": 3.818086781269697e-28,
+            "left_outward_mol_s": 1.2411041057285952e-14,
+            "right_outward_mol_s": -1.241104105728557e-14,
+            "section_fluxes_mol_s": [
+              -1.2411041057285952e-14,
+              -1.2411041057285957e-14,
+              -1.2411041057285952e-14,
+              -1.2411041057285957e-14,
+              -1.2411041057285952e-14,
+              -1.2411041057285952e-14,
+              -1.2411041057285957e-14,
+              -1.2411041057285958e-14,
+              -1.241104105728595e-14,
+              -1.2411041057285958e-14,
+              -1.2411041057286403e-14,
+              -1.241104105728557e-14
+            ]
+          }
+        ],
+        "positive": true,
+        "min_concentration_mol_m3": 99.99999999999999,
+        "ion_wall_flux": "zero by omitted exterior face; electrochemical potential at wall is solved",
+        "potential_end_wall_rim": "Dirichlet jump preserved; endpoint corner potential takes reservoir value"
+      },
+      "ohmic_relative_error": 7.028845161321191e-16
+    }
+  ]
+}

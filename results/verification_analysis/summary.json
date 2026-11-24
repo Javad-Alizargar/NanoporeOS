@@ -1,0 +1,190 @@
+{
+  "status": "AUDITED_BOTH_CAMPAIGNS",
+  "campaigns": [
+    {
+      "path": "results\\verification_v3\\campaigns\\41fda4e6c07d_51dbdf69c1e9\\summary.json",
+      "sha256": "df0367ddc3f911086e566d2df89e9a6797654912103ac1e753d7969f5f9938a8"
+    },
+    {
+      "path": "results\\verification_v4\\campaigns\\bb71ddf21c96_c13393ef0878\\summary.json",
+      "sha256": "af4db89470f62e93f3f6264f227fbbd7b13f479b0e868838d6d6a2f09fa2628f"
+    }
+  ],
+  "unique_evaluation_tuples": 16,
+  "evaluation_sets_disjoint": true,
+  "policy_results": [
+    {
+      "evaluation": "First set / two pairs",
+      "policy": "residual_only",
+      "accurate": 0,
+      "inaccurate": 8,
+      "unresolved": 0,
+      "scenarios": 8,
+      "attempted_cells": 576,
+      "cells_relative_to_finest": 0.015625,
+      "solve_plus_selection_seconds": 1.1342027001082897
+    },
+    {
+      "evaluation": "First set / two pairs",
+      "policy": "current_mesh",
+      "accurate": 6,
+      "inaccurate": 0,
+      "unresolved": 2,
+      "scenarios": 8,
+      "attempted_cells": 24768,
+      "cells_relative_to_finest": 0.671875,
+      "solve_plus_selection_seconds": 26.75171340163797
+    },
+    {
+      "evaluation": "First set / two pairs",
+      "policy": "field_controller",
+      "accurate": 6,
+      "inaccurate": 0,
+      "unresolved": 2,
+      "scenarios": 8,
+      "attempted_cells": 48960,
+      "cells_relative_to_finest": 1.328125,
+      "solve_plus_selection_seconds": 54.98116940073669
+    },
+    {
+      "evaluation": "First set / two pairs",
+      "policy": "uniform_finest",
+      "accurate": 8,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "scenarios": 8,
+      "attempted_cells": 36864,
+      "cells_relative_to_finest": 1.0,
+      "solve_plus_selection_seconds": 44.75610179733485
+    },
+    {
+      "evaluation": "New set / one pair",
+      "policy": "residual_only",
+      "accurate": 0,
+      "inaccurate": 8,
+      "unresolved": 0,
+      "scenarios": 8,
+      "attempted_cells": 576,
+      "cells_relative_to_finest": 0.015625,
+      "solve_plus_selection_seconds": 1.0529306000098586
+    },
+    {
+      "evaluation": "New set / one pair",
+      "policy": "current_mesh",
+      "accurate": 5,
+      "inaccurate": 0,
+      "unresolved": 3,
+      "scenarios": 8,
+      "attempted_cells": 29376,
+      "cells_relative_to_finest": 0.796875,
+      "solve_plus_selection_seconds": 32.52566179726273
+    },
+    {
+      "evaluation": "New set / one pair",
+      "policy": "field_controller",
+      "accurate": 6,
+      "inaccurate": 0,
+      "unresolved": 2,
+      "scenarios": 8,
+      "attempted_cells": 25920,
+      "cells_relative_to_finest": 0.703125,
+      "solve_plus_selection_seconds": 27.70768969785422
+    },
+    {
+      "evaluation": "New set / one pair",
+      "policy": "uniform_finest",
+      "accurate": 6,
+      "inaccurate": 2,
+      "unresolved": 0,
+      "scenarios": 8,
+      "attempted_cells": 36864,
+      "cells_relative_to_finest": 1.0,
+      "solve_plus_selection_seconds": 45.1783120976761
+    }
+  ],
+  "development_observed_order_min": 1.799023289717118,
+  "development_observed_order_max": 1.9413021135995698,
+  "development_cases": 2,
+  "grids_per_case": 4,
+  "reported_current": "Midplane manufactured observable; prescribed sources permit axial current variation",
+  "matched_current_ablation": {
+    "status": "POST_HOC_FIXED_ESTIMATOR_MATCHING_NOT_PRIMARY_HOLDOUT",
+    "definition": "Current-only selection with2/3 times raw current difference <=1%, matching the frozen field rule current estimator",
+    "accurate": 6,
+    "inaccurate": 0,
+    "unresolved": 2,
+    "attempted_cells": 24768,
+    "records": [
+      {
+        "case": "v4_holdout_01",
+        "selected_grid": [
+          48,
+          24
+        ],
+        "accurate": true,
+        "attempted_cells": 1512
+      },
+      {
+        "case": "v4_holdout_02",
+        "selected_grid": [
+          48,
+          24
+        ],
+        "accurate": true,
+        "attempted_cells": 1512
+      },
+      {
+        "case": "v4_holdout_03",
+        "selected_grid": [
+          48,
+          24
+        ],
+        "accurate": true,
+        "attempted_cells": 1512
+      },
+      {
+        "case": "v4_holdout_04",
+        "selected_grid": [
+          96,
+          48
+        ],
+        "accurate": true,
+        "attempted_cells": 6120
+      },
+      {
+        "case": "v4_holdout_05",
+        "selected_grid": [
+          24,
+          12
+        ],
+        "accurate": true,
+        "attempted_cells": 360
+      },
+      {
+        "case": "v4_holdout_06",
+        "selected_grid": [
+          48,
+          24
+        ],
+        "accurate": true,
+        "attempted_cells": 1512
+      },
+      {
+        "case": "v4_holdout_07",
+        "selected_grid": null,
+        "accurate": null,
+        "attempted_cells": 6120
+      },
+      {
+        "case": "v4_holdout_08",
+        "selected_grid": null,
+        "accurate": null,
+        "attempted_cells": 6120
+      }
+    ],
+    "interpretation": "Sensitivity/ablation only. Original four-policy outcomes remain unchanged. No causal field benefit inferred from differently scaled original current criteria."
+  },
+  "truth_separation": "Saved pre-scoring policy records omit exact errors; exact fields score outputs afterwards",
+  "interpretation": "Finite deterministic manufactured family; empirical qualification decisions, not certified error bounds, physical validation or generalization",
+  "legacy_charged_wall_gate": "HOLD_UNCHANGED"
+}

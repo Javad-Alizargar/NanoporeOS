@@ -1,0 +1,236 @@
+{
+  "case": {
+    "name": "v5_oscillatory_06",
+    "length_nm": 28,
+    "radius_nm": 4,
+    "salt_mM": 160,
+    "drive_VT": -0.9,
+    "amplitude_psi": 0.9,
+    "bplus": 0.4,
+    "bminus": -0.6,
+    "wall_amplitude": -0.45,
+    "family": "oscillatory"
+  },
+  "policies": [
+    {
+      "policy": "residual_only",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 0,
+      "selected_grid": [
+        8,
+        4
+      ],
+      "visited_indices": [
+        0
+      ],
+      "attempted_solve_seconds": 0.11149509996175766,
+      "attempted_cells": 32,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 4.8900023102760315e-05,
+      "solve_plus_selection_seconds": 0.11154399998486042
+    },
+    {
+      "policy": "current_matched",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        64,
+        32
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attempted_solve_seconds": 2.546118099242449,
+      "attempted_cells": 2720,
+      "indicators": [
+        {
+          "coarse_grid": [
+            8,
+            4
+          ],
+          "fine_grid": [
+            16,
+            8
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.12427929983560858
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.08285286655707239
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            16,
+            8
+          ],
+          "fine_grid": [
+            32,
+            16
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.03966924690582584
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.026446164603883895
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            32,
+            16
+          ],
+          "fine_grid": [
+            64,
+            32
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.010027359044519204
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.006684906029679469
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "shared_estimator_factor": 0.6666666666666666,
+      "comparison": "Same grids/order/safety/current budget/one-pair evidence; field criterion is the added component",
+      "selection_seconds": 7.630046457052231e-05,
+      "solve_plus_selection_seconds": 2.5461943997070193
+    },
+    {
+      "policy": "field_matched",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        64,
+        32
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attempted_solve_seconds": 2.546118099242449,
+      "attempted_cells": 2720,
+      "indicators": [
+        {
+          "coarse_grid": [
+            8,
+            4
+          ],
+          "fine_grid": [
+            16,
+            8
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.08630891478674108,
+            "max_plus_relative_error": 0.11254479485541877,
+            "max_minus_relative_error": 0.11587187054624408,
+            "mid_current_relative_error": 0.12427929983560858
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.057539276524494046,
+            "max_plus_relative_error": 0.07502986323694584,
+            "max_minus_relative_error": 0.07724791369749605,
+            "mid_current_relative_error": 0.08285286655707239
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            16,
+            8
+          ],
+          "fine_grid": [
+            32,
+            16
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.022971606901080466,
+            "max_plus_relative_error": 0.027688578440853758,
+            "max_minus_relative_error": 0.03461628565625948,
+            "mid_current_relative_error": 0.03966924690582584
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.01531440460072031,
+            "max_plus_relative_error": 0.018459052293902503,
+            "max_minus_relative_error": 0.02307752377083965,
+            "mid_current_relative_error": 0.026446164603883895
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            32,
+            16
+          ],
+          "fine_grid": [
+            64,
+            32
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.005703237774203007,
+            "max_plus_relative_error": 0.006754147959920697,
+            "max_minus_relative_error": 0.008834808241321265,
+            "mid_current_relative_error": 0.010027359044519204
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.003802158516135338,
+            "max_plus_relative_error": 0.0045027653066137974,
+            "max_minus_relative_error": 0.0058898721608808425,
+            "mid_current_relative_error": 0.006684906029679469
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "shared_estimator_factor": 0.6666666666666666,
+      "comparison": "Same grids/order/safety/current budget/one-pair evidence; field criterion is the added component",
+      "selection_seconds": 0.0017386004328727722,
+      "solve_plus_selection_seconds": 2.5478566996753216
+    },
+    {
+      "policy": "uniform_finest",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 4,
+      "selected_grid": [
+        128,
+        64
+      ],
+      "visited_indices": [
+        4
+      ],
+      "attempted_solve_seconds": 12.949232599698007,
+      "attempted_cells": 8192,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 2.679973840713501e-05,
+      "solve_plus_selection_seconds": 12.949259399436414
+    }
+  ],
+  "decision_seconds": 0.0018906006589531898,
+  "decision_inputs": "Numerical snapshots, budgets and fixed policy parameters only"
+}

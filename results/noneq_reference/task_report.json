@@ -1,0 +1,52 @@
+{
+  "task_id": "noneq_reference",
+  "status": "completed",
+  "scientific_gate": "NUMERICAL_HOLD_RETAINED",
+  "implementation": "independent nodal electrochemical-potential cylindrical PNP with geometric face conductivity",
+  "reference_source_sha256": "5964679b4ab79322fb0f1172c28bfc955b3647db3ce3c67082a8a8c1e8091e18",
+  "executed_comparison_driver_sha256": "7c2e3ece8ddb20d614673cbab4ab5012c6f44b2d74333b8b8c9df46928bc3a91",
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe workers\\noneq_reference\\check_reference.py",
+    ".\\.venv\\Scripts\\python.exe workers\\noneq_reference\\compare.py",
+    ".\\.venv\\Scripts\\python.exe workers\\noneq_reference\\analyze.py"
+  ],
+  "resource_settings": {"OPENBLAS_NUM_THREADS": 2, "OMP_NUM_THREADS": 2, "heavy_jobs_concurrent": 1},
+  "checks": {
+    "finite_difference_Jacobian": "PASS",
+    "Jacobian_max_absolute_discrepancy": 1.8823964609282484e-10,
+    "neutral_plus_minus_100mV_ohmic": "PASS",
+    "equilibrium_Boltzmann": "PASS",
+    "reference_cases": 8,
+    "reference_cases_pass": 8,
+    "reference_grid_meaning": "axial/radial nodal intervals; nodes=(nx+1)*(nr+1)",
+    "grids": [[32, 16], [64, 32], [128, 64], [256, 128]],
+    "canonical_comparison_grids": [[16, 8], [24, 12], [36, 18], [72, 36], [144, 72]],
+    "max_reloaded_scaled_residual": 7.152053659136984e-13,
+    "max_integrated_poisson_charge_residual_C": 6.341522359747957e-33,
+    "max_species_local_imbalance_mol_s": 1.7210538771905704e-26,
+    "max_species_global_imbalance_mol_s": 3.7123794199700816e-27,
+    "max_current_spread_A": 8.08155458464308e-22,
+    "min_concentration_mol_m3": 54.65056731991365,
+    "reflection_current_error_A": 1.2407709188295415e-24
+  },
+  "key_results": {
+    "finest_reference_current_magnitude_A": 2.3837403847273628e-9,
+    "original36x18_candidate_max_phi_error_VT": 0.023217003001197688,
+    "original36x18_reference_refinement_difference_VT": 0.001022533990353771,
+    "fine144x72_candidate_max_phi_error_VT": 0.008461704824411125,
+    "fine144x72_reference_refinement_difference_VT": 0.08627697356531185,
+    "fine144x72_current_relative_error": 0.0001944465469734336,
+    "comparison_campaign_seconds": 444.85900000017136
+  },
+  "artifacts": ["artifact_manifest.json", "nodal_pnp.py", "check_reference.py", "compare.py", "analyze.py", "checks.json", "comparison.json", "array_audit.json", "execution.txt", "per-case reference/candidate fields and metadata"],
+  "limitations": [
+    "Only radius10nm,salt100mM,offset-15mV,V+/-100mV representative nonequilibrium family evaluated",
+    "Dirichlet end-wall rim jump retained; gradients/forces not qualified",
+    "Fine-reference pointwise interpolation/refinement uncertainty exceeds the unchanged0.02VT criterion near rims",
+    "No rigorous reference error bound or full-domain qualification",
+    "Worker comparison cache is not a production resumption implementation; canonical integration must validate config/source/array hashes",
+    "No experimental validation"
+  ],
+  "costs": {"additional_paid_API_calls": 0, "additional_paid_API_USD": 0, "credentials_read": false, "network_calls": 0},
+  "integration_recommendation": "Copy nodal_pnp.py unchanged to benchmarks/independent; use a source-bound canonical driver writing results/noneq_reference; preserve worker outputs and HOLD. Do not run another heavy refinement in this bounded pass."
+}

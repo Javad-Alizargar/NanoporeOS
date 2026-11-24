@@ -1,0 +1,13 @@
+{
+  "version": "1.0-before-fitting",
+  "data_scope": "Only neutral-wall cases with independent analytical ohmic field/current checks; charged-wall targets excluded while HOLD persists",
+  "group": "physical scenario (length,radius,salt,voltage,wall_offset,model); all meshes share split",
+  "split": "sort physical scenario SHA256; first 7 neutral groups train, next 2 validation, remaining 3 locked test; no split changes after fitting",
+  "targets": "finest original mesh current only; equilibrium zero-current groups retained",
+  "baselines": ["analytical ohmic formula", "ordinary least squares with intercept and raw physical features", "one-coefficient regression on physical R^2*c*V/L feature"],
+  "hyperparameters": "none; no tuning on validation/test",
+  "metrics": ["MAE in amperes", "max absolute error", "normalized MAE by maximum abs test target; absolute tolerance for zero current"],
+  "OOD": "abstain for nonzero wall offset and parameter ranges beyond tested neutral grid; no claimed interpolation bound",
+  "neural_PINN": "NOT_IMPLEMENTED; no benefit established beyond exact analytical baseline",
+  "interpretation": "Small numerical pipeline demonstration, not evidence of general charged-wall surrogate performance or experimental predictivity"
+}

@@ -1,0 +1,212 @@
+{
+  "case": {
+    "name": "development_a",
+    "length_nm": 20,
+    "radius_nm": 7,
+    "salt_mM": 30,
+    "drive_VT": 2,
+    "amplitude_psi": 0.6,
+    "bplus": 0.4,
+    "bminus": -0.25,
+    "wall_amplitude": 0.3
+  },
+  "policies": [
+    {
+      "policy": "residual_only",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 0,
+      "selected_grid": [
+        12,
+        6
+      ],
+      "visited_indices": [
+        0
+      ],
+      "attempted_solve_seconds": 0.16055590007454157,
+      "attempted_cells": 72,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 0.00010820012539625168,
+      "solve_plus_selection_seconds": 0.16066410019993782
+    },
+    {
+      "policy": "current_mesh",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 2,
+      "selected_grid": [
+        48,
+        24
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2
+      ],
+      "attempted_solve_seconds": 1.3314404003322124,
+      "attempted_cells": 1512,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.032942056858213185
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.032942056858213185
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.00798979735900638
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.00798979735900638
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 6.060022860765457e-05,
+      "solve_plus_selection_seconds": 1.33150100056082
+    },
+    {
+      "policy": "field_controller",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attempted_solve_seconds": 6.077300800010562,
+      "attempted_cells": 6120,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.010590786513915207,
+            "max_plus_relative_error": 0.016749517431921084,
+            "max_minus_relative_error": 0.01179754736201135,
+            "mid_current_relative_error": 0.032942056858213185
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.007060524342610138,
+            "max_plus_relative_error": 0.011166344954614056,
+            "max_minus_relative_error": 0.007865031574674233,
+            "mid_current_relative_error": 0.02196137123880879
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.00311410837981696,
+            "max_plus_relative_error": 0.004193409138463273,
+            "max_minus_relative_error": 0.003717868572970692,
+            "mid_current_relative_error": 0.00798979735900638
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.0020760722532113065,
+            "max_plus_relative_error": 0.002795606092308849,
+            "max_minus_relative_error": 0.002478579048647128,
+            "mid_current_relative_error": 0.00532653157267092
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        },
+        {
+          "coarse_grid": [
+            48,
+            24
+          ],
+          "fine_grid": [
+            96,
+            48
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.0008662177599818577,
+            "max_plus_relative_error": 0.001048383016034742,
+            "max_minus_relative_error": 0.0010279713734859864,
+            "mid_current_relative_error": 0.0019826877016884265
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.0005774785066545718,
+            "max_plus_relative_error": 0.000698922010689828,
+            "max_minus_relative_error": 0.0006853142489906575,
+            "mid_current_relative_error": 0.0013217918011256176
+          },
+          "pair_pass": true,
+          "consecutive_passes": 2
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 0.0023315995931625366,
+      "solve_plus_selection_seconds": 6.0796323996037245
+    },
+    {
+      "policy": "uniform_finest",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        3
+      ],
+      "attempted_solve_seconds": 4.7458603996783495,
+      "attempted_cells": 4608,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 2.8899870812892914e-05,
+      "solve_plus_selection_seconds": 4.745889299549162
+    }
+  ],
+  "decision_seconds": 0.002529299817979336,
+  "decision_inputs": "Numerical snapshots, budgets and fixed policy parameters only"
+}

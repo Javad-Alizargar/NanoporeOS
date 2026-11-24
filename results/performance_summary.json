@@ -1,0 +1,31 @@
+{
+  "status": "FINISHED",
+  "source_artifact_sha256": "8c713073b542d26cdf42276629bb3f6cd72f86f0d15195b60516641294eda191",
+  "method_timings": 648,
+  "physical_scenario_groups": 36,
+  "repetitions": 3,
+  "methods": {
+    "legacy": {
+      "attempts": 324,
+      "successes": 270,
+      "median_seconds": 0.567786349914968,
+      "total_seconds": 369.346460390836
+    },
+    "candidate": {
+      "attempts": 324,
+      "successes": 324,
+      "median_seconds": 0.14005824970081449,
+      "total_seconds": 55.42332980316132
+    }
+  },
+  "mean_paired_attempt_time_difference_seconds": 0.9688985511965266,
+  "scenario_bootstrap_95percent_CI_seconds": [
+    0.6422047340942769,
+    1.2940824857976196
+  ],
+  "bootstrap_seed": 20261109,
+  "bootstrap_draws": 10000,
+  "scope": "Construction plus method call; candidate includes diagnostics, legacy retains original stopping rule; failures included",
+  "interpretation": "Attempt cost/coverage comparison only. Different accuracy criteria and failure outcomes prevent an equal-accuracy solver speedup claim.",
+  "energy_or_full_system_peak_memory": "NOT_MEASURED"
+}

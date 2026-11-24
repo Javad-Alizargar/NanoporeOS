@@ -1,0 +1,568 @@
+{
+  "status": "PASS_ARRAY_RELOAD_AND_AUDIT",
+  "reference_audits": [
+    {
+      "config": {
+        "nx": 32,
+        "nr": 16,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 7.152053659136984e-13,
+      "max_integrated_poisson_charge_residual_C": 3.860186059477044e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 54.650567319917386,
+      "current_spread_A": 8.08155458464308e-22,
+      "species_max_global_imbalance_mol_s": 3.7123794199700816e-27,
+      "species_max_local_imbalance_mol_s": 1.7210538771905704e-26
+    },
+    {
+      "config": {
+        "nx": 64,
+        "nr": 32,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 5.885105062963089e-13,
+      "max_integrated_poisson_charge_residual_C": 3.587283561419754e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 54.98532003376923,
+      "current_spread_A": 6.394106135034904e-22,
+      "species_max_global_imbalance_mol_s": 3.0970679138976923e-27,
+      "species_max_local_imbalance_mol_s": 1.431710572319389e-26
+    },
+    {
+      "config": {
+        "nx": 128,
+        "nr": 64,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 5.239814495359695e-13,
+      "max_integrated_poisson_charge_residual_C": 4.2660790864789206e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 55.01803076116608,
+      "current_spread_A": 5.546246007168051e-22,
+      "species_max_global_imbalance_mol_s": 2.7925676044823818e-27,
+      "species_max_local_imbalance_mol_s": 1.2830088991222511e-26
+    },
+    {
+      "config": {
+        "nx": 256,
+        "nr": 128,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": 100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 4.904214427105226e-13,
+      "max_integrated_poisson_charge_residual_C": 5.221979412554595e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 55.02453804401202,
+      "current_spread_A": 5.103704379452181e-22,
+      "species_max_global_imbalance_mol_s": 2.6269068143859693e-27,
+      "species_max_local_imbalance_mol_s": 1.2043734454181276e-26
+    },
+    {
+      "config": {
+        "nx": 32,
+        "nr": 16,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 1.9698744215946415e-13,
+      "max_integrated_poisson_charge_residual_C": 3.7336225821171416e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 54.65056731991365,
+      "current_spread_A": 2.1010387558846903e-22,
+      "species_max_global_imbalance_mol_s": 1.3584184787905823e-27,
+      "species_max_local_imbalance_mol_s": 4.9073212160521954e-27
+    },
+    {
+      "config": {
+        "nx": 64,
+        "nr": 32,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 1.3370833977258083e-13,
+      "max_integrated_poisson_charge_residual_C": 4.208235622216778e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 54.985320033769206,
+      "current_spread_A": 1.3565762045869654e-22,
+      "species_max_global_imbalance_mol_s": 9.466330862652142e-28,
+      "species_max_local_imbalance_mol_s": 3.3709379732016486e-27
+    },
+    {
+      "config": {
+        "nx": 128,
+        "nr": 64,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 1.0544894722619097e-13,
+      "max_integrated_poisson_charge_residual_C": 4.918177628032484e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 55.01803076116612,
+      "current_spread_A": 1.0546552810051103e-22,
+      "species_max_global_imbalance_mol_s": 7.7150596530614955e-28,
+      "species_max_local_imbalance_mol_s": 2.674212851161428e-27
+    },
+    {
+      "config": {
+        "nx": 256,
+        "nr": 128,
+        "length_nm": 20.0,
+        "radius_nm": 10.0,
+        "salt_mM": 100.0,
+        "voltage_mV": -100.0,
+        "wall_offset_mV": -15.0
+      },
+      "reloaded_scaled_residual_max": 9.264400254372378e-14,
+      "max_integrated_poisson_charge_residual_C": 6.341522359747957e-33,
+      "end_concentration_error_mol_m3": 0.0,
+      "min_concentration_mol_m3": 55.02453804401205,
+      "current_spread_A": 8.395883217413231e-23,
+      "species_max_global_imbalance_mol_s": 6.941975965944904e-28,
+      "species_max_local_imbalance_mol_s": 2.35639990853187e-27
+    }
+  ],
+  "reflection_check": {
+    "potential_reflection_error_V": 1.5785983631388945e-15,
+    "cplus_reflection_error_mol_m3": 5.67297320230864e-11,
+    "cminus_reflection_error_mol_m3": 7.94386778579792e-12,
+    "current_odd_symmetry_error_A": 1.2407709188295415e-24,
+    "justification": "Axial reflection maps +V to -V and phi to reflected phi minus V; same wall offset retained. No charge-conjugation/species exchange is assumed."
+  },
+  "perturbation_field_metrics": [
+    {
+      "voltage_mV": 100.0,
+      "candidate_grid": [
+        16,
+        8
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.10757907370217835
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.12788504478616364
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.09747004337024888
+        }
+      ]
+    },
+    {
+      "voltage_mV": 100.0,
+      "candidate_grid": [
+        24,
+        12
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.06107971173100625
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.07638379874065043
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.053223574738107626
+        }
+      ]
+    },
+    {
+      "voltage_mV": 100.0,
+      "candidate_grid": [
+        36,
+        18
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.03168239589475867
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.04124212613161701
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.027022529285549265
+        }
+      ]
+    },
+    {
+      "voltage_mV": 100.0,
+      "candidate_grid": [
+        72,
+        36
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.00968417834700253
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.013130039902024456
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.008232194164962238
+        }
+      ]
+    },
+    {
+      "voltage_mV": 100.0,
+      "candidate_grid": [
+        144,
+        72
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.0030391218176777555
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.004344233931093381
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.0028350917614979503
+        }
+      ]
+    },
+    {
+      "voltage_mV": -100.0,
+      "candidate_grid": [
+        16,
+        8
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.10757907370217087
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.12788504478615467
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.09747004337024677
+        }
+      ]
+    },
+    {
+      "voltage_mV": -100.0,
+      "candidate_grid": [
+        24,
+        12
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.061079711731006306
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.07638379874064638
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.05322357473811068
+        }
+      ]
+    },
+    {
+      "voltage_mV": -100.0,
+      "candidate_grid": [
+        36,
+        18
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.031682395894757284
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.04124212613161119
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.02702252928555047
+        }
+      ]
+    },
+    {
+      "voltage_mV": -100.0,
+      "candidate_grid": [
+        72,
+        36
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.009684178347004952
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.013130039902021563
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.00823219416496354
+        }
+      ]
+    },
+    {
+      "voltage_mV": -100.0,
+      "candidate_grid": [
+        144,
+        72
+      ],
+      "metrics": [
+        {
+          "field": "potential_V",
+          "relative_perturbation_volume_L2": 0.003039121817670696
+        },
+        {
+          "field": "cplus_mol_m3",
+          "relative_perturbation_volume_L2": 0.004344233931081494
+        },
+        {
+          "field": "cminus_mol_m3",
+          "relative_perturbation_volume_L2": 0.002835091761478221
+        }
+      ]
+    }
+  ],
+  "reference_resolution_at_each_candidate_grid": [
+    {
+      "voltage_mV": 100.0,
+      "evaluation_grid": [
+        16,
+        8
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.00022782644376770947,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": 100.0,
+      "evaluation_grid": [
+        24,
+        12
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.000979864055981261,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": 100.0,
+      "evaluation_grid": [
+        36,
+        18
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.001022533990353771,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": 100.0,
+      "evaluation_grid": [
+        72,
+        36
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.004330849521368593,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": 100.0,
+      "evaluation_grid": [
+        144,
+        72
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.08627697356531185,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": -100.0,
+      "evaluation_grid": [
+        16,
+        8
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.0002278264437717606,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": -100.0,
+      "evaluation_grid": [
+        24,
+        12
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.0009798640559831517,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": -100.0,
+      "evaluation_grid": [
+        36,
+        18
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.001022533990354902,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": -100.0,
+      "evaluation_grid": [
+        72,
+        36
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.004330849521369251,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    },
+    {
+      "voltage_mV": -100.0,
+      "evaluation_grid": [
+        144,
+        72
+      ],
+      "reference_grids": [
+        [
+          128,
+          64
+        ],
+        [
+          256,
+          128
+        ]
+      ],
+      "max_refinement_difference_VT": 0.08627697356531282,
+      "note": "A refinement difference, not a rigorous fine-reference error bound. Corner interpolation can dominate fine target grids."
+    }
+  ],
+  "note": "Potential background V*x/L and concentration background bulk removed only in these additional diagnostics; original frozen gates are unchanged.",
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "numpy": "2.3.2",
+    "scipy": "1.16.3",
+    "platform": "Windows-10-10.0.19045-SP0"
+  },
+  "analysis_source_sha256": "a429b906bfcb040e5519b35fef7458f3935d1698aee793417f26e91214643a22"
+}

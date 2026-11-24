@@ -1,0 +1,25 @@
+{
+  "protocol_sha256": "d7d8bd67c5e75d6f6beb60c485d2513a6fe0917a5a9e36fe332a339fbb422ab6",
+  "source_hashes": {
+    "core_source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+    "families_source_sha256": "b842ed05dad23aae39462e5945151ede8f99b266c3fa2faadce748e97ef77c6f",
+    "source_aware_audit_source_sha256": "bdd579a3bfbb604186256423d1fae1a2191e7c4cdd6b8abecfb5d5c2691e8c5b",
+    "model": "axisym-forced-pnp-distinct-families-v1",
+    "forcing_quadrature": "cell-centre midpoint continuous analytic sources",
+    "boundaries": "end psi0/v q1; sidewall psi=v*x/L+w*sin\u00b2(pi*x/L), zero species flux; regular axis",
+    "solver": "unchanged core Newton with four continuation fractions; scaled residual2e-11; log bound30",
+    "controller_sha256": "cb4dd507015f0cc9b3b08fde7003e337f4a6bf0bad6522d4a87ba9200591bdbb",
+    "matched_controller_sha256": "05ae8da79f5db900cd2ae46c82fba0e0ab86bff2bb51e89be59f364544123d3d",
+    "driver_sha256": "7b062e83db8ab1194f5eb03c59bf6de853fccf6e83fdc8a67d64656160847b19"
+  },
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "D:\\nanopore OS complete\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.3.2",
+    "scipy": "1.16.3"
+  },
+  "created_utc": "2026-11-21T10:06:02.335821+00:00",
+  "data_mode": "local_only",
+  "paid_calls": 0
+}

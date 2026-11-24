@@ -1,0 +1,591 @@
+{
+  "status": "FINISHED",
+  "records": [
+    {
+      "voltage_mV": 100.0,
+      "reference_refinements": [
+        {
+          "coarse": [
+            32,
+            16
+          ],
+          "fine": [
+            64,
+            32
+          ],
+          "fixed_evaluation_grid": "36x18 canonical cell centres",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0020245548082562237,
+              "relative_volume_L2": 0.004545328590610989
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 7.525826060861647,
+              "relative_volume_L2": 0.013905349406842314
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 8.156941645799066,
+              "relative_volume_L2": 0.007755497761647404
+            }
+          ],
+          "current_relative_difference": 0.001173543768405249
+        },
+        {
+          "coarse": [
+            64,
+            32
+          ],
+          "fine": [
+            128,
+            64
+          ],
+          "fixed_evaluation_grid": "36x18 canonical cell centres",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.00012381737950693805,
+              "relative_volume_L2": 0.0006630312892409859
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 0.7624230342028966,
+              "relative_volume_L2": 0.0018453999336967798
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 0.7038061702596394,
+              "relative_volume_L2": 0.0011407125260075816
+            }
+          ],
+          "current_relative_difference": 0.00031533261006455685
+        },
+        {
+          "coarse": [
+            128,
+            64
+          ],
+          "fine": [
+            256,
+            128
+          ],
+          "fixed_evaluation_grid": "36x18 canonical cell centres",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 2.6271535451163897e-05,
+              "relative_volume_L2": 0.00017245361910910452
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 0.31692625605828084,
+              "relative_volume_L2": 0.0005666614391127617
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 0.08662927477000437,
+              "relative_volume_L2": 0.00024335516635986702
+            }
+          ],
+          "current_relative_difference": 7.852687560665515e-05
+        }
+      ],
+      "comparisons": [
+        {
+          "candidate_grid": [
+            16,
+            8
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.001008003605489876,
+              "relative_volume_L2": 0.007630358911656384
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 5.253539564474011,
+              "relative_volume_L2": 0.01991494786969736
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 3.1299727240173922,
+              "relative_volume_L2": 0.01372683934662681
+            }
+          ],
+          "current_relative_error": 0.005943962436559878,
+          "max_phi_difference_VT": 0.03923325878415256,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            24,
+            12
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0008034495449270184,
+              "relative_volume_L2": 0.004674835131730039
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 4.5644176800806235,
+              "relative_volume_L2": 0.013111457445033045
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 2.353415492967599,
+              "relative_volume_L2": 0.007938441772324093
+            }
+          ],
+          "current_relative_error": 0.0035237198386317073,
+          "max_phi_difference_VT": 0.03127165790325927,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            36,
+            18
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0005965046865627592,
+              "relative_volume_L2": 0.002513849163383651
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 3.648596717008843,
+              "relative_volume_L2": 0.007434910023769668
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 1.667142917064126,
+              "relative_volume_L2": 0.00413390237659044
+            }
+          ],
+          "current_relative_error": 0.0019007429433929568,
+          "max_phi_difference_VT": 0.023217003001197688,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            72,
+            36
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.00038425707168528167,
+              "relative_volume_L2": 0.0007858874623506619
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 2.543391373936714,
+              "relative_volume_L2": 0.002444071534853252
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 1.0304820177552898,
+              "relative_volume_L2": 0.001278590046575989
+            }
+          ],
+          "current_relative_error": 0.0006023559909959928,
+          "max_phi_difference_VT": 0.014955955565002918,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            144,
+            72
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.00021740302070045667,
+              "relative_volume_L2": 0.0002480883166153262
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 1.6141176105384147,
+              "relative_volume_L2": 0.0008156590118616635
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 0.9446988033725603,
+              "relative_volume_L2": 0.0004420386364765355
+            }
+          ],
+          "current_relative_error": 0.0001944465469734336,
+          "max_phi_difference_VT": 0.008461704824411125,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        }
+      ],
+      "reference_configs": [
+        {
+          "nx": 32,
+          "nr": 16,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": 100.0,
+          "wall_offset_mV": -15.0
+        },
+        {
+          "nx": 64,
+          "nr": 32,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": 100.0,
+          "wall_offset_mV": -15.0
+        },
+        {
+          "nx": 128,
+          "nr": 64,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": 100.0,
+          "wall_offset_mV": -15.0
+        },
+        {
+          "nx": 256,
+          "nr": 128,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": 100.0,
+          "wall_offset_mV": -15.0
+        }
+      ]
+    },
+    {
+      "voltage_mV": -100.0,
+      "reference_refinements": [
+        {
+          "coarse": [
+            32,
+            16
+          ],
+          "fine": [
+            64,
+            32
+          ],
+          "fixed_evaluation_grid": "36x18 canonical cell centres",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0020245548082561994,
+              "relative_volume_L2": 0.0041947831793795205
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 7.525826060861277,
+              "relative_volume_L2": 0.013905349406841367
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 8.156941645798554,
+              "relative_volume_L2": 0.00775549776164876
+            }
+          ],
+          "current_relative_difference": 0.001173543768403343
+        },
+        {
+          "coarse": [
+            64,
+            32
+          ],
+          "fine": [
+            128,
+            64
+          ],
+          "fixed_evaluation_grid": "36x18 canonical cell centres",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.00012381737950694673,
+              "relative_volume_L2": 0.0006123605732481562
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 0.7624230342032376,
+              "relative_volume_L2": 0.0018453999336968789
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 0.7038061702607621,
+              "relative_volume_L2": 0.0011407125260090884
+            }
+          ],
+          "current_relative_difference": 0.0003153326100636896
+        },
+        {
+          "coarse": [
+            128,
+            64
+          ],
+          "fine": [
+            256,
+            128
+          ],
+          "fixed_evaluation_grid": "36x18 canonical cell centres",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 2.6271535451192953e-05,
+              "relative_volume_L2": 0.00015930676474405696
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 0.3169262560583377,
+              "relative_volume_L2": 0.0005666614391130722
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 0.08662927476996174,
+              "relative_volume_L2": 0.00024335516636078168
+            }
+          ],
+          "current_relative_difference": 7.852687560648169e-05
+        }
+      ],
+      "comparisons": [
+        {
+          "candidate_grid": [
+            16,
+            8
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0010080036054897906,
+              "relative_volume_L2": 0.007079818740257141
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 5.253539564473726,
+              "relative_volume_L2": 0.019914947869695842
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 3.1299727240172928,
+              "relative_volume_L2": 0.013726839346625972
+            }
+          ],
+          "current_relative_error": 0.005943962436559187,
+          "max_phi_difference_VT": 0.03923325878414923,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            24,
+            12
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0008034495449269624,
+              "relative_volume_L2": 0.004324477607498541
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 4.564417680080339,
+              "relative_volume_L2": 0.013111457445032386
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 2.3534154929676134,
+              "relative_volume_L2": 0.007938441772324294
+            }
+          ],
+          "current_relative_error": 0.003523719838631362,
+          "max_phi_difference_VT": 0.03127165790325709,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            36,
+            18
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0005965046865626933,
+              "relative_volume_L2": 0.0023222080194058273
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 3.648596717008786,
+              "relative_volume_L2": 0.0074349100237686505
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 1.6671429170642398,
+              "relative_volume_L2": 0.004133902376590495
+            }
+          ],
+          "current_relative_error": 0.0019007429433933046,
+          "max_phi_difference_VT": 0.02321700300119512,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            72,
+            36
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.0003842570716852539,
+              "relative_volume_L2": 0.0007253661774752784
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 2.5433913739378227,
+              "relative_volume_L2": 0.0024440715348527254
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 1.0304820177554745,
+              "relative_volume_L2": 0.0012785900465761505
+            }
+          ],
+          "current_relative_error": 0.0006023559909968606,
+          "max_phi_difference_VT": 0.014955955565001837,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        },
+        {
+          "candidate_grid": [
+            144,
+            72
+          ],
+          "reference_grid": [
+            256,
+            128
+          ],
+          "status": "PASS",
+          "fields": [
+            {
+              "field": "potential_V",
+              "max_absolute": 0.00021740302070043238,
+              "relative_volume_L2": 0.0002289344177698016
+            },
+            {
+              "field": "cplus_mol_m3",
+              "max_absolute": 1.614117610540461,
+              "relative_volume_L2": 0.0008156590118594362
+            },
+            {
+              "field": "cminus_mol_m3",
+              "max_absolute": 0.9446988033715513,
+              "relative_volume_L2": 0.0004420386364734456
+            }
+          ],
+          "current_relative_error": 0.0001944465469736072,
+          "max_phi_difference_VT": 0.00846170482441018,
+          "reference_remaining_spatial_error": "NOT_BOUNDED; see independently refined reference comparisons"
+        }
+      ],
+      "reference_configs": [
+        {
+          "nx": 32,
+          "nr": 16,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": -100.0,
+          "wall_offset_mV": -15.0
+        },
+        {
+          "nx": 64,
+          "nr": 32,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": -100.0,
+          "wall_offset_mV": -15.0
+        },
+        {
+          "nx": 128,
+          "nr": 64,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": -100.0,
+          "wall_offset_mV": -15.0
+        },
+        {
+          "nx": 256,
+          "nr": 128,
+          "length_nm": 20.0,
+          "radius_nm": 10.0,
+          "salt_mM": 100.0,
+          "voltage_mV": -100.0,
+          "wall_offset_mV": -15.0
+        }
+      ]
+    }
+  ],
+  "seconds": 444.85900000017136,
+  "scope": "Representative hard family only, no full-domain qualification",
+  "reference_source_sha256": "5964679b4ab79322fb0f1172c28bfc955b3647db3ce3c67082a8a8c1e8091e18",
+  "comparison_source_sha256": "7c2e3ece8ddb20d614673cbab4ab5012c6f44b2d74333b8b8c9df46928bc3a91",
+  "candidate_source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+  "independence": "Nodal electrochemical-potential diffusion with geometric face conductivity; no SG flux/canonical assembly import in reference module",
+  "limitations": [
+    "Rim Dirichlet jumps preserved",
+    "Different discretizations converge to matching continuum model only under refinement",
+    "No independent derivative/electric-field accuracy bound",
+    "No experimental validation"
+  ]
+}

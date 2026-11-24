@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanoporeos"
+version = "0.1.0"
+description = "Verification-gated axisymmetric steady PNP research software"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.12", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+verification = ["sympy==1.14.0"]
+
+[project.scripts]
+nanoporeos = "nanoporeos.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

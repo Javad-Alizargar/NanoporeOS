@@ -1,0 +1,28 @@
+{
+  "design": {
+    "repetition": 3,
+    "case": "v5_localized_08",
+    "policy": "current_matched"
+  },
+  "source_identity": "dffe2f66c53d9dd3cd69507f5b138dd2f179fb43f647289cf83f866a5fe3ac95",
+  "wall_seconds": 0.6498851999640465,
+  "attempted_cells": 672,
+  "selected_grid": [
+    32,
+    16
+  ],
+  "exact_accuracy_pass": true,
+  "errors": {
+    "max_phi_error_VT": 0.0027935404358809812,
+    "max_plus_relative_error": 0.003628049260231414,
+    "max_minus_relative_error": 0.003445051906687313,
+    "mid_current_absolute_error_A": 1.0932543116269808e-12,
+    "mid_current_relative_error": 0.002159925479498513,
+    "exact_mid_current_A": 5.061537178036394e-10,
+    "exact_current_quadrature_change_A": 4.1359030627651384e-25
+  },
+  "decision_file": "attempt_051_decision.json",
+  "decision_before_scoring_sha256": "2cc6a517200740ab510b6e28633e0ae22429b4b7ef20f9c5a639c1aced1bb1cb",
+  "selected_fields": "attempt_051_fields.npz",
+  "selected_fields_sha256": "c9287460c9e95454995b69476e4bf8c3842854e23da9c95c9adc8feea0263930"
+}

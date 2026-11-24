@@ -1,0 +1,187 @@
+{
+  "case": {
+    "name": "v4_holdout_03",
+    "length_nm": 32,
+    "radius_nm": 13,
+    "salt_mM": 120,
+    "drive_VT": 1.4,
+    "amplitude_psi": -1.1,
+    "bplus": -0.65,
+    "bminus": 0.4,
+    "wall_amplitude": 0.65
+  },
+  "policies": [
+    {
+      "policy": "residual_only",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 0,
+      "selected_grid": [
+        12,
+        6
+      ],
+      "visited_indices": [
+        0
+      ],
+      "attempted_solve_seconds": 0.13686359953135252,
+      "attempted_cells": 72,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 9.560026228427887e-05,
+      "solve_plus_selection_seconds": 0.1369591997936368
+    },
+    {
+      "policy": "current_mesh",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 2,
+      "selected_grid": [
+        48,
+        24
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2
+      ],
+      "attempted_solve_seconds": 1.3610584996640682,
+      "attempted_cells": 1512,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.026221020883744454
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.026221020883744454
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "mid_current_relative_error": 0.0065137867857611685
+          },
+          "estimated_errors": {
+            "mid_current_relative_error": 0.0065137867857611685
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 4.810001701116562e-05,
+      "solve_plus_selection_seconds": 1.3611065996810794
+    },
+    {
+      "policy": "field_controller",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 2,
+      "selected_grid": [
+        48,
+        24
+      ],
+      "visited_indices": [
+        0,
+        1,
+        2
+      ],
+      "attempted_solve_seconds": 1.3610584996640682,
+      "attempted_cells": 1512,
+      "indicators": [
+        {
+          "coarse_grid": [
+            12,
+            6
+          ],
+          "fine_grid": [
+            24,
+            12
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.019313005769074132,
+            "max_plus_relative_error": 0.015159830434456787,
+            "max_minus_relative_error": 0.013843512005035988,
+            "mid_current_relative_error": 0.026221020883744454
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.012875337179382754,
+            "max_plus_relative_error": 0.010106553622971191,
+            "max_minus_relative_error": 0.009229008003357325,
+            "mid_current_relative_error": 0.017480680589162967
+          },
+          "pair_pass": false,
+          "consecutive_passes": 0
+        },
+        {
+          "coarse_grid": [
+            24,
+            12
+          ],
+          "fine_grid": [
+            48,
+            24
+          ],
+          "raw_differences": {
+            "max_phi_error_VT": 0.005618273007091723,
+            "max_plus_relative_error": 0.003817514626669978,
+            "max_minus_relative_error": 0.004477482062793131,
+            "mid_current_relative_error": 0.0065137867857611685
+          },
+          "estimated_errors": {
+            "max_phi_error_VT": 0.0037455153380611486,
+            "max_plus_relative_error": 0.0025450097511133187,
+            "max_minus_relative_error": 0.0029849880418620868,
+            "mid_current_relative_error": 0.004342524523840778
+          },
+          "pair_pass": true,
+          "consecutive_passes": 1
+        }
+      ],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 0.0012582996860146523,
+      "solve_plus_selection_seconds": 1.3623167993500829
+    },
+    {
+      "policy": "uniform_finest",
+      "status": "ESTIMATED_ACCEPT",
+      "selected_index": 3,
+      "selected_grid": [
+        96,
+        48
+      ],
+      "visited_indices": [
+        3
+      ],
+      "attempted_solve_seconds": 6.213187200017273,
+      "attempted_cells": 4608,
+      "indicators": [],
+      "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+      "certified_error_bound": false,
+      "training_qualified": false,
+      "selection_seconds": 2.58004292845726e-05,
+      "solve_plus_selection_seconds": 6.213213000446558
+    }
+  ],
+  "decision_seconds": 0.0014278003945946693,
+  "decision_inputs": "Numerical snapshots, budgets and fixed policy parameters only"
+}

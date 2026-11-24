@@ -1,0 +1,431 @@
+{
+  "version": "verification-v5-distinct-families-matched-estimators",
+  "output_family": "verification_v5",
+  "declared_utc": "2026-11-21T10:05:02.825675+00:00",
+  "status": "FROZEN_BEFORE_ANY_V5_PDE_OUTPUT",
+  "purpose": "Test whether adding field criteria changes acceptance when current estimators are matched",
+  "design_history": "v3/v4 outcomes and matched ablation are exposed prior evidence; no v5 functions/tuples have been solved before freeze",
+  "model": "axisym-forced-pnp-distinct-families-v1",
+  "legacy_core_changes": false,
+  "family_definitions": {
+    "polynomial": "P=16u\u00b2(1-u)\u00b2 H2; M=16u\u00b2(1-u)\u00b2(2u-1)H3",
+    "oscillatory": "P=sin(3piu)H2; M=sin(4piu)H3",
+    "localized": "P=4u(1-u)exp(-36(u-.35)\u00b2)H2; M=4u(1-u)(2u-1)exp(-25(u-.65)\u00b2)H3"
+  },
+  "common_definition": "u=x/L,Hm=(1-(r/R)\u00b2)^m; W=w sin\u00b2(piu); psi=vu+aP+W; logq_z=b_z M-zaP",
+  "development_cases": [
+    {
+      "name": "v5_development_polynomial",
+      "family": "polynomial",
+      "length_nm": 20,
+      "radius_nm": 7,
+      "salt_mM": 30,
+      "drive_VT": 2,
+      "amplitude_psi": 0.4,
+      "bplus": 0.25,
+      "bminus": -0.2,
+      "wall_amplitude": 0.2
+    },
+    {
+      "name": "v5_development_oscillatory",
+      "family": "oscillatory",
+      "length_nm": 20,
+      "radius_nm": 7,
+      "salt_mM": 30,
+      "drive_VT": 2,
+      "amplitude_psi": 0.4,
+      "bplus": 0.25,
+      "bminus": -0.2,
+      "wall_amplitude": 0.2
+    },
+    {
+      "name": "v5_development_localized",
+      "family": "localized",
+      "length_nm": 20,
+      "radius_nm": 7,
+      "salt_mM": 30,
+      "drive_VT": 2,
+      "amplitude_psi": 0.4,
+      "bplus": 0.25,
+      "bminus": -0.2,
+      "wall_amplitude": 0.2
+    }
+  ],
+  "held_out_cases": [
+    {
+      "name": "v5_polynomial_01",
+      "family": "polynomial",
+      "length_nm": 16,
+      "radius_nm": 5,
+      "salt_mM": 15,
+      "drive_VT": 1.8,
+      "amplitude_psi": 0.35,
+      "bplus": 0.25,
+      "bminus": -0.15,
+      "wall_amplitude": 0.2
+    },
+    {
+      "name": "v5_polynomial_02",
+      "family": "polynomial",
+      "length_nm": 22,
+      "radius_nm": 9,
+      "salt_mM": 55,
+      "drive_VT": -1.7,
+      "amplitude_psi": 0.75,
+      "bplus": -0.35,
+      "bminus": 0.4,
+      "wall_amplitude": -0.3
+    },
+    {
+      "name": "v5_polynomial_03",
+      "family": "polynomial",
+      "length_nm": 34,
+      "radius_nm": 12,
+      "salt_mM": 110,
+      "drive_VT": 2.4,
+      "amplitude_psi": -0.8,
+      "bplus": 0.55,
+      "bminus": -0.45,
+      "wall_amplitude": 0.6
+    },
+    {
+      "name": "v5_polynomial_04",
+      "family": "polynomial",
+      "length_nm": 42,
+      "radius_nm": 7,
+      "salt_mM": 80,
+      "drive_VT": -2.6,
+      "amplitude_psi": 1.0,
+      "bplus": 0.7,
+      "bminus": 0.3,
+      "wall_amplitude": -0.65
+    },
+    {
+      "name": "v5_polynomial_05",
+      "family": "polynomial",
+      "length_nm": 19,
+      "radius_nm": 11,
+      "salt_mM": 35,
+      "drive_VT": 0.8,
+      "amplitude_psi": -0.5,
+      "bplus": -0.65,
+      "bminus": 0.5,
+      "wall_amplitude": 0.35
+    },
+    {
+      "name": "v5_polynomial_06",
+      "family": "polynomial",
+      "length_nm": 28,
+      "radius_nm": 4,
+      "salt_mM": 160,
+      "drive_VT": -0.9,
+      "amplitude_psi": 0.9,
+      "bplus": 0.4,
+      "bminus": -0.6,
+      "wall_amplitude": -0.45
+    },
+    {
+      "name": "v5_polynomial_07",
+      "family": "polynomial",
+      "length_nm": 46,
+      "radius_nm": 15,
+      "salt_mM": 25,
+      "drive_VT": 1.2,
+      "amplitude_psi": 1.2,
+      "bplus": -0.75,
+      "bminus": 0.65,
+      "wall_amplitude": 0.75
+    },
+    {
+      "name": "v5_polynomial_08",
+      "family": "polynomial",
+      "length_nm": 36,
+      "radius_nm": 8,
+      "salt_mM": 190,
+      "drive_VT": -1.4,
+      "amplitude_psi": -1.1,
+      "bplus": 0.6,
+      "bminus": -0.7,
+      "wall_amplitude": -0.8
+    },
+    {
+      "name": "v5_oscillatory_01",
+      "family": "oscillatory",
+      "length_nm": 16,
+      "radius_nm": 5,
+      "salt_mM": 15,
+      "drive_VT": 1.8,
+      "amplitude_psi": 0.35,
+      "bplus": 0.25,
+      "bminus": -0.15,
+      "wall_amplitude": 0.2
+    },
+    {
+      "name": "v5_oscillatory_02",
+      "family": "oscillatory",
+      "length_nm": 22,
+      "radius_nm": 9,
+      "salt_mM": 55,
+      "drive_VT": -1.7,
+      "amplitude_psi": 0.75,
+      "bplus": -0.35,
+      "bminus": 0.4,
+      "wall_amplitude": -0.3
+    },
+    {
+      "name": "v5_oscillatory_03",
+      "family": "oscillatory",
+      "length_nm": 34,
+      "radius_nm": 12,
+      "salt_mM": 110,
+      "drive_VT": 2.4,
+      "amplitude_psi": -0.8,
+      "bplus": 0.55,
+      "bminus": -0.45,
+      "wall_amplitude": 0.6
+    },
+    {
+      "name": "v5_oscillatory_04",
+      "family": "oscillatory",
+      "length_nm": 42,
+      "radius_nm": 7,
+      "salt_mM": 80,
+      "drive_VT": -2.6,
+      "amplitude_psi": 1.0,
+      "bplus": 0.7,
+      "bminus": 0.3,
+      "wall_amplitude": -0.65
+    },
+    {
+      "name": "v5_oscillatory_05",
+      "family": "oscillatory",
+      "length_nm": 19,
+      "radius_nm": 11,
+      "salt_mM": 35,
+      "drive_VT": 0.8,
+      "amplitude_psi": -0.5,
+      "bplus": -0.65,
+      "bminus": 0.5,
+      "wall_amplitude": 0.35
+    },
+    {
+      "name": "v5_oscillatory_06",
+      "family": "oscillatory",
+      "length_nm": 28,
+      "radius_nm": 4,
+      "salt_mM": 160,
+      "drive_VT": -0.9,
+      "amplitude_psi": 0.9,
+      "bplus": 0.4,
+      "bminus": -0.6,
+      "wall_amplitude": -0.45
+    },
+    {
+      "name": "v5_oscillatory_07",
+      "family": "oscillatory",
+      "length_nm": 46,
+      "radius_nm": 15,
+      "salt_mM": 25,
+      "drive_VT": 1.2,
+      "amplitude_psi": 1.2,
+      "bplus": -0.75,
+      "bminus": 0.65,
+      "wall_amplitude": 0.75
+    },
+    {
+      "name": "v5_oscillatory_08",
+      "family": "oscillatory",
+      "length_nm": 36,
+      "radius_nm": 8,
+      "salt_mM": 190,
+      "drive_VT": -1.4,
+      "amplitude_psi": -1.1,
+      "bplus": 0.6,
+      "bminus": -0.7,
+      "wall_amplitude": -0.8
+    },
+    {
+      "name": "v5_localized_01",
+      "family": "localized",
+      "length_nm": 16,
+      "radius_nm": 5,
+      "salt_mM": 15,
+      "drive_VT": 1.8,
+      "amplitude_psi": 0.35,
+      "bplus": 0.25,
+      "bminus": -0.15,
+      "wall_amplitude": 0.2
+    },
+    {
+      "name": "v5_localized_02",
+      "family": "localized",
+      "length_nm": 22,
+      "radius_nm": 9,
+      "salt_mM": 55,
+      "drive_VT": -1.7,
+      "amplitude_psi": 0.75,
+      "bplus": -0.35,
+      "bminus": 0.4,
+      "wall_amplitude": -0.3
+    },
+    {
+      "name": "v5_localized_03",
+      "family": "localized",
+      "length_nm": 34,
+      "radius_nm": 12,
+      "salt_mM": 110,
+      "drive_VT": 2.4,
+      "amplitude_psi": -0.8,
+      "bplus": 0.55,
+      "bminus": -0.45,
+      "wall_amplitude": 0.6
+    },
+    {
+      "name": "v5_localized_04",
+      "family": "localized",
+      "length_nm": 42,
+      "radius_nm": 7,
+      "salt_mM": 80,
+      "drive_VT": -2.6,
+      "amplitude_psi": 1.0,
+      "bplus": 0.7,
+      "bminus": 0.3,
+      "wall_amplitude": -0.65
+    },
+    {
+      "name": "v5_localized_05",
+      "family": "localized",
+      "length_nm": 19,
+      "radius_nm": 11,
+      "salt_mM": 35,
+      "drive_VT": 0.8,
+      "amplitude_psi": -0.5,
+      "bplus": -0.65,
+      "bminus": 0.5,
+      "wall_amplitude": 0.35
+    },
+    {
+      "name": "v5_localized_06",
+      "family": "localized",
+      "length_nm": 28,
+      "radius_nm": 4,
+      "salt_mM": 160,
+      "drive_VT": -0.9,
+      "amplitude_psi": 0.9,
+      "bplus": 0.4,
+      "bminus": -0.6,
+      "wall_amplitude": -0.45
+    },
+    {
+      "name": "v5_localized_07",
+      "family": "localized",
+      "length_nm": 46,
+      "radius_nm": 15,
+      "salt_mM": 25,
+      "drive_VT": 1.2,
+      "amplitude_psi": 1.2,
+      "bplus": -0.75,
+      "bminus": 0.65,
+      "wall_amplitude": 0.75
+    },
+    {
+      "name": "v5_localized_08",
+      "family": "localized",
+      "length_nm": 36,
+      "radius_nm": 8,
+      "salt_mM": 190,
+      "drive_VT": -1.4,
+      "amplitude_psi": -1.1,
+      "bplus": 0.6,
+      "bminus": -0.7,
+      "wall_amplitude": -0.8
+    }
+  ],
+  "mesh_ladder": [
+    [
+      12,
+      6
+    ],
+    [
+      24,
+      12
+    ],
+    [
+      48,
+      24
+    ],
+    [
+      96,
+      48
+    ],
+    [
+      192,
+      96
+    ]
+  ],
+  "exact_evaluation_tolerances": {
+    "max_phi_error_VT": 0.005,
+    "max_plus_relative_error": 0.01,
+    "max_minus_relative_error": 0.01,
+    "mid_current_relative_error": 0.01
+  },
+  "current_relative_denominator_floor_A": 1e-15,
+  "order_verification": {
+    "cases": "one prespecified development case per new family",
+    "observables": [
+      "max_phi_error_VT",
+      "max_plus_relative_error",
+      "max_minus_relative_error"
+    ],
+    "last_pair_order_interval": [
+      1.7,
+      2.3
+    ]
+  },
+  "policies": {
+    "residual_only": "First strict discrete PASS",
+    "current_matched": "First pair with 2/3 successive current difference <=1%",
+    "field_matched": "Same current rule plus potential and both concentration criteria at same 2/3 scaling",
+    "uniform_finest": "Direct192x96 discrete PASS"
+  },
+  "controller_assumed_order": 2,
+  "controller_safety_factor": 2,
+  "controller_consecutive_pairs": 1,
+  "primary_outcomes": [
+    "accurate/inaccurate/unresolved counts overall and per family",
+    "paired identities of inaccurate acceptance prevented by fields and accurate cases lost/deferred",
+    "cumulative visited cells including failures and deferred cases"
+  ],
+  "secondary_outcomes": [
+    "cached solve-plus-own-selection replay seconds; no general runtime advantage claim"
+  ],
+  "cost_estimand": "Cached-grid replay; construction+solve plus own selection; I/O/scoring/plotting excluded",
+  "evaluation_separation": "Freeze numerical decisions to file before exact scoring; no exact fields in policy inputs",
+  "failure_handling": "Retain all failures; failed development order gate stops dependent evaluation; no replacement, budget changes or controller retuning",
+  "statistical_unit": "24 fixed family/tuple combinations; same8 physical/amplitude tuples across3 families, not24 independent population samples",
+  "sample_size_reason": "Bounded deterministic coverage8tuples per3structurally different smooth profiles; no statistical power/population reliability claim",
+  "timing_followup": {
+    "status": "PRESPECIFIED_SECONDARY_IF_TIME_PERMITS",
+    "repetitions": 3,
+    "seed": 20261121,
+    "cases": [
+      "v5_polynomial_01",
+      "v5_polynomial_08",
+      "v5_oscillatory_01",
+      "v5_oscillatory_08",
+      "v5_localized_01",
+      "v5_localized_08"
+    ],
+    "method": "randomize case-policy order per repeat; each policy performs its own new solves and stops numerically; no cached solve reuse",
+    "warmup": "one excluded12x6 polynomial solve; report attempted wall time and coverage, no equal-accuracy speedup"
+  },
+  "scope_limits": [
+    "smooth forced verification only",
+    "not physical validation or charged-wall HOLD release",
+    "all families share one field parameterization and canonical discretization",
+    "heuristic order/safety; shared bias can evade comparison",
+    "not external preregistration or human blinding"
+  ],
+  "maximum_campaign_minutes": 25,
+  "threads": 2
+}

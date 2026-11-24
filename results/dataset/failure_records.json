@@ -1,0 +1,308 @@
+[
+  {
+    "case_id": "d64efe5316a258b8cade91ccac6916bb7486861414c4253962fa9e2f5e6b9902",
+    "scenario": {
+      "nx": 16,
+      "nr": 8,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\d64efe5316a258b8cade91ccac6916bb7486861414c4253962fa9e2f5e6b9902\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "93b7347b958f6a2402ffa10f8e53050d22f2180bc604b5fce169a9c53369dd93",
+    "scenario": {
+      "nx": 24,
+      "nr": 12,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\93b7347b958f6a2402ffa10f8e53050d22f2180bc604b5fce169a9c53369dd93\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "b843b759e607a8a6d00ba7d9bdd716d76bd68d54e7b6e2ad6bafbec7b418ef4d",
+    "scenario": {
+      "nx": 36,
+      "nr": 18,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\b843b759e607a8a6d00ba7d9bdd716d76bd68d54e7b6e2ad6bafbec7b418ef4d\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "004dd7def87c498cdeee995772928e11d202001ccbe61c933c7014554e75aa87",
+    "scenario": {
+      "nx": 16,
+      "nr": 8,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\004dd7def87c498cdeee995772928e11d202001ccbe61c933c7014554e75aa87\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "d8b3213c728379f5bf63915058cff1e227a77d6d87c7e70972ea6fe8c635f3b4",
+    "scenario": {
+      "nx": 24,
+      "nr": 12,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\d8b3213c728379f5bf63915058cff1e227a77d6d87c7e70972ea6fe8c635f3b4\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "2bfe12e336fe9477a386f2972ed54e686f9915783b679f6fb4f68108dcf50faf",
+    "scenario": {
+      "nx": 36,
+      "nr": 18,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\2bfe12e336fe9477a386f2972ed54e686f9915783b679f6fb4f68108dcf50faf\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "6f2cd0b9c7a909afaa86b97322a279315aebca0f09fdfe356654ffb1563f633b",
+    "scenario": {
+      "nx": 16,
+      "nr": 8,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\6f2cd0b9c7a909afaa86b97322a279315aebca0f09fdfe356654ffb1563f633b\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "35cddaf1f6d2ce6cff0fa45a22d8dd1fab5abcd3734ffae029543fa11fec010c",
+    "scenario": {
+      "nx": 24,
+      "nr": 12,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\35cddaf1f6d2ce6cff0fa45a22d8dd1fab5abcd3734ffae029543fa11fec010c\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "8e875db23f7a2929536410061294d71a8e9081fc295c76d97808892552b1b6a7",
+    "scenario": {
+      "nx": 36,
+      "nr": 18,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\8e875db23f7a2929536410061294d71a8e9081fc295c76d97808892552b1b6a7\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "bf3f1051846d52e62fa620d3901731c5d058e7cf467687f7e092c52cf8c39379",
+    "scenario": {
+      "nx": 16,
+      "nr": 8,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\bf3f1051846d52e62fa620d3901731c5d058e7cf467687f7e092c52cf8c39379\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "cf31d64eb7f35cc80efc91674c759c684eed5fdd118dbf7d1b8304226433ef21",
+    "scenario": {
+      "nx": 24,
+      "nr": 12,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\cf31d64eb7f35cc80efc91674c759c684eed5fdd118dbf7d1b8304226433ef21\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "4ec357682b3704f0e9f9558e701a10a19969fa53c050aaa6e441be55d61846da",
+    "scenario": {
+      "nx": 36,
+      "nr": 18,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\4ec357682b3704f0e9f9558e701a10a19969fa53c050aaa6e441be55d61846da\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "aea088e5da00841008849ee37ce8e979f21557e1e09cb7ac8d4e7ccbc86551e1",
+    "scenario": {
+      "nx": 16,
+      "nr": 8,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\aea088e5da00841008849ee37ce8e979f21557e1e09cb7ac8d4e7ccbc86551e1\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "f435598fab0dd87241d3f1bcbb60ada7c63be802e787043de0d7877262ef5bd9",
+    "scenario": {
+      "nx": 24,
+      "nr": 12,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\f435598fab0dd87241d3f1bcbb60ada7c63be802e787043de0d7877262ef5bd9\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "1e1692a9a5fab88a43c79567ae9a17715b2c8fb79b3af4173044962c5e95a043",
+    "scenario": {
+      "nx": 36,
+      "nr": 18,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": -15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\1e1692a9a5fab88a43c79567ae9a17715b2c8fb79b3af4173044962c5e95a043\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "521a936fdebc195b59f2727306e92eefddc00144692746b81514d204fb99c0dd",
+    "scenario": {
+      "nx": 16,
+      "nr": 8,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\521a936fdebc195b59f2727306e92eefddc00144692746b81514d204fb99c0dd\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "3bb050baa6403944ce770cf9c52d9459b88ceb60a2c5f8a7976a02774536bb04",
+    "scenario": {
+      "nx": 24,
+      "nr": 12,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\3bb050baa6403944ce770cf9c52d9459b88ceb60a2c5f8a7976a02774536bb04\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  },
+  {
+    "case_id": "06eb68a35c917d99cdf87926cb75f54da0fb5c5f61bc48d310ffdc872c06d16e",
+    "scenario": {
+      "nx": 36,
+      "nr": 18,
+      "length_nm": 20.0,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 15.0,
+      "model": "axisym-pnp-ramp-offset-v1"
+    },
+    "source": "reexecuted supplied legacy kernel",
+    "status": "FAIL",
+    "artifact": "results\\matrix\\06eb68a35c917d99cdf87926cb75f54da0fb5c5f61bc48d310ffdc872c06d16e\\legacy.json",
+    "historical_executed_source_identity": "UNRESOLVED"
+  }
+]

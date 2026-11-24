@@ -1,0 +1,5 @@
+policy,selected_mesh_records,total_mesh_records,selected_from_field_gate_failed_scenarios,selected_non_neutral_records,interpretation
+Legacy update-success flag,90,108,18,54,Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability
+Candidate discrete gate,108,108,36,72,Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability
+Candidate plus scenario mesh field gate,72,108,0,36,Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability
+Conservative neutral analytical policy,36,108,0,0,Retrospective selection diagnostic; mesh gate assigned at scenario level; not an accuracy probability

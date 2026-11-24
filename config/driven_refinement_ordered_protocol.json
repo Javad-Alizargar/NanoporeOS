@@ -1,0 +1,23 @@
+{
+  "version": "driven-reference-directional-ordered-v1",
+  "amendment": "Original COLAMD reference attempt terminated after sparse factorization overran600s soft boundary; no completed output. Only SuperLU column ordering changes to MMD_AT_PLUS_A. Small-grid equations/Jacobians are byte-identical and +/-100mV solutions agree. All grids, physical parameters, nonlinear tolerances, criteria and budgets remain unchanged. This is a separate source/version, not a historical source replacement.",
+  "declared_before_new_reference_solves": true,
+  "question": "How much does directional reference refinement change full-domain field comparisons for one driven legacy family?",
+  "problem": {"length_nm": 20.0, "radius_nm": 10.0, "salt_mM": 100.0, "voltage_mV": 100.0, "wall_offset_mV": -15.0},
+  "existing_base_grid": [256,128],
+  "new_reference_grids": [[512,128],[256,256],[512,256]],
+  "fixed_candidate_evaluation_grids": [[36,18],[72,36],[144,72]],
+  "metrics": ["max potential difference/VT", "volume-weighted relative L2 potential and concentrations", "max relative concentration differences", "relative current difference"],
+  "reference_sensitivity_indicators": {"max_phi_difference_VT": 0.002, "max_concentration_relative_difference": 0.01},
+  "indicator_interpretation": "Empirical directional/refinement changes only, not certified reference-error bounds or new physical qualification criteria",
+  "original_gates_changed": false,
+  "full_domain": true,
+  "no_corner_exclusion_for_primary_metrics": true,
+  "secondary_spatial_diagnostic": "Locate maximum potential mismatch and its Euclidean distance from either end-wall rim; no trimming or replacement",
+  "method": "Unchanged independent nodal electrochemical-potential assembly and continuation; no exact initialization or canonical assembly",
+  "maximum_run_minutes": 25,
+  "per_solve_maximum_seconds": 600,
+  "threads": 2,
+  "failure_handling": "Preserve partial/failed results and stop at bounds; no replacement or post-outcome tolerance changes",
+  "scope": "One fixed representative driven case; no full-domain or experimental validation claim"
+}

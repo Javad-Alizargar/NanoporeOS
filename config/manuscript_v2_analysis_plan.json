@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-11-09T08:10:00Z",
+  "scope": "Retrospective descriptive manuscript extension using preserved completed runs; not a new confirmatory experiment",
+  "research_questions": [
+    "Does coupled log-density Newton improve discrete acceptance over legacy fixed relaxation under identical final boundary conditions?",
+    "Does discrete/current acceptance agree with predeclared field mesh acceptance?",
+    "How do explicit acceptance policies change the retained dataset, and are exported neutral fields analytically correct?"
+  ],
+  "fixed_existing_thresholds": "config/verification_protocol.json is unchanged",
+  "additional_neutral_field_check": {
+    "description": "Each neutral-case full array compared to independently derived constant concentration and linear potential, not just current",
+    "maximum_absolute_normalized_concentration_error": 1e-8,
+    "maximum_absolute_potential_error_VT": 1e-8,
+    "rationale": "Algebraically exact representable solution; threshold far above roundoff and below production field-accuracy criteria"
+  },
+  "policy_audit": [
+    "Legacy update-success flag only",
+    "Candidate discrete residual/positivity/section-current gate only",
+    "Candidate discrete gate plus original scenario-level mesh field gate",
+    "Actual conservative dataset policy: neutral analytical case checks only"
+  ],
+  "interpretation": "Report deterministic finite-matrix selection counts and diagnostics, not causal workflow efficacy, universal correctness or domain-wide error bounds",
+  "no_additional_paid_API_calls": true,
+  "server_work_deferred": true
+}

@@ -1,0 +1,74 @@
+{
+  "scenario": {
+    "nx": 16,
+    "nr": 8,
+    "length_nm": 20.0,
+    "radius_nm": 5.0,
+    "salt_mM": 10.0,
+    "voltage_mV": 0.0,
+    "wall_offset_mV": 0.0,
+    "model": "axisym-pnp-ramp-offset-v1"
+  },
+  "reported_converged": true,
+  "iterations": 1,
+  "update_error": 1.7763568394002505e-15,
+  "history": [
+    1.7763568394002505e-15
+  ],
+  "diagnostics": {
+    "coupled_residual_max": 2.4424906541753446e-16,
+    "poisson_scaled": 0.0,
+    "plus_scaled": 2.4424906541753446e-16,
+    "minus_scaled": 2.4424906541753446e-16,
+    "poisson_integrated_charge_residual_C": 0.0,
+    "species_max_local_imbalance_mol_s": [
+      5.169893081173293e-31,
+      5.354532119786626e-31
+    ],
+    "species_global_imbalance_mol_s": [
+      1.606512230182776e-30,
+      1.663887666975018e-30
+    ],
+    "species_boundary_fluxes": [
+      {
+        "left_outward_mol_s": 9.656163936736899e-31,
+        "right_outward_mol_s": 6.40895836509086e-31
+      },
+      {
+        "left_outward_mol_s": 1.0001026934477501e-30,
+        "right_outward_mol_s": 6.637849735272677e-31
+      }
+    ],
+    "current_A": 3.291047353497096e-29,
+    "section_currents_A": [
+      3.327422087404232e-27,
+      1.163125419933342e-27,
+      1.987619388493704e-27,
+      9.717250343746837e-28,
+      8.097708619789098e-28,
+      3.6807766453586586e-28,
+      5.59478050094517e-28,
+      -2.208465987215205e-28,
+      -1.9140038555865188e-28,
+      -5.153087303502148e-28,
+      -2.208465987215205e-28,
+      -6.1837047642026e-28,
+      -3.239083447915622e-28,
+      -1.3103564857476924e-27,
+      -1.7078803634464298e-27,
+      -1.3103564857476924e-27,
+      -2.2084659872152038e-27
+    ],
+    "current_spread_A": 5.535888074619436e-27,
+    "current_consistent": true,
+    "positive": true,
+    "min_concentration_mol_m3": 10.000000000000002,
+    "boundary_conditions": "end Dirichlet face values; axis/wall ion flux zero by construction",
+    "debye_length_nm": 3.0381796575009594,
+    "radial_cells_per_debye_length": 4.861087452001535
+  },
+  "seconds": 0.024189400486648083,
+  "legacy_kernel_sha256": "0cc2d53432c6a2d7a972d5cd101666d6a62cfdaf2290da49fb19dddcada1a1f7",
+  "supplied_notebook_sha256": "f115c53261fda1f9434f6c20b7b72874b7e5bf04874f2bc0ded191731764ee01",
+  "historical_executed_source_identity": "UNRESOLVED"
+}

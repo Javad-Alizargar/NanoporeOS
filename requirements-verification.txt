@@ -1,0 +1,2 @@
+# Optional symbolic disjoint checker; core engine does not require SymPy.
+sympy==1.14.0

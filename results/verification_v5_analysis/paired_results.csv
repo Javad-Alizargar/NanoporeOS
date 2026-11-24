@@ -1,0 +1,25 @@
+case,family,current_accuracy,field_accuracy,current_grid,field_grid,current_cells,field_cells
+v5_polynomial_01,polynomial,False,True,"[16, 8]","[32, 16]",160,672
+v5_polynomial_02,polynomial,False,True,"[16, 8]","[64, 32]",160,2720
+v5_polynomial_03,polynomial,False,True,"[16, 8]","[64, 32]",160,2720
+v5_polynomial_04,polynomial,True,True,"[32, 16]","[64, 32]",672,2720
+v5_polynomial_05,polynomial,False,True,"[16, 8]","[32, 16]",160,672
+v5_polynomial_06,polynomial,True,True,"[64, 32]","[64, 32]",2720,2720
+v5_polynomial_07,polynomial,False,True,"[32, 16]","[64, 32]",672,2720
+v5_polynomial_08,polynomial,True,True,"[32, 16]","[64, 32]",672,2720
+v5_oscillatory_01,oscillatory,True,True,"[32, 16]","[64, 32]",672,2720
+v5_oscillatory_02,oscillatory,True,True,"[32, 16]","[64, 32]",672,2720
+v5_oscillatory_03,oscillatory,False,True,"[32, 16]","[128, 64]",672,10912
+v5_oscillatory_04,oscillatory,True,True,"[64, 32]","[64, 32]",2720,2720
+v5_oscillatory_05,oscillatory,True,True,"[64, 32]","[64, 32]",2720,2720
+v5_oscillatory_06,oscillatory,True,True,"[64, 32]","[64, 32]",2720,2720
+v5_oscillatory_07,oscillatory,True,True,"[64, 32]","[128, 64]",2720,10912
+v5_oscillatory_08,oscillatory,True,True,"[64, 32]","[64, 32]",2720,2720
+v5_localized_01,localized,False,True,"[16, 8]","[64, 32]",160,2720
+v5_localized_02,localized,False,True,"[16, 8]","[64, 32]",160,2720
+v5_localized_03,localized,False,True,"[16, 8]","[64, 32]",160,2720
+v5_localized_04,localized,False,True,"[16, 8]","[64, 32]",160,2720
+v5_localized_05,localized,False,True,"[16, 8]","[64, 32]",160,2720
+v5_localized_06,localized,True,True,"[64, 32]","[64, 32]",2720,2720
+v5_localized_07,localized,False,True,"[16, 8]","[64, 32]",160,2720
+v5_localized_08,localized,True,True,"[32, 16]","[64, 32]",672,2720

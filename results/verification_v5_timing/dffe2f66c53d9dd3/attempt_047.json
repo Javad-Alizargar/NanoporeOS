@@ -1,0 +1,28 @@
+{
+  "design": {
+    "repetition": 2,
+    "case": "v5_oscillatory_01",
+    "policy": "current_matched"
+  },
+  "source_identity": "dffe2f66c53d9dd3cd69507f5b138dd2f179fb43f647289cf83f866a5fe3ac95",
+  "wall_seconds": 0.6269573997706175,
+  "attempted_cells": 672,
+  "selected_grid": [
+    32,
+    16
+  ],
+  "exact_accuracy_pass": true,
+  "errors": {
+    "max_phi_error_VT": 0.001445398595264047,
+    "max_plus_relative_error": 0.004385194131671044,
+    "max_minus_relative_error": 0.002811388315194341,
+    "mid_current_absolute_error_A": 1.0641171260777696e-13,
+    "mid_current_relative_error": 0.0015029162886293548,
+    "exact_mid_current_A": -7.080348613749034e-11,
+    "exact_current_quadrature_change_A": 1.550963648536927e-25
+  },
+  "decision_file": "attempt_047_decision.json",
+  "decision_before_scoring_sha256": "08c1d0fe10f95374e4f0e08cf7910d19393bb647f4bd20db4db7a53962679405",
+  "selected_fields": "attempt_047_fields.npz",
+  "selected_fields_sha256": "0985b1234c650fae1befaf788408beabc0ba152351d4f50a12323ae2138869da"
+}

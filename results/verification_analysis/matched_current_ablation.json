@@ -1,0 +1,77 @@
+{
+  "status": "POST_HOC_FIXED_ESTIMATOR_MATCHING_NOT_PRIMARY_HOLDOUT",
+  "definition": "Current-only selection with2/3 times raw current difference <=1%, matching the frozen field rule current estimator",
+  "accurate": 6,
+  "inaccurate": 0,
+  "unresolved": 2,
+  "attempted_cells": 24768,
+  "records": [
+    {
+      "case": "v4_holdout_01",
+      "selected_grid": [
+        48,
+        24
+      ],
+      "accurate": true,
+      "attempted_cells": 1512
+    },
+    {
+      "case": "v4_holdout_02",
+      "selected_grid": [
+        48,
+        24
+      ],
+      "accurate": true,
+      "attempted_cells": 1512
+    },
+    {
+      "case": "v4_holdout_03",
+      "selected_grid": [
+        48,
+        24
+      ],
+      "accurate": true,
+      "attempted_cells": 1512
+    },
+    {
+      "case": "v4_holdout_04",
+      "selected_grid": [
+        96,
+        48
+      ],
+      "accurate": true,
+      "attempted_cells": 6120
+    },
+    {
+      "case": "v4_holdout_05",
+      "selected_grid": [
+        24,
+        12
+      ],
+      "accurate": true,
+      "attempted_cells": 360
+    },
+    {
+      "case": "v4_holdout_06",
+      "selected_grid": [
+        48,
+        24
+      ],
+      "accurate": true,
+      "attempted_cells": 1512
+    },
+    {
+      "case": "v4_holdout_07",
+      "selected_grid": null,
+      "accurate": null,
+      "attempted_cells": 6120
+    },
+    {
+      "case": "v4_holdout_08",
+      "selected_grid": null,
+      "accurate": null,
+      "attempted_cells": 6120
+    }
+  ],
+  "interpretation": "Sensitivity/ablation only. Original four-policy outcomes remain unchanged. No causal field benefit inferred from differently scaled original current criteria."
+}

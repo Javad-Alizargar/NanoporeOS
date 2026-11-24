@@ -1,0 +1,102 @@
+{
+  "scope": "local linearization; not unique global failure cause",
+  "source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+  "records": [
+    {
+      "radius_nm": 5,
+      "salt_mM": 10,
+      "voltage_mV": 0,
+      "wall_offset_mV": -15,
+      "relaxed_map_spectral_radius": 0.7799999999999995,
+      "eigenvalues": [
+        {
+          "real": 0.7799999999999995,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7799999999999913,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7799999999993825,
+          "imag": 0.0
+        }
+      ],
+      "eigenpair_residual": 6.508459410380532e-16,
+      "map_finite_difference_relative_error": 1.6607856907382908e-10,
+      "interpretation": "locally stable"
+    },
+    {
+      "radius_nm": 5,
+      "salt_mM": 100,
+      "voltage_mV": 0,
+      "wall_offset_mV": -15,
+      "relaxed_map_spectral_radius": 0.7800000000000002,
+      "eigenvalues": [
+        {
+          "real": 0.7799999999999976,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7800000000000002,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7799999999995266,
+          "imag": 0.0
+        }
+      ],
+      "eigenpair_residual": 2.802642400429264e-14,
+      "map_finite_difference_relative_error": 3.8405322507216456e-10,
+      "interpretation": "locally stable"
+    },
+    {
+      "radius_nm": 10,
+      "salt_mM": 10,
+      "voltage_mV": 0,
+      "wall_offset_mV": -15,
+      "relaxed_map_spectral_radius": 0.7800000000000077,
+      "eigenvalues": [
+        {
+          "real": 0.7800000000000002,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7799999999999991,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7800000000000077,
+          "imag": 0.0
+        }
+      ],
+      "eigenpair_residual": 2.9540099454720476e-13,
+      "map_finite_difference_relative_error": 1.5374303775368026e-10,
+      "interpretation": "locally stable"
+    },
+    {
+      "radius_nm": 10,
+      "salt_mM": 100,
+      "voltage_mV": 0,
+      "wall_offset_mV": -15,
+      "relaxed_map_spectral_radius": 2.1228127715643885,
+      "eigenvalues": [
+        {
+          "real": -2.1228127715643885,
+          "imag": 0.0
+        },
+        {
+          "real": -0.7585115975665385,
+          "imag": 0.0
+        },
+        {
+          "real": 0.7799999999999992,
+          "imag": 0.0
+        }
+      ],
+      "eigenpair_residual": 2.9531765942530243e-15,
+      "map_finite_difference_relative_error": 1.6055126971322703e-10,
+      "interpretation": "locally unstable"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+evaluation,policy,accurate,inaccurate,unresolved,scenarios,attempted_cells,cells_relative_to_finest,solve_plus_selection_seconds
+First set / two pairs,residual_only,0,8,0,8,576,0.015625,1.1342027001082897
+First set / two pairs,current_mesh,6,0,2,8,24768,0.671875,26.75171340163797
+First set / two pairs,field_controller,6,0,2,8,48960,1.328125,54.98116940073669
+First set / two pairs,uniform_finest,8,0,0,8,36864,1.0,44.75610179733485
+New set / one pair,residual_only,0,8,0,8,576,0.015625,1.0529306000098586
+New set / one pair,current_mesh,5,0,3,8,29376,0.796875,32.52566179726273
+New set / one pair,field_controller,6,0,2,8,25920,0.703125,27.70768969785422
+New set / one pair,uniform_finest,6,2,0,8,36864,1.0,45.1783120976761

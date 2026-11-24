@@ -1,0 +1,189 @@
+{
+  "status": "PASS_FROZEN_RESULT_AUDIT",
+  "campaign_summary": "results\\verification_v5\\campaigns\\bf8a486ee86b_9fe854d469cd\\summary.json",
+  "campaign_summary_sha256": "a30c5ef980c9322ea621918375c7c20786ad72253271986dd23a2e1b4f3bef60",
+  "protocol_sha256": "bf8a486ee86b19e3d387b6c85a0fefa87e5cc4c8bdc99a7689e126d47e0871a0",
+  "evaluation_combinations": 24,
+  "function_families": 3,
+  "unique_parameter_tuples": 8,
+  "discrete_pass": 135,
+  "discrete_total": 135,
+  "development_order_min": 1.8962908068553963,
+  "development_order_max": 2.0000785190943717,
+  "policies": [
+    {
+      "family": "ALL",
+      "policy": "residual_only",
+      "scenarios": 24,
+      "accurate": 0,
+      "inaccurate": 24,
+      "unresolved": 0,
+      "attempted_cells": 768,
+      "replayed_seconds": 2.824027302674949
+    },
+    {
+      "family": "ALL",
+      "policy": "current_matched",
+      "scenarios": 24,
+      "accurate": 12,
+      "inaccurate": 12,
+      "unresolved": 0,
+      "attempted_cells": 25344,
+      "replayed_seconds": 25.06328560691327
+    },
+    {
+      "family": "ALL",
+      "policy": "field_matched",
+      "scenarios": 24,
+      "accurate": 24,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 77568,
+      "replayed_seconds": 80.50287459976971
+    },
+    {
+      "family": "ALL",
+      "policy": "uniform_finest",
+      "scenarios": 24,
+      "accurate": 24,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 196608,
+      "replayed_seconds": 276.70524219889194
+    },
+    {
+      "family": "polynomial",
+      "policy": "residual_only",
+      "scenarios": 8,
+      "accurate": 0,
+      "inaccurate": 8,
+      "unresolved": 0,
+      "attempted_cells": 256,
+      "replayed_seconds": 0.9501920994371176
+    },
+    {
+      "family": "polynomial",
+      "policy": "current_matched",
+      "scenarios": 8,
+      "accurate": 3,
+      "inaccurate": 5,
+      "unresolved": 0,
+      "attempted_cells": 5376,
+      "replayed_seconds": 5.748145502991974
+    },
+    {
+      "family": "polynomial",
+      "policy": "field_matched",
+      "scenarios": 8,
+      "accurate": 8,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 17664,
+      "replayed_seconds": 16.43346970155835
+    },
+    {
+      "family": "polynomial",
+      "policy": "uniform_finest",
+      "scenarios": 8,
+      "accurate": 8,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 65536,
+      "replayed_seconds": 91.67110069934279
+    },
+    {
+      "family": "oscillatory",
+      "policy": "residual_only",
+      "scenarios": 8,
+      "accurate": 0,
+      "inaccurate": 8,
+      "unresolved": 0,
+      "attempted_cells": 256,
+      "replayed_seconds": 0.9296856019645929
+    },
+    {
+      "family": "oscillatory",
+      "policy": "current_matched",
+      "scenarios": 8,
+      "accurate": 7,
+      "inaccurate": 1,
+      "unresolved": 0,
+      "attempted_cells": 15616,
+      "replayed_seconds": 14.839338703081012
+    },
+    {
+      "family": "oscillatory",
+      "policy": "field_matched",
+      "scenarios": 8,
+      "accurate": 8,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 38144,
+      "replayed_seconds": 46.079445000737906
+    },
+    {
+      "family": "oscillatory",
+      "policy": "uniform_finest",
+      "scenarios": 8,
+      "accurate": 8,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 65536,
+      "replayed_seconds": 99.69749499950558
+    },
+    {
+      "family": "localized",
+      "policy": "residual_only",
+      "scenarios": 8,
+      "accurate": 0,
+      "inaccurate": 8,
+      "unresolved": 0,
+      "attempted_cells": 256,
+      "replayed_seconds": 0.9441496012732387
+    },
+    {
+      "family": "localized",
+      "policy": "current_matched",
+      "scenarios": 8,
+      "accurate": 2,
+      "inaccurate": 6,
+      "unresolved": 0,
+      "attempted_cells": 4352,
+      "replayed_seconds": 4.475801400840282
+    },
+    {
+      "family": "localized",
+      "policy": "field_matched",
+      "scenarios": 8,
+      "accurate": 8,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 21760,
+      "replayed_seconds": 17.989959897473454
+    },
+    {
+      "family": "localized",
+      "policy": "uniform_finest",
+      "scenarios": 8,
+      "accurate": 8,
+      "inaccurate": 0,
+      "unresolved": 0,
+      "attempted_cells": 65536,
+      "replayed_seconds": 85.33664650004357
+    }
+  ],
+  "paired_current_inaccurate_field_accurate": 12,
+  "paired_current_inaccurate_field_unresolved": 0,
+  "paired_current_accurate_field_unresolved": 0,
+  "current_selected_exact_budget_violations": {
+    "max_phi_error_VT": 11,
+    "max_plus_relative_error": 4,
+    "max_minus_relative_error": 3,
+    "mid_current_relative_error": 0
+  },
+  "shared_estimator_factor": 0.6666666666666666,
+  "certified_bound": false,
+  "physical_qualification": false,
+  "statistical_scope": "24 fixed family/tuple combinations; same8 physical/amplitude tuples across3 families, not24 independent population samples",
+  "timing_scope": "Cached-grid replay; construction+solve plus own selection; I/O/scoring/plotting excluded"
+}

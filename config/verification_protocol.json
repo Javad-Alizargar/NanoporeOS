@@ -1,0 +1,22 @@
+{
+  "version": "1.0-preproduction",
+  "scope": "legacy ramp-plus-offset cylindrical steady monovalent PNP; no experimental validation",
+  "frozen_before_campaign": true,
+  "coupled_residual_max": 2e-11,
+  "residual_definition": "Poisson integrated FV residual / Laplace diagonal; each species normalized-concentration flux residual / diffusion Laplace diagonal",
+  "positive_concentrations_required": true,
+  "section_current_spread_A": "<= 1e-18 + 1e-6 * max(abs(section_currents_A)); includes both boundary faces",
+  "ohmic_relative_error": 1e-8,
+  "equilibrium_boltzmann_max_log_error": 1e-8,
+  "mesh_current_relative_spread": 0.05,
+  "mesh_field_relative_L2": 0.05,
+  "mesh_absolute_phi_VT": 0.02,
+  "mesh_path": "original 16x8,24x12,36x18 plus independent axial and radial refinements; field interpolation at common cell centres",
+  "qualification": "Convergence alone is insufficient: mesh/reference gates and domain assessment remain required",
+  "stress_cases": [
+    {"radius_nm": 7, "salt_mM": 30, "voltage_mV": 75, "wall_offset_mV": -22},
+    {"radius_nm": 12, "salt_mM": 200, "voltage_mV": -125, "wall_offset_mV": 22},
+    {"radius_nm": 3, "salt_mM": 5, "voltage_mV": 25, "wall_offset_mV": 10}
+  ],
+  "statuses": ["PASS", "FAIL", "NOT_EVALUABLE", "NOT_IMPLEMENTED", "OUTSIDE_VALIDATED_DOMAIN"]
+}

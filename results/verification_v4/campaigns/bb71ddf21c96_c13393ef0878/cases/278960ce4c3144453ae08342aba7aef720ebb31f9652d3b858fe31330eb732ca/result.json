@@ -1,0 +1,312 @@
+{
+  "status": "PASS",
+  "diagnostics": {
+    "coupled_residual_max": 1.1566268776075361e-14,
+    "poisson_scaled": 1.2212453270876722e-15,
+    "plus_scaled": 1.1566268776075361e-14,
+    "minus_scaled": 2.0192181260370035e-15,
+    "poisson_integrated_charge_residual_C": 4.361614627721216e-33,
+    "species_max_local_imbalance_mol_s": [
+      1.0480338819007784e-29,
+      8.235212511920055e-30
+    ],
+    "species_global_imbalance_mol_s": [
+      9.91930958557202e-30,
+      1.082295591547851e-29
+    ],
+    "species_boundary_fluxes": [
+      {
+        "left_outward_mol_s": -3.71568339927656e-15,
+        "right_outward_mol_s": 3.719289286454341e-15
+      },
+      {
+        "left_outward_mol_s": 3.40191313349535e-15,
+        "right_outward_mol_s": -3.399364943923172e-15
+      }
+    ],
+    "current_A": 4.771273921142354e-10,
+    "section_currents_A": [
+      6.867436653842176e-10,
+      6.15921503483028e-10,
+      5.470196394892862e-10,
+      4.799007574521474e-10,
+      4.1432077165373266e-10,
+      3.500537031899308e-10,
+      2.8700654576072734e-10,
+      2.2531641059917664e-10,
+      1.6542135913503537e-10,
+      1.080960529177992e-10,
+      5.444472501088465e-11,
+      5.847626182373645e-12,
+      -3.6137075427087414e-11,
+      -6.990687757078096e-11,
+      -9.396817139104444e-11,
+      -1.070886062429438e-10,
+      -1.0842698110879107e-10,
+      -9.762211859526165e-11,
+      -7.482891622343579e-11,
+      -4.0698693166964914e-11,
+      3.689967756675275e-12,
+      5.6936398002919535e-11,
+      1.1744140754558615e-10,
+      1.8353102241712053e-10,
+      2.5356472588762136e-10,
+      3.260171580984038e-10,
+      3.9952769449540234e-10,
+      4.729175474049271e-10,
+      5.451783030878295e-10,
+      6.154388098632968e-10,
+      6.829190711865442e-10,
+      7.468804212123808e-10,
+      8.065809280281461e-10,
+      8.612437756540944e-10,
+      9.100443644756146e-10,
+      9.521191173701414e-10,
+      9.865956941816945e-10,
+      1.0126409009415096e-09,
+      1.0295195974524573e-09,
+      1.0366559639592982e-09,
+      1.0336880496957962e-09,
+      1.020507746030643e-09,
+      9.972809614035289e-10,
+      9.644462305227832e-10,
+      9.226934868611665e-10,
+      8.729275225828029e-10,
+      8.16222246284103e-10,
+      7.537720629740384e-10,
+      6.868457176889801e-10
+    ],
+    "current_spread_A": 1.1450829450680893e-09,
+    "current_consistent": true,
+    "positive": true,
+    "min_concentration_mol_m3": 3.6806754396719352,
+    "boundary_conditions": "end psi 0/v and q=1; wall psi=v*x/L+w*sin\u00b2(pi*x/L), zero ion flux; regular axis",
+    "debye_length_nm": 2.1483174382819508,
+    "radial_cells_per_debye_length": 3.222476157422926,
+    "unforced_current_consistency": "NOT_APPLICABLE_PRESCRIBED_SPECIES_SOURCES",
+    "source_corrected_current_spread_A": 4.963083675318166e-24,
+    "source_corrected_section_currents_A": [
+      6.867436653842176e-10,
+      6.867436653842177e-10,
+      6.867436653842158e-10,
+      6.867436653842174e-10,
+      6.86743665384217e-10,
+      6.867436653842169e-10,
+      6.867436653842174e-10,
+      6.867436653842164e-10,
+      6.867436653842142e-10,
+      6.867436653842139e-10,
+      6.867436653842148e-10,
+      6.867436653842167e-10,
+      6.867436653842187e-10,
+      6.867436653842188e-10,
+      6.867436653842186e-10,
+      6.86743665384218e-10,
+      6.867436653842166e-10,
+      6.867436653842166e-10,
+      6.867436653842166e-10,
+      6.867436653842165e-10,
+      6.867436653842166e-10,
+      6.86743665384217e-10,
+      6.867436653842177e-10,
+      6.867436653842162e-10,
+      6.867436653842165e-10,
+      6.867436653842174e-10,
+      6.867436653842164e-10,
+      6.867436653842164e-10,
+      6.867436653842162e-10,
+      6.867436653842166e-10,
+      6.86743665384217e-10,
+      6.867436653842169e-10,
+      6.867436653842173e-10,
+      6.867436653842176e-10,
+      6.867436653842173e-10,
+      6.867436653842164e-10,
+      6.867436653842171e-10,
+      6.867436653842173e-10,
+      6.867436653842165e-10,
+      6.867436653842166e-10,
+      6.867436653842173e-10,
+      6.867436653842162e-10,
+      6.867436653842167e-10,
+      6.867436653842166e-10,
+      6.867436653842169e-10,
+      6.867436653842167e-10,
+      6.867436653842172e-10,
+      6.867436653842166e-10,
+      6.867436653842154e-10
+    ],
+    "physical_validation": "NOT_PERFORMED_VERIFICATION_ONLY",
+    "source_corrected_global_species_imbalance_mol_s": [
+      9.91930958557202e-30,
+      1.082295591547851e-29
+    ],
+    "raw_boundary_net_species_flux_mol_s": [
+      3.6058871777806075e-18,
+      2.5481895721782254e-18
+    ],
+    "raw_species_max_local_flux_divergence_mol_s": [
+      5.354211033281018e-17,
+      4.673199840023148e-17
+    ],
+    "species_balance_definition": "Outward numerical flux minus integrated prescribed continuous source"
+  },
+  "history": [
+    {
+      "fraction": 0.25,
+      "iteration": 0,
+      "residual": 0.467833008096176,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 1,
+      "residual": 0.0031233232341369484,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 2,
+      "residual": 0.0002008033461341754,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 3,
+      "residual": 5.32331109036159e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 4,
+      "residual": 1.9401390216611247e-12
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 0,
+      "residual": 0.46783300809617595,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 1,
+      "residual": 0.0019466769770533285,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 2,
+      "residual": 6.747057096059134e-05,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 3,
+      "residual": 6.119611132247849e-08,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 4,
+      "residual": 2.5097979250432445e-14
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 0,
+      "residual": 0.467833008096176,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 1,
+      "residual": 0.0020049656898102897,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 2,
+      "residual": 2.9989595874302388e-05,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 3,
+      "residual": 1.2774632044895706e-08,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 4,
+      "residual": 1.9012569296705806e-15
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 0,
+      "residual": 0.4678330080961763,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 1,
+      "residual": 0.0018671922484281567,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 2,
+      "residual": 2.2390352376791545e-05,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 3,
+      "residual": 1.3851584622142851e-08,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 4,
+      "residual": 1.1566268776075361e-14
+    }
+  ],
+  "seconds": 0.8991086995229125,
+  "scenario": {
+    "nx": 48,
+    "nr": 24,
+    "length_nm": 38,
+    "radius_nm": 16,
+    "salt_mM": 20,
+    "voltage_mV": -71.93922153904037,
+    "wall_offset_mV": 0,
+    "model": "axisym-forced-pnp-manufactured-v1"
+  },
+  "identity": "278960ce4c3144453ae08342aba7aef720ebb31f9652d3b858fe31330eb732ca",
+  "dataset_class": "manufactured_forced_PDE_code_verification_not_physical_training_data",
+  "training_qualified": false,
+  "model": "axisym-forced-pnp-manufactured-v1",
+  "verification_only": true,
+  "manufactured_case": {
+    "name": "v4_holdout_06",
+    "length_nm": 38,
+    "radius_nm": 16,
+    "salt_mM": 20,
+    "drive_VT": -2.8,
+    "amplitude_psi": 1.15,
+    "bplus": -0.8,
+    "bminus": 0.55,
+    "wall_amplitude": 0.95
+  },
+  "implementation": {
+    "core_source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+    "manufactured_source_sha256": "bdd579a3bfbb604186256423d1fae1a2191e7c4cdd6b8abecfb5d5c2691e8c5b",
+    "model": "axisym-forced-pnp-manufactured-v1",
+    "forcing_quadrature": "cell-centre midpoint integration of continuous analytic sources",
+    "source_equations": "continuous fpsi=-lap psi-alpha cb(q+-q-); fi=-qi(lap mu+grad logqi dot grad mu)",
+    "boundaries": "end psi 0/v and q=1; wall psi=v*x/L+w*sin\u00b2(pi*x/L), zero ion flux; regular axis",
+    "solver": "unchanged core Newton; four fixed fractions; 2e-11 scaled residual; log bound30"
+  },
+  "construction_and_solve_seconds": 0.907668299973011,
+  "protocol_sha256": "bb71ddf21c968d100f467db01a3ed18b0574b99d797badc034428fab407d2eb5",
+  "problem_id": "7e5b804c4fcc209013ff5a417696a1614036cf996cc5e117558c07a66721a824",
+  "mid_current_A": 2.5356472588762136e-10
+}

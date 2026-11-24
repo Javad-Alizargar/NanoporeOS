@@ -1,0 +1,524 @@
+{
+  "statistics_sha256": "998a35c5adc572b44a821ca2130beb249ecff1b4cbb72b53cb40c73150b5a0f6",
+  "reference_sha256": "22061fd6bb454a5d3935b33b85619cfee4a7fa125af06c3aac500d7e407009b7",
+  "Supplemental_Figure_S2": {
+    "labels": [
+      "Legacy\nreported",
+      "Legacy\npost-hoc check",
+      "Candidate\ncoupled check"
+    ],
+    "passes": [
+      90,
+      36,
+      108
+    ],
+    "mesh_current_pass": 36,
+    "mesh_field_pass": 24
+  },
+  "figure4": {
+    "candidate_axial_cells": [
+      16,
+      24,
+      36,
+      72,
+      144
+    ],
+    "max_candidate_phi_difference_VT": [
+      0.03923325878415256,
+      0.03127165790325927,
+      0.023217003001197688,
+      0.014955955565002918,
+      0.008461704824411125
+    ],
+    "max_reference_refinement_difference_VT": [
+      0.00022782644376770947,
+      0.000979864055981261,
+      0.001022533990353771,
+      0.004330849521368593,
+      0.08627697356531185
+    ],
+    "current_relative_discrepancy_percent": [
+      0.5943962436559879,
+      0.3523719838631707,
+      0.19007429433929568,
+      0.06023559909959928,
+      0.01944465469734336
+    ],
+    "comparison_sha256": "3f5ab0d4caf7b2043982ee58e2226922799817b55a73e7e2da842152c0178f3b",
+    "audit_sha256": "1e801331275df1a5da3278e8b50d25fa1f31e4441c609f22cac209e172509cc7"
+  },
+  "figure3": {
+    "radial_cells": [
+      8,
+      12,
+      18,
+      36,
+      72
+    ],
+    "potential_relative_L2": [
+      0.11109882224066896,
+      0.06253182463633203,
+      0.032043047186877165,
+      0.009674298886416922,
+      0.0031625882675096455
+    ],
+    "directional_max_phi_VT": [
+      0.020931106538757904,
+      0.013134985562888779,
+      0.03736633144652529,
+      0.035989576153919706
+    ]
+  },
+  "figure1": {
+    "neutral_records": 36,
+    "neutral_scenarios": 12,
+    "exploratory_records": 72,
+    "experimental_validation": "NOT_PERFORMED",
+    "figure_type": "workflow schematic"
+  },
+  "figure2": [
+    {
+      "scenario_number": 1,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 2,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 3,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 4,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 5,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 6,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 7,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 8,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 9,
+      "radius_nm": 5.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 10,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 11,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 12,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 13,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 14,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 15,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 16,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 17,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 18,
+      "radius_nm": 5.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 19,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 20,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 21,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 22,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 23,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 24,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 25,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 26,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 27,
+      "radius_nm": 10.0,
+      "salt_mM": 10.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 28,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 0,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 29,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 30,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": -100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 0,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 31,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 0,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 32,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 33,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 0.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 0,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 34,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": -15.0,
+      "legacy_reported_mesh_pass": 0,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    },
+    {
+      "scenario_number": 35,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 0.0,
+      "legacy_reported_mesh_pass": 3,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": true,
+      "analytically_qualified_mesh_records": 3
+    },
+    {
+      "scenario_number": 36,
+      "radius_nm": 10.0,
+      "salt_mM": 100.0,
+      "voltage_mV": 100.0,
+      "wall_offset_mV": 15.0,
+      "legacy_reported_mesh_pass": 0,
+      "candidate_strict_mesh_pass": 3,
+      "mesh_count": 3,
+      "field_mesh_gate": false,
+      "analytically_qualified_mesh_records": 0
+    }
+  ],
+  "workflow_input_hashes": {
+    "results/matrix/campaign.json": "0507a24a50b11c946db4dd5970d2390e63015f0cfe13c32fc9419defad8f5a83",
+    "results/statistics.json": "998a35c5adc572b44a821ca2130beb249ecff1b4cbb72b53cb40c73150b5a0f6",
+    "results/manuscript_v2/qualification_audit.json": "4beb93495aa2b5f7c5a36fed7bf520212ebec5db33b249bf86dae3c9c80fbcd1",
+    "results/manuscript_v2/acceptance_policies.csv": "2f0bfdd52e5fe2ab1452d2fb0460fa8debda2b44c68fdbe549f83a7d1d35f115",
+    "results/performance_summary.json": "29dd9fd12ca6784bbd59b0b6c04985bc0f522407d73cdee322f6cee015b58db0",
+    "results/performance.json": "8c713073b542d26cdf42276629bb3f6cd72f86f0d15195b60516641294eda191",
+    "config/verification_protocol.json": "a3991fb9e0b731233dc20aae1d7ccbf465e8a01419181671a92457d96c79f471",
+    "config/manuscript_v2_analysis_plan.json": "76f0292149468b96a867f2604225d4628b07348fc7e7fb5aa7da38a805bfd0a9",
+    "config/performance_protocol.json": "9a1b66170a9a6256a416a59e0c73c5d9e90e34a780ad5307f25bdc3e88c10a2e"
+  }
+}

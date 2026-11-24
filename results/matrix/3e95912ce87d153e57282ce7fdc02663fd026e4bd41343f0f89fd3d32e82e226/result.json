@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "diagnostics": {
+    "coupled_residual_max": 8.467042592473287e-16,
+    "poisson_scaled": 8.467042592473287e-16,
+    "plus_scaled": 5.820973059127613e-16,
+    "minus_scaled": 7.934739172268208e-16,
+    "poisson_integrated_charge_residual_C": 2.2801874683923435e-33,
+    "species_max_local_imbalance_mol_s": [
+      1.4187762076289801e-30,
+      1.870614774190926e-30
+    ],
+    "species_global_imbalance_mol_s": [
+      3.481659405224491e-30,
+      8.29381008315977e-30
+    ],
+    "species_boundary_fluxes": [
+      {
+        "left_outward_mol_s": -2.995768531069023e-16,
+        "right_outward_mol_s": 2.995768531068988e-16
+      },
+      {
+        "left_outward_mol_s": 3.102760264321479e-16,
+        "right_outward_mol_s": -3.102760264321562e-16
+      }
+    ],
+    "current_A": 5.884185762868216e-11,
+    "section_currents_A": [
+      5.884185762868224e-11,
+      5.884185762868215e-11,
+      5.88418576286822e-11,
+      5.884185762868211e-11,
+      5.884185762868216e-11,
+      5.884185762868216e-11,
+      5.884185762868218e-11,
+      5.884185762868216e-11,
+      5.884185762868215e-11,
+      5.884185762868215e-11,
+      5.884185762868219e-11,
+      5.88418576286822e-11,
+      5.884185762868219e-11,
+      5.884185762868222e-11,
+      5.884185762868228e-11,
+      5.884185762868228e-11,
+      5.884185762868218e-11,
+      5.884185762868216e-11,
+      5.884185762868196e-11,
+      5.88418576286819e-11,
+      5.884185762868209e-11,
+      5.884185762868197e-11,
+      5.88418576286819e-11,
+      5.884185762868196e-11,
+      5.88418576286827e-11
+    ],
+    "current_spread_A": 7.884065213396045e-25,
+    "current_consistent": true,
+    "positive": true,
+    "min_concentration_mol_m3": 9.999999999999932,
+    "boundary_conditions": "end Dirichlet face values; axis/wall ion flux zero by construction",
+    "debye_length_nm": 3.0381796575009594,
+    "radial_cells_per_debye_length": 7.291631178002302
+  },
+  "history": [
+    {
+      "fraction": 0.25,
+      "iteration": 0,
+      "residual": 0.6524131957103952,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 1,
+      "residual": 4.980513034528796e-16
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 0,
+      "residual": 0.6524131957103954,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 1,
+      "residual": 6.820769946262085e-16
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 0,
+      "residual": 0.6524131957103952,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 1,
+      "residual": 8.503508966544886e-16
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 0,
+      "residual": 0.6524131957103956,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 1,
+      "residual": 8.467042592473287e-16
+    }
+  ],
+  "seconds": 0.07408270053565502,
+  "scenario": {
+    "nx": 24,
+    "nr": 12,
+    "length_nm": 20.0,
+    "radius_nm": 5.0,
+    "salt_mM": 10.0,
+    "voltage_mV": -100.0,
+    "wall_offset_mV": 0.0,
+    "model": "axisym-pnp-ramp-offset-v1"
+  },
+  "identity": "3e95912ce87d153e57282ce7fdc02663fd026e4bd41343f0f89fd3d32e82e226",
+  "dataset_class": "exploratory_numerical_simulation",
+  "training_qualified": false,
+  "schema_version": "1.0",
+  "model_equations": "steady monovalent PNP; no flow",
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "D:\\nanopore OS complete\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.3.2",
+    "scipy": "1.16.3"
+  },
+  "source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+  "units": {
+    "x_nm": "nm",
+    "r_nm": "nm",
+    "potential_V": "V",
+    "cplus_mol_m3": "mol/m^3",
+    "cminus_mol_m3": "mol/m^3"
+  },
+  "field_layout": "[axial_cell, radial_cell]",
+  "experimental_validation": "NOT_PERFORMED",
+  "unsupported": [
+    "fluid coupling",
+    "molecule feedback",
+    "physical time dependence",
+    "instrument calibration"
+  ],
+  "license": "UNRESOLVED: user approval required before redistribution"
+}

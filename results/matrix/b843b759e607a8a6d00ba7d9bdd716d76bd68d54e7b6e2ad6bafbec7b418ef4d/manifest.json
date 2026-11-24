@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "files": {
+    "fields.npz": "9d62c175d1aa30c1311f7b7377880eacf0321c72a00bb7c81b1e7cb9d74ab4b8",
+    "result.json": "82bf9d48472d0984bd441717a42d5d518a88da9de53a922d5684996eccde6436",
+    "sections.csv": "b206a73bacd276363785e068ab48509009cea273ce7dcbe2e07df853583a3299"
+  }
+}

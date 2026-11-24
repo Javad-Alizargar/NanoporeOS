@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "models": [
+    {
+      "id": "axisym-pnp-ramp-offset-v1",
+      "implementation": "IMPLEMENTED",
+      "numerical_verification": "DISCRETE_PASS_MATRIX_CONTINUUM_DOMAIN_HOLD",
+      "equations": ["-div(epsilon grad phi)=F(cplus-cminus)", "div Ji=0", "Ji=-Di(grad ci + zi ci grad phi/VT)"],
+      "independent_inputs": {"length_nm": "nm", "radius_nm": "nm", "salt_mM": "mM = mol/m3", "voltage_mV": "mV", "wall_offset_mV": "mV"},
+      "numerical_inputs": ["nx", "nr"],
+      "fixed_parameters": {"temperature_K": 298.15, "epsilon_r": 78.3, "Dplus_m2_s": 1.96e-9, "Dminus_m2_s": 2.03e-9},
+      "derived": ["thermal_voltage", "Debye length for symmetric monovalent electrolyte", "axisymmetric face areas and volumes"],
+      "boundary": "end Dirichlet salt/potentials; wall axial ramp plus offset potential, zero ionic flux; axis symmetry",
+      "assumptions": ["ideal dilute point ions", "uniform temperature/permittivity/diffusion", "cylindrical finite channel", "steady state", "no access reservoirs"],
+      "applicability": "Numerical study of stated idealized model. Nonzero offset causes Dirichlet jumps at end-wall rims, with singular idealized gradients. Potential/current convergence does not qualify near-corner electric fields, particle forces or drift. Accuracy gates do not establish physical validity at high salt or small length scales.",
+      "calibration": "NOT_PERFORMED",
+      "experimental_validation": "NOT_PERFORMED"
+    }
+  ],
+  "unsupported": {
+    "fully_coupled_PNP_Stokes": "NOT_IMPLEMENTED",
+    "fixed_surface_charge": "NOT_IMPLEMENTED",
+    "charge_regulation": "NOT_IMPLEMENTED",
+    "molecule_feedback": "NOT_IMPLEMENTED",
+    "molecular_structural_dynamics": "NOT_IMPLEMENTED",
+    "time_dependent_PNP": "NOT_IMPLEMENTED",
+    "acquisition_calibration": "NOT_IMPLEMENTED",
+    "heating_chemistry_polarization_optics_magnetics_quantum_atomistics": "NOT_IMPLEMENTED"
+  }
+}

@@ -1,0 +1,3325 @@
+{
+  "status": "FINISHED_FIXED_HOLDOUT",
+  "protocol_sha256": "41fda4e6c07d7fb50216048b02f0025c2350a16b85575a79e8384aa635ea607a",
+  "source_hashes": {
+    "core_source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+    "manufactured_source_sha256": "bdd579a3bfbb604186256423d1fae1a2191e7c4cdd6b8abecfb5d5c2691e8c5b",
+    "model": "axisym-forced-pnp-manufactured-v1",
+    "forcing_quadrature": "cell-centre midpoint integration of continuous analytic sources",
+    "source_equations": "continuous fpsi=-lap psi-alpha cb(q+-q-); fi=-qi(lap mu+grad logqi dot grad mu)",
+    "boundaries": "end psi 0/v and q=1; wall psi=v*x/L+w*sin\u00b2(pi*x/L), zero ion flux; regular axis",
+    "solver": "unchanged core Newton; four fixed fractions; 2e-11 scaled residual; log bound30",
+    "controller_sha256": "cb4dd507015f0cc9b3b08fde7003e337f4a6bf0bad6522d4a87ba9200591bdbb",
+    "driver_sha256": "e83e086426d55f36301ccfd07d5c739734522d67805d763721a1611e8dd7d4d8"
+  },
+  "records": [
+    {
+      "case": {
+        "name": "development_a",
+        "length_nm": 20,
+        "radius_nm": 7,
+        "salt_mM": 30,
+        "drive_VT": 2,
+        "amplitude_psi": 0.6,
+        "bplus": 0.4,
+        "bminus": -0.25,
+        "wall_amplitude": 0.3
+      },
+      "split": "development",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.01119479283383673,
+          "max_plus_relative_error": 0.015004566109376505,
+          "max_minus_relative_error": 0.012228388699179527,
+          "mid_current_absolute_error_A": 5.388838345292622e-12,
+          "mid_current_relative_error": 0.043202139894851624,
+          "exact_mid_current_A": -1.2473544964227124e-10,
+          "exact_current_quadrature_change_A": 4.1359030627651384e-25
+        },
+        {
+          "max_phi_error_VT": 0.0033696177249942227,
+          "max_plus_relative_error": 0.004468769544783591,
+          "max_minus_relative_error": 0.0038983920573755215,
+          "mid_current_absolute_error_A": 1.3233913024738949e-12,
+          "mid_current_relative_error": 0.010609584574948408,
+          "exact_mid_current_A": -1.2473544964227124e-10,
+          "exact_current_quadrature_change_A": 4.1359030627651384e-25
+        },
+        {
+          "max_phi_error_VT": 0.000937130458512403,
+          "max_plus_relative_error": 0.0012130145447686314,
+          "max_minus_relative_error": 0.0010858844727692496,
+          "mid_current_absolute_error_A": 3.294122736617296e-13,
+          "mid_current_relative_error": 0.0026408873708833455,
+          "exact_mid_current_A": -1.2473544964227124e-10,
+          "exact_current_quadrature_change_A": 4.1359030627651384e-25
+        },
+        {
+          "max_phi_error_VT": 0.000247135512951413,
+          "max_plus_relative_error": 0.00031584633477521606,
+          "max_minus_relative_error": 0.00028587949955394265,
+          "mid_current_absolute_error_A": 8.226393538440152e-14,
+          "mid_current_relative_error": 0.00065950726614067,
+          "exact_mid_current_A": -1.2473544964227124e-10,
+          "exact_current_quadrature_change_A": 4.1359030627651384e-25
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.922947561958254,
+        "max_plus_relative_error": 1.9413021135995698,
+        "max_minus_relative_error": 1.92539155001291
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.16055590007454157,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.00010820012539625168,
+          "solve_plus_selection_seconds": 0.16066410019993782,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.01119479283383673,
+            "max_plus_relative_error": 0.015004566109376505,
+            "max_minus_relative_error": 0.012228388699179527,
+            "mid_current_absolute_error_A": 5.388838345292622e-12,
+            "mid_current_relative_error": 0.043202139894851624,
+            "exact_mid_current_A": -1.2473544964227124e-10,
+            "exact_current_quadrature_change_A": 4.1359030627651384e-25
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 2,
+          "selected_grid": [
+            48,
+            24
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2
+          ],
+          "attempted_solve_seconds": 1.3314404003322124,
+          "attempted_cells": 1512,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.032942056858213185
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.032942056858213185
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.00798979735900638
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.00798979735900638
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 6.060022860765457e-05,
+          "solve_plus_selection_seconds": 1.33150100056082,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.000937130458512403,
+            "max_plus_relative_error": 0.0012130145447686314,
+            "max_minus_relative_error": 0.0010858844727692496,
+            "mid_current_absolute_error_A": 3.294122736617296e-13,
+            "mid_current_relative_error": 0.0026408873708833455,
+            "exact_mid_current_A": -1.2473544964227124e-10,
+            "exact_current_quadrature_change_A": 4.1359030627651384e-25
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 6.077300800010562,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.010590786513915207,
+                "max_plus_relative_error": 0.016749517431921084,
+                "max_minus_relative_error": 0.01179754736201135,
+                "mid_current_relative_error": 0.032942056858213185
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.007060524342610138,
+                "max_plus_relative_error": 0.011166344954614056,
+                "max_minus_relative_error": 0.007865031574674233,
+                "mid_current_relative_error": 0.02196137123880879
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.00311410837981696,
+                "max_plus_relative_error": 0.004193409138463273,
+                "max_minus_relative_error": 0.003717868572970692,
+                "mid_current_relative_error": 0.00798979735900638
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0020760722532113065,
+                "max_plus_relative_error": 0.002795606092308849,
+                "max_minus_relative_error": 0.002478579048647128,
+                "mid_current_relative_error": 0.00532653157267092
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0008662177599818577,
+                "max_plus_relative_error": 0.001048383016034742,
+                "max_minus_relative_error": 0.0010279713734859864,
+                "mid_current_relative_error": 0.0019826877016884265
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0005774785066545718,
+                "max_plus_relative_error": 0.000698922010689828,
+                "max_minus_relative_error": 0.0006853142489906575,
+                "mid_current_relative_error": 0.0013217918011256176
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.0023315995931625366,
+          "solve_plus_selection_seconds": 6.0796323996037245,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.000247135512951413,
+            "max_plus_relative_error": 0.00031584633477521606,
+            "max_minus_relative_error": 0.00028587949955394265,
+            "mid_current_absolute_error_A": 8.226393538440152e-14,
+            "mid_current_relative_error": 0.00065950726614067,
+            "exact_mid_current_A": -1.2473544964227124e-10,
+            "exact_current_quadrature_change_A": 4.1359030627651384e-25
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 4.7458603996783495,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 2.8899870812892914e-05,
+          "solve_plus_selection_seconds": 4.745889299549162,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.000247135512951413,
+            "max_plus_relative_error": 0.00031584633477521606,
+            "max_minus_relative_error": 0.00028587949955394265,
+            "mid_current_absolute_error_A": 8.226393538440152e-14,
+            "mid_current_relative_error": 0.00065950726614067,
+            "exact_mid_current_A": -1.2473544964227124e-10,
+            "exact_current_quadrature_change_A": 4.1359030627651384e-25
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "ce588f7223281a3a72f62a0d81addb27b668837a65f3b008d1a7a308756fed68",
+      "decision_seconds": 0.002529299817979336,
+      "solve_identities": [
+        "e2fa57af5cad0dfa4a8baf48087facbb2dc5009e41427660177ef7d8c5ca6c5e",
+        "d21101b892d2e4330cbfc1d964bcb5508e2485991d003dfecf5aafd3930e9b3e",
+        "850aba42719c4f4e8b3e74a2210daa316d777323d4cce6f3f5e2a9f99a947292",
+        "445b3a1976b86d529e9ff744264be88373361380b674e7cb6b460b4b217c6560"
+      ]
+    },
+    {
+      "case": {
+        "name": "development_b",
+        "length_nm": 30,
+        "radius_nm": 10,
+        "salt_mM": 100,
+        "drive_VT": -2,
+        "amplitude_psi": 1.1,
+        "bplus": 0.65,
+        "bminus": -0.4,
+        "wall_amplitude": -0.4
+      },
+      "split": "development",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.022918619009481472,
+          "max_plus_relative_error": 0.01865044483884648,
+          "max_minus_relative_error": 0.010082233096328386,
+          "mid_current_absolute_error_A": 5.0614312887733285e-11,
+          "mid_current_relative_error": 0.03598560631915764,
+          "exact_mid_current_A": 1.4065154950797027e-09,
+          "exact_current_quadrature_change_A": 4.549493369041652e-24
+        },
+        {
+          "max_phi_error_VT": 0.005605856287866959,
+          "max_plus_relative_error": 0.007261327434660236,
+          "max_minus_relative_error": 0.004962384382674823,
+          "mid_current_absolute_error_A": 1.2523038243005277e-11,
+          "mid_current_relative_error": 0.008903590672703991,
+          "exact_mid_current_A": 1.4065154950797027e-09,
+          "exact_current_quadrature_change_A": 4.549493369041652e-24
+        },
+        {
+          "max_phi_error_VT": 0.0015368388391412413,
+          "max_plus_relative_error": 0.002268810899659135,
+          "max_minus_relative_error": 0.0016867333283374641,
+          "mid_current_absolute_error_A": 3.1243907899415607e-12,
+          "mid_current_relative_error": 0.00222136961936883,
+          "exact_mid_current_A": 1.4065154950797027e-09,
+          "exact_current_quadrature_change_A": 4.549493369041652e-24
+        },
+        {
+          "max_phi_error_VT": 0.00042756544377708927,
+          "max_plus_relative_error": 0.0006300498582740843,
+          "max_minus_relative_error": 0.0004847149928179917,
+          "mid_current_absolute_error_A": 7.807360748266365e-13,
+          "mid_current_relative_error": 0.0005550852994921288,
+          "exact_mid_current_A": 1.4065154950797027e-09,
+          "exact_current_quadrature_change_A": 4.549493369041652e-24
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.8457487215321695,
+        "max_plus_relative_error": 1.8483984643363929,
+        "max_minus_relative_error": 1.799023289717118
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.1291997004300356,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 9.37003642320633e-05,
+          "solve_plus_selection_seconds": 0.12929340079426765,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.022918619009481472,
+            "max_plus_relative_error": 0.01865044483884648,
+            "max_minus_relative_error": 0.010082233096328386,
+            "mid_current_absolute_error_A": 5.0614312887733285e-11,
+            "mid_current_relative_error": 0.03598560631915764,
+            "exact_mid_current_A": 1.4065154950797027e-09,
+            "exact_current_quadrature_change_A": 4.549493369041652e-24
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 2,
+          "selected_grid": [
+            48,
+            24
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2
+          ],
+          "attempted_solve_seconds": 1.3229850009083748,
+          "attempted_cells": 1512,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.026843016415866103
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.026843016415866103
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.006667410270719916
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.006667410270719916
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 5.090050399303436e-05,
+          "solve_plus_selection_seconds": 1.3230359014123678,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0015368388391412413,
+            "max_plus_relative_error": 0.002268810899659135,
+            "max_minus_relative_error": 0.0016867333283374641,
+            "mid_current_absolute_error_A": 3.1243907899415607e-12,
+            "mid_current_relative_error": 0.00222136961936883,
+            "exact_mid_current_A": 1.4065154950797027e-09,
+            "exact_current_quadrature_change_A": 4.549493369041652e-24
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.035966600291431,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.021464728263164798,
+                "max_plus_relative_error": 0.015068952867352431,
+                "max_minus_relative_error": 0.011814179491499962,
+                "mid_current_relative_error": 0.026843016415866103
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.014309818842109865,
+                "max_plus_relative_error": 0.010045968578234954,
+                "max_minus_relative_error": 0.007876119660999974,
+                "mid_current_relative_error": 0.01789534427724407
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.005705353085085463,
+                "max_plus_relative_error": 0.005976792272330163,
+                "max_minus_relative_error": 0.004680974195859963,
+                "mid_current_relative_error": 0.006667410270719916
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0038035687233903084,
+                "max_plus_relative_error": 0.003984528181553442,
+                "max_minus_relative_error": 0.003120649463906642,
+                "mid_current_relative_error": 0.004444940180479943
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0016886163242477714,
+                "max_plus_relative_error": 0.0018697465269823948,
+                "max_minus_relative_error": 0.0015245628372874483,
+                "mid_current_relative_error": 0.00166535990307614
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.001125744216165181,
+                "max_plus_relative_error": 0.0012464976846549298,
+                "max_minus_relative_error": 0.0010163752248582988,
+                "mid_current_relative_error": 0.0011102399353840934
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.0021532997488975525,
+          "solve_plus_selection_seconds": 7.0381199000403285,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00042756544377708927,
+            "max_plus_relative_error": 0.0006300498582740843,
+            "max_minus_relative_error": 0.0004847149928179917,
+            "mid_current_absolute_error_A": 7.807360748266365e-13,
+            "mid_current_relative_error": 0.0005550852994921288,
+            "exact_mid_current_A": 1.4065154950797027e-09,
+            "exact_current_quadrature_change_A": 4.549493369041652e-24
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 5.712981599383056,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 3.000069409608841e-05,
+          "solve_plus_selection_seconds": 5.713011600077152,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00042756544377708927,
+            "max_plus_relative_error": 0.0006300498582740843,
+            "max_minus_relative_error": 0.0004847149928179917,
+            "mid_current_absolute_error_A": 7.807360748266365e-13,
+            "mid_current_relative_error": 0.0005550852994921288,
+            "exact_mid_current_A": 1.4065154950797027e-09,
+            "exact_current_quadrature_change_A": 4.549493369041652e-24
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "1797013f8616da835458a8d1e6ed93335bd6f9ec63866e27137f103d8ae99d93",
+      "decision_seconds": 0.0023279013112187386,
+      "solve_identities": [
+        "4559708120017e7c1de78fb5e03c4d88df5fcc762df2ff9ee837da8affdd875e",
+        "c65fe588c62338a2b2c02391aa7040c96590ad1babc3efd9f170d4199223bffb",
+        "c07d3401ee55f6bc34d4eb0765d33f9b86c4dfc5bc86e5c96f378a7e977d604b",
+        "26b550ffbda9a3fc36fc637c7bb6e169fb9d5f480f54a65ec03f0b4b7fffbce5"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_01",
+        "length_nm": 12,
+        "radius_nm": 3,
+        "salt_mM": 5,
+        "drive_VT": 2,
+        "amplitude_psi": 0.25,
+        "bplus": 0.15,
+        "bminus": -0.08,
+        "wall_amplitude": -0.2
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.0053069646308553375,
+          "max_plus_relative_error": 0.01331113817632168,
+          "max_minus_relative_error": 0.008657698714465312,
+          "mid_current_absolute_error_A": 1.8019771545623392e-13,
+          "mid_current_relative_error": 0.02228212751800552,
+          "exact_mid_current_A": -8.08709649967767e-12,
+          "exact_current_quadrature_change_A": 8.077935669463161e-27
+        },
+        {
+          "max_phi_error_VT": 0.0015318417767290482,
+          "max_plus_relative_error": 0.0032886989985276838,
+          "max_minus_relative_error": 0.0023251628446864236,
+          "mid_current_absolute_error_A": 4.445300778325176e-14,
+          "mid_current_relative_error": 0.00549678216217941,
+          "exact_mid_current_A": -8.08709649967767e-12,
+          "exact_current_quadrature_change_A": 8.077935669463161e-27
+        },
+        {
+          "max_phi_error_VT": 0.0004085565472802255,
+          "max_plus_relative_error": 0.0008196346868590831,
+          "max_minus_relative_error": 0.0006002238575761876,
+          "mid_current_absolute_error_A": 1.1076440104075996e-14,
+          "mid_current_relative_error": 0.0013696436173993316,
+          "exact_mid_current_A": -8.08709649967767e-12,
+          "exact_current_quadrature_change_A": 8.077935669463161e-27
+        },
+        {
+          "max_phi_error_VT": 0.00010532806577367992,
+          "max_plus_relative_error": 0.00020475500900152266,
+          "max_minus_relative_error": 0.00015261321985371445,
+          "mid_current_absolute_error_A": 2.7668153006677293e-15,
+          "mid_current_relative_error": 0.0003421271529006742,
+          "exact_mid_current_A": -8.08709649967767e-12,
+          "exact_current_quadrature_change_A": 8.077935669463161e-27
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.9556458630746862,
+        "max_plus_relative_error": 2.001082294844307,
+        "max_minus_relative_error": 1.9756207255013478
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.12589129991829395,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.00010180007666349411,
+          "solve_plus_selection_seconds": 0.12599309999495745,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0053069646308553375,
+            "max_plus_relative_error": 0.01331113817632168,
+            "max_minus_relative_error": 0.008657698714465312,
+            "mid_current_absolute_error_A": 1.8019771545623392e-13,
+            "mid_current_relative_error": 0.02228212751800552,
+            "exact_mid_current_A": -8.08709649967767e-12,
+            "exact_current_quadrature_change_A": 8.077935669463161e-27
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 2,
+          "selected_grid": [
+            48,
+            24
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2
+          ],
+          "attempted_solve_seconds": 1.056826500222087,
+          "attempted_cells": 1512,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.01687812070866863
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.01687812070866863
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.00413279900656141
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.00413279900656141
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 6.030034273862839e-05,
+          "solve_plus_selection_seconds": 1.0568868005648255,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0004085565472802255,
+            "max_plus_relative_error": 0.0008196346868590831,
+            "max_minus_relative_error": 0.0006002238575761876,
+            "mid_current_absolute_error_A": 1.1076440104075996e-14,
+            "mid_current_relative_error": 0.0013696436173993316,
+            "exact_mid_current_A": -8.08709649967767e-12,
+            "exact_current_quadrature_change_A": 8.077935669463161e-27
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 5.520981099456549,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.006087132373573834,
+                "max_plus_relative_error": 0.012866117876157594,
+                "max_minus_relative_error": 0.007155086604307624,
+                "mid_current_relative_error": 0.01687812070866863
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.004058088249049222,
+                "max_plus_relative_error": 0.008577411917438396,
+                "max_minus_relative_error": 0.004770057736205082,
+                "mid_current_relative_error": 0.011252080472445754
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0017393616755511099,
+                "max_plus_relative_error": 0.003177013629174817,
+                "max_minus_relative_error": 0.0019210139249789821,
+                "mid_current_relative_error": 0.00413279900656141
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0011595744503674066,
+                "max_plus_relative_error": 0.0021180090861165446,
+                "max_minus_relative_error": 0.001280675949985988,
+                "mid_current_relative_error": 0.0027551993377076065
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.00046146422371029505,
+                "max_plus_relative_error": 0.0007930097038398616,
+                "max_minus_relative_error": 0.0004991774182602289,
+                "mid_current_relative_error": 0.0010278681260941953
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.00030764281580686337,
+                "max_plus_relative_error": 0.000528673135893241,
+                "max_minus_relative_error": 0.00033278494550681925,
+                "mid_current_relative_error": 0.0006852454173961302
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.002196500077843666,
+          "solve_plus_selection_seconds": 5.523177599534392,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00010532806577367992,
+            "max_plus_relative_error": 0.00020475500900152266,
+            "max_minus_relative_error": 0.00015261321985371445,
+            "mid_current_absolute_error_A": 2.7668153006677293e-15,
+            "mid_current_relative_error": 0.0003421271529006742,
+            "exact_mid_current_A": -8.08709649967767e-12,
+            "exact_current_quadrature_change_A": 8.077935669463161e-27
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 4.464154599234462,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 2.8800219297409058e-05,
+          "solve_plus_selection_seconds": 4.464183399453759,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00010532806577367992,
+            "max_plus_relative_error": 0.00020475500900152266,
+            "max_minus_relative_error": 0.00015261321985371445,
+            "mid_current_absolute_error_A": 2.7668153006677293e-15,
+            "mid_current_relative_error": 0.0003421271529006742,
+            "exact_mid_current_A": -8.08709649967767e-12,
+            "exact_current_quadrature_change_A": 8.077935669463161e-27
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "bc436fea66b95cb65f51b9302d74ea40ea334e0163f28c917c47e82e9f43ccbb",
+      "decision_seconds": 0.0023874007165431976,
+      "solve_identities": [
+        "76e5286f1d5fc02542d25870cc1181bfefec9f0dfef8769df510702cb1cdc085",
+        "88be3964f5d58a9ca83e6d5612fc9ba3b3510a452fe24806206222f78e7e7ff4",
+        "ddf320e00195c665182914c787c2f0312769529b75f9da69bf3254c2860e08f0",
+        "825e98da86e99b48be9ffd5c8bfde6160652d587b4fe9b93e2facb7cb7f026a1"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_02",
+        "length_nm": 20,
+        "radius_nm": 7,
+        "salt_mM": 30,
+        "drive_VT": -2.5,
+        "amplitude_psi": 0.6,
+        "bplus": 0.4,
+        "bminus": -0.25,
+        "wall_amplitude": 0.4
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.010679491821539377,
+          "max_plus_relative_error": 0.016009389677541508,
+          "max_minus_relative_error": 0.012796259645378227,
+          "mid_current_absolute_error_A": 5.669430616120399e-12,
+          "mid_current_relative_error": 0.01945787313015804,
+          "exact_mid_current_A": 2.9136949234874316e-10,
+          "exact_current_quadrature_change_A": 5.686866711302065e-25
+        },
+        {
+          "max_phi_error_VT": 0.003289933475383311,
+          "max_plus_relative_error": 0.0048159074837366145,
+          "max_minus_relative_error": 0.004088068972224912,
+          "mid_current_absolute_error_A": 1.408340380800036e-12,
+          "mid_current_relative_error": 0.004833520384880854,
+          "exact_mid_current_A": 2.9136949234874316e-10,
+          "exact_current_quadrature_change_A": 5.686866711302065e-25
+        },
+        {
+          "max_phi_error_VT": 0.0009265428384028773,
+          "max_plus_relative_error": 0.0013160402424590156,
+          "max_minus_relative_error": 0.0011401169317417637,
+          "mid_current_absolute_error_A": 3.515802617543368e-13,
+          "mid_current_relative_error": 0.0012066474733515573,
+          "exact_mid_current_A": 2.9136949234874316e-10,
+          "exact_current_quadrature_change_A": 5.686866711302065e-25
+        },
+        {
+          "max_phi_error_VT": 0.00024578440839051474,
+          "max_plus_relative_error": 0.0003435812958585416,
+          "max_minus_relative_error": 0.00030064700652487897,
+          "mid_current_absolute_error_A": 8.786503441872523e-14,
+          "mid_current_relative_error": 0.00030155879982643707,
+          "exact_mid_current_A": 2.9136949234874316e-10,
+          "exact_current_quadrature_change_A": 5.686866711302065e-25
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.9144642806884924,
+        "max_plus_relative_error": 1.9374801999227018,
+        "max_minus_relative_error": 1.9230392973632535
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.16145170014351606,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.00010020006448030472,
+          "solve_plus_selection_seconds": 0.16155190020799637,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.010679491821539377,
+            "max_plus_relative_error": 0.016009389677541508,
+            "max_minus_relative_error": 0.012796259645378227,
+            "mid_current_absolute_error_A": 5.669430616120399e-12,
+            "mid_current_relative_error": 0.01945787313015804,
+            "exact_mid_current_A": 2.9136949234874316e-10,
+            "exact_current_quadrature_change_A": 5.686866711302065e-25
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 2,
+          "selected_grid": [
+            48,
+            24
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2
+          ],
+          "attempted_solve_seconds": 1.3279477003961802,
+          "attempted_cells": 1512,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.014554005662227141
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.014554005662227141
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.003622501828850303
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.003622501828850303
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 5.8200210332870483e-05,
+          "solve_plus_selection_seconds": 1.328005900606513,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0009265428384028773,
+            "max_plus_relative_error": 0.0013160402424590156,
+            "max_minus_relative_error": 0.0011401169317417637,
+            "mid_current_absolute_error_A": 3.515802617543368e-13,
+            "mid_current_relative_error": 0.0012066474733515573,
+            "exact_mid_current_A": 2.9136949234874316e-10,
+            "exact_current_quadrature_change_A": 5.686866711302065e-25
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.165058800950646,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.012009031075815843,
+                "max_plus_relative_error": 0.01332535751619573,
+                "max_minus_relative_error": 0.011724643879088273,
+                "mid_current_relative_error": 0.014554005662227141
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.008006020717210561,
+                "max_plus_relative_error": 0.00888357167746382,
+                "max_minus_relative_error": 0.007816429252725514,
+                "mid_current_relative_error": 0.00970267044148476
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.002977820886312668,
+                "max_plus_relative_error": 0.00409364328994313,
+                "max_minus_relative_error": 0.003731737808551788,
+                "mid_current_relative_error": 0.003622501828850303
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0019852139242084454,
+                "max_plus_relative_error": 0.0027290955266287536,
+                "max_minus_relative_error": 0.002487825205701192,
+                "mid_current_relative_error": 0.002415001219233535
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0008318932942161794,
+                "max_plus_relative_error": 0.001125026783893162,
+                "max_minus_relative_error": 0.0010379104502513611,
+                "mid_current_relative_error": 0.0009048158183528736
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0005545955294774529,
+                "max_plus_relative_error": 0.0007500178559287746,
+                "max_minus_relative_error": 0.000691940300167574,
+                "mid_current_relative_error": 0.0006032105455685824
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.002183699980378151,
+          "solve_plus_selection_seconds": 7.1672425009310246,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00024578440839051474,
+            "max_plus_relative_error": 0.0003435812958585416,
+            "max_minus_relative_error": 0.00030064700652487897,
+            "mid_current_absolute_error_A": 8.786503441872523e-14,
+            "mid_current_relative_error": 0.00030155879982643707,
+            "exact_mid_current_A": 2.9136949234874316e-10,
+            "exact_current_quadrature_change_A": 5.686866711302065e-25
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 5.837111100554466,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 2.7900561690330505e-05,
+          "solve_plus_selection_seconds": 5.837139001116157,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00024578440839051474,
+            "max_plus_relative_error": 0.0003435812958585416,
+            "max_minus_relative_error": 0.00030064700652487897,
+            "mid_current_absolute_error_A": 8.786503441872523e-14,
+            "mid_current_relative_error": 0.00030155879982643707,
+            "exact_mid_current_A": 2.9136949234874316e-10,
+            "exact_current_quadrature_change_A": 5.686866711302065e-25
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "179f0e6dcde3b33812c403cd249c01e265e3236a9412764b679c4ba01e7e69a8",
+      "decision_seconds": 0.0023700008168816566,
+      "solve_identities": [
+        "bbcd678d5e589febd5483d61becec6a95ce6c0b58b7b4edda45a8d5889a45794",
+        "cdcee0ca4b5afbd0376f00c408779fb250533946544587fc2e77de2c67488c53",
+        "16b9e29530b3abcec9c8f2d0b467a22cf2d40566e3e9570131373cdd35a12905",
+        "13a1a4a8ce3395ceb76ea66e1dd8eefd8fa5f085a1604615382427d6ae31f513"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_03",
+        "length_nm": 28,
+        "radius_nm": 12,
+        "salt_mM": 150,
+        "drive_VT": 1,
+        "amplitude_psi": 1,
+        "bplus": 0.65,
+        "bminus": -0.45,
+        "wall_amplitude": -0.6
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.020003594261130075,
+          "max_plus_relative_error": 0.027535402162098932,
+          "max_minus_relative_error": 0.0146541012570085,
+          "mid_current_absolute_error_A": 8.326947054777214e-11,
+          "mid_current_relative_error": 0.5182060975995486,
+          "exact_mid_current_A": 1.6068794044202825e-10,
+          "exact_current_quadrature_change_A": 8.530300066953098e-24
+        },
+        {
+          "max_phi_error_VT": 0.005050054559737838,
+          "max_plus_relative_error": 0.007218571571931287,
+          "max_minus_relative_error": 0.00444937258721545,
+          "mid_current_absolute_error_A": 2.028157958239558e-11,
+          "mid_current_relative_error": 0.1262171854751764,
+          "exact_mid_current_A": 1.6068794044202825e-10,
+          "exact_current_quadrature_change_A": 8.530300066953098e-24
+        },
+        {
+          "max_phi_error_VT": 0.001338589990728091,
+          "max_plus_relative_error": 0.0018865190170311852,
+          "max_minus_relative_error": 0.0011890160961174345,
+          "mid_current_absolute_error_A": 5.037036077825686e-12,
+          "mid_current_relative_error": 0.03134669636047087,
+          "exact_mid_current_A": 1.6068794044202825e-10,
+          "exact_current_quadrature_change_A": 8.530300066953098e-24
+        },
+        {
+          "max_phi_error_VT": 0.0003803605598094034,
+          "max_plus_relative_error": 0.00048465788898877094,
+          "max_minus_relative_error": 0.0003545628987138283,
+          "mid_current_absolute_error_A": 1.2571457596028295e-12,
+          "mid_current_relative_error": 0.007823522761848906,
+          "exact_mid_current_A": 1.6068794044202825e-10,
+          "exact_current_quadrature_change_A": 8.530300066953098e-24
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.8152745680153037,
+        "max_plus_relative_error": 1.9606880032831362,
+        "max_minus_relative_error": 1.7456547591195581
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.15351840015500784,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 9.749922901391983e-05,
+          "solve_plus_selection_seconds": 0.15361589938402176,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.020003594261130075,
+            "max_plus_relative_error": 0.027535402162098932,
+            "max_minus_relative_error": 0.0146541012570085,
+            "mid_current_absolute_error_A": 8.326947054777214e-11,
+            "mid_current_relative_error": 0.5182060975995486,
+            "exact_mid_current_A": 1.6068794044202825e-10,
+            "exact_current_quadrature_change_A": 8.530300066953098e-24
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "UNRESOLVED",
+          "selected_index": null,
+          "selected_grid": null,
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.131213000044227,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.34805800975145235
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.34805800975145235
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.0919870005396778
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.0919870005396778
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.023340568132562373
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.023340568132562373
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 5.809962749481201e-05,
+          "solve_plus_selection_seconds": 7.1312710996717215,
+          "exact_accuracy_pass": null,
+          "actual_errors": null
+        },
+        {
+          "policy": "field_controller",
+          "status": "UNRESOLVED",
+          "selected_index": null,
+          "selected_grid": null,
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.131213000044227,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.01911065432149739,
+                "max_plus_relative_error": 0.023566298632220713,
+                "max_minus_relative_error": 0.011057591143889649,
+                "mid_current_relative_error": 0.34805800975145235
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.012740436214331591,
+                "max_plus_relative_error": 0.015710865754813806,
+                "max_minus_relative_error": 0.0073717274292597655,
+                "mid_current_relative_error": 0.23203867316763488
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0052034364888499185,
+                "max_plus_relative_error": 0.006067704465874826,
+                "max_minus_relative_error": 0.0031011345707448136,
+                "mid_current_relative_error": 0.0919870005396778
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.003468957659233279,
+                "max_plus_relative_error": 0.004045136310583217,
+                "max_minus_relative_error": 0.0020674230471632088,
+                "mid_current_relative_error": 0.06132466702645187
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.001550348973116844,
+                "max_plus_relative_error": 0.0015240814415412947,
+                "max_minus_relative_error": 0.0010323927845568674,
+                "mid_current_relative_error": 0.023340568132562373
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.001033565982077896,
+                "max_plus_relative_error": 0.0010160542943608631,
+                "max_minus_relative_error": 0.0006882618563712449,
+                "mid_current_relative_error": 0.015560378755041581
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.00210649985820055,
+          "solve_plus_selection_seconds": 7.133319499902427,
+          "exact_accuracy_pass": null,
+          "actual_errors": null
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 5.813008699566126,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 2.6999972760677338e-05,
+          "solve_plus_selection_seconds": 5.8130356995388865,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0003803605598094034,
+            "max_plus_relative_error": 0.00048465788898877094,
+            "max_minus_relative_error": 0.0003545628987138283,
+            "mid_current_absolute_error_A": 1.2571457596028295e-12,
+            "mid_current_relative_error": 0.007823522761848906,
+            "exact_mid_current_A": 1.6068794044202825e-10,
+            "exact_current_quadrature_change_A": 8.530300066953098e-24
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "ec53056f0d612d88e32edcfeb4a4fa50ff916538db74aa64989093474fe350bb",
+      "decision_seconds": 0.0022890986874699593,
+      "solve_identities": [
+        "ec1757d938595dc87bbd2bb59a017550143b81b82e62c58c23a336acb017b45f",
+        "d7473e370e4aa1fbbd7b06f0cf23adeb6c3ca51f83fa45bbdddf0014f39107fd",
+        "48100a4be9dc5e8c2cf1bb44e213cb9ef056068534cf8d57cfcfb2b2633ecdc4",
+        "341d13da1155c7c5118120f647383fd68ec0b6039e0d66fa75da2c4a73f8cb80"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_04",
+        "length_nm": 50,
+        "radius_nm": 5,
+        "salt_mM": 80,
+        "drive_VT": -1.2,
+        "amplitude_psi": 1.4,
+        "bplus": 0.8,
+        "bminus": -0.55,
+        "wall_amplitude": 0.75
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.21240185275926537,
+          "max_plus_relative_error": 0.24773553886096167,
+          "max_minus_relative_error": 0.13511267205883892,
+          "mid_current_absolute_error_A": 6.788366095775148e-11,
+          "mid_current_relative_error": 0.4256553885214701,
+          "exact_mid_current_A": 1.5948032795625567e-10,
+          "exact_current_quadrature_change_A": 8.013312184107456e-25
+        },
+        {
+          "max_phi_error_VT": 0.05439726537269196,
+          "max_plus_relative_error": 0.0701592051379365,
+          "max_minus_relative_error": 0.04348038724986791,
+          "mid_current_absolute_error_A": 1.6681394418046798e-11,
+          "mid_current_relative_error": 0.10459844566298099,
+          "exact_mid_current_A": 1.5948032795625567e-10,
+          "exact_current_quadrature_change_A": 8.013312184107456e-25
+        },
+        {
+          "max_phi_error_VT": 0.013674473154354994,
+          "max_plus_relative_error": 0.018444667589383457,
+          "max_minus_relative_error": 0.011923506810464612,
+          "mid_current_absolute_error_A": 4.154068204965613e-12,
+          "mid_current_relative_error": 0.02604752735462799,
+          "exact_mid_current_A": 1.5948032795625567e-10,
+          "exact_current_quadrature_change_A": 8.013312184107456e-25
+        },
+        {
+          "max_phi_error_VT": 0.003422568043656038,
+          "max_plus_relative_error": 0.004733431146630052,
+          "max_minus_relative_error": 0.0031082303340617123,
+          "mid_current_absolute_error_A": 1.037529970706264e-12,
+          "mid_current_relative_error": 0.006505692482591654,
+          "exact_mid_current_A": 1.5948032795625567e-10,
+          "exact_current_quadrature_change_A": 8.013312184107456e-25
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.9983341214798993,
+        "max_plus_relative_error": 1.962245547275237,
+        "max_minus_relative_error": 1.939643284670105
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.14883000031113625,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 9.990017861127853e-05,
+          "solve_plus_selection_seconds": 0.14892990048974752,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.21240185275926537,
+            "max_plus_relative_error": 0.24773553886096167,
+            "max_minus_relative_error": 0.13511267205883892,
+            "mid_current_absolute_error_A": 6.788366095775148e-11,
+            "mid_current_relative_error": 0.4256553885214701,
+            "exact_mid_current_A": 1.5948032795625567e-10,
+            "exact_current_quadrature_change_A": 8.013312184107456e-25
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "UNRESOLVED",
+          "selected_index": null,
+          "selected_grid": null,
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.076275100931525,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.2906548928427927
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.2906548928427927
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.07655680289087019
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.07655680289087019
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.01941552344710095
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.01941552344710095
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 6.899982690811157e-05,
+          "solve_plus_selection_seconds": 7.076344100758433,
+          "exact_accuracy_pass": null,
+          "actual_errors": null
+        },
+        {
+          "policy": "field_controller",
+          "status": "UNRESOLVED",
+          "selected_index": null,
+          "selected_grid": null,
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.076275100931525,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.1552029223898718,
+                "max_plus_relative_error": 0.17640869699112832,
+                "max_minus_relative_error": 0.08575684671194501,
+                "mid_current_relative_error": 0.2906548928427927
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.10346861492658119,
+                "max_plus_relative_error": 0.11760579799408555,
+                "max_minus_relative_error": 0.05717123114129667,
+                "mid_current_relative_error": 0.19376992856186182
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.03919027153253396,
+                "max_plus_relative_error": 0.05216173387709435,
+                "max_minus_relative_error": 0.029622488632615976,
+                "mid_current_relative_error": 0.07655680289087019
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.02612684768835597,
+                "max_plus_relative_error": 0.03477448925139623,
+                "max_minus_relative_error": 0.019748325755077317,
+                "mid_current_relative_error": 0.05103786859391346
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.009882504348281418,
+                "max_plus_relative_error": 0.01387121891549916,
+                "max_minus_relative_error": 0.008265059416911854,
+                "mid_current_relative_error": 0.01941552344710095
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.006588336232187611,
+                "max_plus_relative_error": 0.00924747927699944,
+                "max_minus_relative_error": 0.005510039611274569,
+                "mid_current_relative_error": 0.0129436822980673
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.002211100421845913,
+          "solve_plus_selection_seconds": 7.078486201353371,
+          "exact_accuracy_pass": null,
+          "actual_errors": null
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 5.794207200407982,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 2.8799287974834442e-05,
+          "solve_plus_selection_seconds": 5.794235999695957,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.003422568043656038,
+            "max_plus_relative_error": 0.004733431146630052,
+            "max_minus_relative_error": 0.0031082303340617123,
+            "mid_current_absolute_error_A": 1.037529970706264e-12,
+            "mid_current_relative_error": 0.006505692482591654,
+            "exact_mid_current_A": 1.5948032795625567e-10,
+            "exact_current_quadrature_change_A": 8.013312184107456e-25
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "7212b8375ae77c2f777b663b1054a8524e47d12680ba06794f5eb81ea96568e8",
+      "decision_seconds": 0.0024087997153401375,
+      "solve_identities": [
+        "3607153ee3a6ed297640e9f4a58a044d62c3a577b2de621fed7bac8c17ba9658",
+        "aa605d4328faf02ce9c46bab11303dc7ee316b95e1314d140887d37d3f929035",
+        "c9084e309b1c7b2b764a2b0417fee2b35dcbac909e53737164e0c78a2ff35c11",
+        "e4a5678aa26d79b3b63662f607f837d5fafc219ff80ba784c8b8c8c5f225035a"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_05",
+        "length_nm": 16,
+        "radius_nm": 9,
+        "salt_mM": 60,
+        "drive_VT": 3,
+        "amplitude_psi": -0.85,
+        "bplus": -0.35,
+        "bminus": 0.6,
+        "wall_amplitude": 0.5
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.015707792945128862,
+          "max_plus_relative_error": 0.01129932122777566,
+          "max_minus_relative_error": 0.01237268623859955,
+          "mid_current_absolute_error_A": 1.967617997346593e-11,
+          "mid_current_relative_error": 0.012702677092465258,
+          "exact_mid_current_A": -1.5489789931869625e-09,
+          "exact_current_quadrature_change_A": 3.308722450212111e-24
+        },
+        {
+          "max_phi_error_VT": 0.004308763750813682,
+          "max_plus_relative_error": 0.004153866210580004,
+          "max_minus_relative_error": 0.004532703042894326,
+          "mid_current_absolute_error_A": 4.896637461106812e-12,
+          "mid_current_relative_error": 0.0031612032717320306,
+          "exact_mid_current_A": -1.5489789931869625e-09,
+          "exact_current_quadrature_change_A": 3.308722450212111e-24
+        },
+        {
+          "max_phi_error_VT": 0.0012679730371405462,
+          "max_plus_relative_error": 0.0012440503981315798,
+          "max_minus_relative_error": 0.0013464926042154879,
+          "mid_current_absolute_error_A": 1.2235554145532871e-12,
+          "mid_current_relative_error": 0.0007899109154707583,
+          "exact_mid_current_A": -1.5489789931869625e-09,
+          "exact_current_quadrature_change_A": 3.308722450212111e-24
+        },
+        {
+          "max_phi_error_VT": 0.00034261808494262525,
+          "max_plus_relative_error": 0.00033870681705494565,
+          "max_minus_relative_error": 0.0003643352844884262,
+          "mid_current_absolute_error_A": 3.0587190975528516e-13,
+          "mid_current_relative_error": 0.0001974667901247427,
+          "exact_mid_current_A": -1.5489789931869625e-09,
+          "exact_current_quadrature_change_A": 3.308722450212111e-24
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.8878508570035675,
+        "max_plus_relative_error": 1.8769360031957592,
+        "max_minus_relative_error": 1.8858676791782703
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.13300429936498404,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.00016320031136274338,
+          "solve_plus_selection_seconds": 0.13316749967634678,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.015707792945128862,
+            "max_plus_relative_error": 0.01129932122777566,
+            "max_minus_relative_error": 0.01237268623859955,
+            "mid_current_absolute_error_A": 1.967617997346593e-11,
+            "mid_current_relative_error": 0.012702677092465258,
+            "exact_mid_current_A": -1.5489789931869625e-09,
+            "exact_current_quadrature_change_A": 3.308722450212111e-24
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 1,
+          "selected_grid": [
+            24,
+            12
+          ],
+          "visited_indices": [
+            0,
+            1
+          ],
+          "attempted_solve_seconds": 0.40040870010852814,
+          "attempted_cells": 360,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.009511406331917997
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.009511406331917997
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.00010090041905641556,
+          "solve_plus_selection_seconds": 0.40050960052758455,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.004308763750813682,
+            "max_plus_relative_error": 0.004153866210580004,
+            "max_minus_relative_error": 0.004532703042894326,
+            "mid_current_absolute_error_A": 4.896637461106812e-12,
+            "mid_current_relative_error": 0.0031612032717320306,
+            "exact_mid_current_A": -1.5489789931869625e-09,
+            "exact_current_quadrature_change_A": 3.308722450212111e-24
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.031581699848175,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.015481540267536786,
+                "max_plus_relative_error": 0.012094868476614465,
+                "max_minus_relative_error": 0.012298736336305032,
+                "mid_current_relative_error": 0.009511406331917997
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.010321026845024523,
+                "max_plus_relative_error": 0.00806324565107631,
+                "max_minus_relative_error": 0.008199157557536687,
+                "mid_current_relative_error": 0.0063409375546119974
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0050143361929402275,
+                "max_plus_relative_error": 0.0037703288452890743,
+                "max_minus_relative_error": 0.004559709703438036,
+                "mid_current_relative_error": 0.0023694207249672777
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.003342890795293485,
+                "max_plus_relative_error": 0.0025135525635260492,
+                "max_minus_relative_error": 0.0030398064689586904,
+                "mid_current_relative_error": 0.0015796138166448517
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.001427271658402507,
+                "max_plus_relative_error": 0.0011134863607977917,
+                "max_minus_relative_error": 0.0013341977092253782,
+                "mid_current_relative_error": 0.0005923271604029472
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0009515144389350045,
+                "max_plus_relative_error": 0.0007423242405318611,
+                "max_minus_relative_error": 0.0008894651394835854,
+                "mid_current_relative_error": 0.0003948847736019648
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.0047968002036213875,
+          "solve_plus_selection_seconds": 7.036378500051796,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00034261808494262525,
+            "max_plus_relative_error": 0.00033870681705494565,
+            "max_minus_relative_error": 0.0003643352844884262,
+            "mid_current_absolute_error_A": 3.0587190975528516e-13,
+            "mid_current_relative_error": 0.0001974667901247427,
+            "exact_mid_current_A": -1.5489789931869625e-09,
+            "exact_current_quadrature_change_A": 3.308722450212111e-24
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 5.71856930013746,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 6.289966404438019e-05,
+          "solve_plus_selection_seconds": 5.718632199801505,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00034261808494262525,
+            "max_plus_relative_error": 0.00033870681705494565,
+            "max_minus_relative_error": 0.0003643352844884262,
+            "mid_current_absolute_error_A": 3.0587190975528516e-13,
+            "mid_current_relative_error": 0.0001974667901247427,
+            "exact_mid_current_A": -1.5489789931869625e-09,
+            "exact_current_quadrature_change_A": 3.308722450212111e-24
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "b5944e5fe0def285e652405f22f2c4526ae254650bbcbece38002168876665e5",
+      "decision_seconds": 0.005123800598084927,
+      "solve_identities": [
+        "51e321d74fc8c5524344d7315e26bb124c66e123e41fd8973cb43c9536e71798",
+        "aa185dc2d6f74abf2d2a3a0640e6139b25818ada5ed1c955ea55b904804ad0d6",
+        "3b96b3e09ea61d26d3dee21b69b8e954fd087e7412ebd8c20b4b494699ce898c",
+        "fafec3cdbda141364d54c4c57c7ba6fcdd5fd0dba2a0297424d7feee6e764ea3"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_06",
+        "length_nm": 35,
+        "radius_nm": 15,
+        "salt_mM": 15,
+        "drive_VT": -3,
+        "amplitude_psi": -1.3,
+        "bplus": 0.7,
+        "bminus": -0.9,
+        "wall_amplitude": -0.9
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.04310631193984982,
+          "max_plus_relative_error": 0.025991910133462248,
+          "max_minus_relative_error": 0.037437505092992485,
+          "mid_current_absolute_error_A": 1.3710038690231382e-11,
+          "mid_current_relative_error": 0.02080862844896989,
+          "exact_mid_current_A": 6.588631597634241e-10,
+          "exact_current_quadrature_change_A": 2.481541837659083e-24
+        },
+        {
+          "max_phi_error_VT": 0.010658787067191922,
+          "max_plus_relative_error": 0.008917301126551647,
+          "max_minus_relative_error": 0.009597410884578217,
+          "mid_current_absolute_error_A": 3.437023160946946e-12,
+          "mid_current_relative_error": 0.005216596359980222,
+          "exact_mid_current_A": 6.588631597634241e-10,
+          "exact_current_quadrature_change_A": 2.481541837659083e-24
+        },
+        {
+          "max_phi_error_VT": 0.002667895821092614,
+          "max_plus_relative_error": 0.0025810364813045883,
+          "max_minus_relative_error": 0.002462330111527633,
+          "mid_current_absolute_error_A": 8.603286223077943e-13,
+          "mid_current_relative_error": 0.0013057773978692477,
+          "exact_mid_current_A": 6.588631597634241e-10,
+          "exact_current_quadrature_change_A": 2.481541837659083e-24
+        },
+        {
+          "max_phi_error_VT": 0.0006662165141482213,
+          "max_plus_relative_error": 0.0006904696562026746,
+          "max_minus_relative_error": 0.0006186883390646436,
+          "mid_current_absolute_error_A": 2.1516173535107146e-13,
+          "mid_current_relative_error": 0.000326565132930378,
+          "exact_mid_current_A": 6.588631597634241e-10,
+          "exact_current_quadrature_change_A": 2.481541837659083e-24
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 2.0016393106571706,
+        "max_plus_relative_error": 1.9023006137105083,
+        "max_minus_relative_error": 1.9927394416114195
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.14550640061497688,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 9.480025619268417e-05,
+          "solve_plus_selection_seconds": 0.14560120087116957,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.04310631193984982,
+            "max_plus_relative_error": 0.025991910133462248,
+            "max_minus_relative_error": 0.037437505092992485,
+            "mid_current_absolute_error_A": 1.3710038690231382e-11,
+            "mid_current_relative_error": 0.02080862844896989,
+            "exact_mid_current_A": 6.588631597634241e-10,
+            "exact_current_quadrature_change_A": 2.481541837659083e-24
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 2,
+          "selected_grid": [
+            48,
+            24
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2
+          ],
+          "attempted_solve_seconds": 1.3272509006783366,
+          "attempted_cells": 1512,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.015511116853273653
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.015511116853273653
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.003905718962567225
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.003905718962567225
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 4.959944635629654e-05,
+          "solve_plus_selection_seconds": 1.327300500124693,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.002667895821092614,
+            "max_plus_relative_error": 0.0025810364813045883,
+            "max_minus_relative_error": 0.002462330111527633,
+            "mid_current_absolute_error_A": 8.603286223077943e-13,
+            "mid_current_relative_error": 0.0013057773978692477,
+            "exact_mid_current_A": 6.588631597634241e-10,
+            "exact_current_quadrature_change_A": 2.481541837659083e-24
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.435726400464773,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.02937024335733729,
+                "max_plus_relative_error": 0.024842500982848636,
+                "max_minus_relative_error": 0.02681407083765795,
+                "mid_current_relative_error": 0.015511116853273653
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.019580162238224858,
+                "max_plus_relative_error": 0.01656166732189909,
+                "max_minus_relative_error": 0.017876047225105298,
+                "mid_current_relative_error": 0.010340744568849102
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0073754828924821325,
+                "max_plus_relative_error": 0.008171557097435014,
+                "max_minus_relative_error": 0.00683762641401203,
+                "mid_current_relative_error": 0.003905718962567225
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.004916988594988088,
+                "max_plus_relative_error": 0.005447704731623343,
+                "max_minus_relative_error": 0.004558417609341353,
+                "mid_current_relative_error": 0.002603812641711483
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0018445561192554916,
+                "max_plus_relative_error": 0.002343398074371232,
+                "max_minus_relative_error": 0.001993650709951636,
+                "mid_current_relative_error": 0.000978892592749194
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.001229704079503661,
+                "max_plus_relative_error": 0.0015622653829141546,
+                "max_minus_relative_error": 0.0013291004733010908,
+                "mid_current_relative_error": 0.000652595061832796
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.0020457999780774117,
+          "solve_plus_selection_seconds": 7.437772200442851,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0006662165141482213,
+            "max_plus_relative_error": 0.0006904696562026746,
+            "max_minus_relative_error": 0.0006186883390646436,
+            "mid_current_absolute_error_A": 2.1516173535107146e-13,
+            "mid_current_relative_error": 0.000326565132930378,
+            "exact_mid_current_A": 6.588631597634241e-10,
+            "exact_current_quadrature_change_A": 2.481541837659083e-24
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 6.108475499786437,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 4.449952393770218e-05,
+          "solve_plus_selection_seconds": 6.108519999310374,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0006662165141482213,
+            "max_plus_relative_error": 0.0006904696562026746,
+            "max_minus_relative_error": 0.0006186883390646436,
+            "mid_current_absolute_error_A": 2.1516173535107146e-13,
+            "mid_current_relative_error": 0.000326565132930378,
+            "exact_mid_current_A": 6.588631597634241e-10,
+            "exact_current_quadrature_change_A": 2.481541837659083e-24
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "c3e957596563e0bb20e763e288db6662670111d394f4eee8d3e68a271af46a96",
+      "decision_seconds": 0.0022346992045640945,
+      "solve_identities": [
+        "03a633964f84824882f29b9e026f5a180a06060cf38ff0a84318d753940713d6",
+        "21def763cfc60ca7a0a85a11ea3b1d815173a3fa5a24694dc06980856ff6609d",
+        "57f84d790c80f232c9076c2b8df7a220a5b4beed53e224d286cb53d4b7b58892",
+        "f127badba01c9726f326437b84446b984a24f85056dac4192ea9db2c459d59b4"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_07",
+        "length_nm": 22,
+        "radius_nm": 6,
+        "salt_mM": 200,
+        "drive_VT": 0.7,
+        "amplitude_psi": 0.9,
+        "bplus": -0.6,
+        "bminus": 0.35,
+        "wall_amplitude": 0.8
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.03142802126252697,
+          "max_plus_relative_error": 0.023028090974481552,
+          "max_minus_relative_error": 0.012663448074722194,
+          "mid_current_absolute_error_A": 5.025987090519877e-11,
+          "mid_current_relative_error": 0.07092543742276118,
+          "exact_mid_current_A": -7.086296924137054e-10,
+          "exact_current_quadrature_change_A": 3.412120026781239e-24
+        },
+        {
+          "max_phi_error_VT": 0.007803678288793359,
+          "max_plus_relative_error": 0.007940787303268637,
+          "max_minus_relative_error": 0.005283866235532675,
+          "mid_current_absolute_error_A": 1.2434619358582576e-11,
+          "mid_current_relative_error": 0.017547415090988193,
+          "exact_mid_current_A": -7.086296924137054e-10,
+          "exact_current_quadrature_change_A": 3.412120026781239e-24
+        },
+        {
+          "max_phi_error_VT": 0.0019406319296313423,
+          "max_plus_relative_error": 0.002345744970396968,
+          "max_minus_relative_error": 0.0016939166217149193,
+          "mid_current_absolute_error_A": 3.1014447819894618e-12,
+          "mid_current_relative_error": 0.00437667912478441,
+          "exact_mid_current_A": -7.086296924137054e-10,
+          "exact_current_quadrature_change_A": 3.412120026781239e-24
+        },
+        {
+          "max_phi_error_VT": 0.0004852342775204521,
+          "max_plus_relative_error": 0.0006356622007062107,
+          "max_minus_relative_error": 0.00047490540167671735,
+          "mid_current_absolute_error_A": 7.749287282995866e-13,
+          "mid_current_relative_error": 0.001093559494607199,
+          "exact_mid_current_A": -7.086296924137054e-10,
+          "exact_current_quadrature_change_A": 3.412120026781239e-24
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.9997731420882294,
+        "max_plus_relative_error": 1.8837139649096672,
+        "max_minus_relative_error": 1.8346507928814193
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.1315708002075553,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 9.409990161657333e-05,
+          "solve_plus_selection_seconds": 0.13166490010917187,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.03142802126252697,
+            "max_plus_relative_error": 0.023028090974481552,
+            "max_minus_relative_error": 0.012663448074722194,
+            "mid_current_absolute_error_A": 5.025987090519877e-11,
+            "mid_current_relative_error": 0.07092543742276118,
+            "exact_mid_current_A": -7.086296924137054e-10,
+            "exact_current_quadrature_change_A": 3.412120026781239e-24
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.193777299486101,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.052457528307906884
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.052457528307906884
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.013113343071327369
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.013113343071327369
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.0032795332654369123
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.0032795332654369123
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 5.920045077800751e-05,
+          "solve_plus_selection_seconds": 7.193836499936879,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0004852342775204521,
+            "max_plus_relative_error": 0.0006356622007062107,
+            "max_minus_relative_error": 0.00047490540167671735,
+            "mid_current_absolute_error_A": 7.749287282995866e-13,
+            "mid_current_relative_error": 0.001093559494607199,
+            "exact_mid_current_A": -7.086296924137054e-10,
+            "exact_current_quadrature_change_A": 3.412120026781239e-24
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 7.193777299486101,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.022929789209023,
+                "max_plus_relative_error": 0.017422482446347497,
+                "max_minus_relative_error": 0.013449982612028994,
+                "mid_current_relative_error": 0.052457528307906884
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.015286526139348666,
+                "max_plus_relative_error": 0.011614988297564997,
+                "max_minus_relative_error": 0.008966655074685996,
+                "mid_current_relative_error": 0.03497168553860459
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.005658370630968301,
+                "max_plus_relative_error": 0.00624089727013605,
+                "max_minus_relative_error": 0.005042199175757406,
+                "mid_current_relative_error": 0.013113343071327369
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0037722470873122007,
+                "max_plus_relative_error": 0.0041605981800907,
+                "max_minus_relative_error": 0.0033614661171716036,
+                "mid_current_relative_error": 0.008742228714218245
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0014048843507006303,
+                "max_plus_relative_error": 0.0018595368371114463,
+                "max_minus_relative_error": 0.0015618676216448738,
+                "mid_current_relative_error": 0.0032795332654369123
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.0009365895671337535,
+                "max_plus_relative_error": 0.0012396912247409641,
+                "max_minus_relative_error": 0.0010412450810965825,
+                "mid_current_relative_error": 0.0021863555102912746
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.002075900323688984,
+          "solve_plus_selection_seconds": 7.19585319980979,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0004852342775204521,
+            "max_plus_relative_error": 0.0006356622007062107,
+            "max_minus_relative_error": 0.00047490540167671735,
+            "mid_current_absolute_error_A": 7.749287282995866e-13,
+            "mid_current_relative_error": 0.001093559494607199,
+            "exact_mid_current_A": -7.086296924137054e-10,
+            "exact_current_quadrature_change_A": 3.412120026781239e-24
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 5.851143099367619,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 2.6499852538108826e-05,
+          "solve_plus_selection_seconds": 5.851169599220157,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0004852342775204521,
+            "max_plus_relative_error": 0.0006356622007062107,
+            "max_minus_relative_error": 0.00047490540167671735,
+            "mid_current_absolute_error_A": 7.749287282995866e-13,
+            "mid_current_relative_error": 0.001093559494607199,
+            "exact_mid_current_A": -7.086296924137054e-10,
+            "exact_current_quadrature_change_A": 3.412120026781239e-24
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "9ff6d6575d605e00ca38a82617f64f3a3f422e5df2cb2041070eed0a13f964af",
+      "decision_seconds": 0.0022557005286216736,
+      "solve_identities": [
+        "f9e7c69def488d6da6d43caa1596bceff23a4e2cb950af6f2945bae2c57702de",
+        "5c0afbc83d016efd6063b62d7b4a98d409925603745aca01359d6d30ade665d6",
+        "f1021fd2da5fb4a4206a41fbba88ce611001cefae2947df0e424ab3c2adeb62b",
+        "edf842566cfd98c391f3f4aa32aceb8a0456a43f62fbcc5d2f8dc66696cd817f"
+      ]
+    },
+    {
+      "case": {
+        "name": "holdout_08",
+        "length_nm": 40,
+        "radius_nm": 11,
+        "salt_mM": 10,
+        "drive_VT": -0.8,
+        "amplitude_psi": -0.4,
+        "bplus": 0.25,
+        "bminus": 0.55,
+        "wall_amplitude": -0.3
+      },
+      "split": "held_out",
+      "grids": [
+        [
+          12,
+          6
+        ],
+        [
+          24,
+          12
+        ],
+        [
+          48,
+          24
+        ],
+        [
+          96,
+          48
+        ]
+      ],
+      "errors": [
+        {
+          "max_phi_error_VT": 0.007980929491640754,
+          "max_plus_relative_error": 0.017813797392473463,
+          "max_minus_relative_error": 0.03709158302883375,
+          "mid_current_absolute_error_A": 1.0648450302879122e-12,
+          "mid_current_relative_error": 0.0430445778090186,
+          "exact_mid_current_A": 2.4738191997432215e-11,
+          "exact_current_quadrature_change_A": 3.554291694563791e-26
+        },
+        {
+          "max_phi_error_VT": 0.002315765342887466,
+          "max_plus_relative_error": 0.004560534377353376,
+          "max_minus_relative_error": 0.009180561572052826,
+          "mid_current_absolute_error_A": 2.5049751589919853e-13,
+          "mid_current_relative_error": 0.010125942749785424,
+          "exact_mid_current_A": 2.4738191997432215e-11,
+          "exact_current_quadrature_change_A": 3.554291694563791e-26
+        },
+        {
+          "max_phi_error_VT": 0.0006341357422546823,
+          "max_plus_relative_error": 0.001146538903164851,
+          "max_minus_relative_error": 0.0022886857386359427,
+          "mid_current_absolute_error_A": 6.165603055398759e-14,
+          "mid_current_relative_error": 0.0024923418235410005,
+          "exact_mid_current_A": 2.4738191997432215e-11,
+          "exact_current_quadrature_change_A": 3.554291694563791e-26
+        },
+        {
+          "max_phi_error_VT": 0.00016598304837545097,
+          "max_plus_relative_error": 0.00028700128384118173,
+          "max_minus_relative_error": 0.0005716421059769328,
+          "mid_current_absolute_error_A": 1.5353697049291705e-14,
+          "mid_current_relative_error": 0.0006206475012759782,
+          "exact_mid_current_A": 2.4738191997432215e-11,
+          "exact_current_quadrature_change_A": 3.554291694563791e-26
+        }
+      ],
+      "exact_accuracy_passes": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "observed_last_pair_orders": {
+        "max_phi_error_VT": 1.9337557862069583,
+        "max_plus_relative_error": 1.9981562121485137,
+        "max_minus_relative_error": 2.0013352874257615
+      },
+      "policies": [
+        {
+          "policy": "residual_only",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 0,
+          "selected_grid": [
+            12,
+            6
+          ],
+          "visited_indices": [
+            0
+          ],
+          "attempted_solve_seconds": 0.13357499986886978,
+          "attempted_cells": 72,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.00010329950600862503,
+          "solve_plus_selection_seconds": 0.1336782993748784,
+          "exact_accuracy_pass": false,
+          "actual_errors": {
+            "max_phi_error_VT": 0.007980929491640754,
+            "max_plus_relative_error": 0.017813797392473463,
+            "max_minus_relative_error": 0.03709158302883375,
+            "mid_current_absolute_error_A": 1.0648450302879122e-12,
+            "mid_current_relative_error": 0.0430445778090186,
+            "exact_mid_current_A": 2.4738191997432215e-11,
+            "exact_current_quadrature_change_A": 3.554291694563791e-26
+          }
+        },
+        {
+          "policy": "current_mesh",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 2,
+          "selected_grid": [
+            48,
+            24
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2
+          ],
+          "attempted_solve_seconds": 1.2375005995854735,
+          "attempted_cells": 1512,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.03325537710390989
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.03325537710390989
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "mid_current_relative_error": 0.0076526740057308315
+              },
+              "estimated_errors": {
+                "mid_current_relative_error": 0.0076526740057308315
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 5.829986184835434e-05,
+          "solve_plus_selection_seconds": 1.237558899447322,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.0006341357422546823,
+            "max_plus_relative_error": 0.001146538903164851,
+            "max_minus_relative_error": 0.0022886857386359427,
+            "mid_current_absolute_error_A": 6.165603055398759e-14,
+            "mid_current_relative_error": 0.0024923418235410005,
+            "exact_mid_current_A": 2.4738191997432215e-11,
+            "exact_current_quadrature_change_A": 3.554291694563791e-26
+          }
+        },
+        {
+          "policy": "field_controller",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "attempted_solve_seconds": 6.4066583989188075,
+          "attempted_cells": 6120,
+          "indicators": [
+            {
+              "coarse_grid": [
+                12,
+                6
+              ],
+              "fine_grid": [
+                24,
+                12
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.007136334821820078,
+                "max_plus_relative_error": 0.018000958267018818,
+                "max_minus_relative_error": 0.03626455974858758,
+                "mid_current_relative_error": 0.03325537710390989
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.004757556547880052,
+                "max_plus_relative_error": 0.012000638844679211,
+                "max_minus_relative_error": 0.024176373165725053,
+                "mid_current_relative_error": 0.022170251402606592
+              },
+              "pair_pass": false,
+              "consecutive_passes": 0
+            },
+            {
+              "coarse_grid": [
+                24,
+                12
+              ],
+              "fine_grid": [
+                48,
+                24
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.002031428345749986,
+                "max_plus_relative_error": 0.0045866075666168024,
+                "max_minus_relative_error": 0.008965173650553788,
+                "mid_current_relative_error": 0.0076526740057308315
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.001354285563833324,
+                "max_plus_relative_error": 0.003057738377744535,
+                "max_minus_relative_error": 0.005976782433702525,
+                "mid_current_relative_error": 0.0051017826704872205
+              },
+              "pair_pass": true,
+              "consecutive_passes": 1
+            },
+            {
+              "coarse_grid": [
+                48,
+                24
+              ],
+              "fine_grid": [
+                96,
+                48
+              ],
+              "raw_differences": {
+                "max_phi_error_VT": 0.0005583718788025882,
+                "max_plus_relative_error": 0.0011499508236982193,
+                "max_minus_relative_error": 0.0022329382851201457,
+                "mid_current_relative_error": 0.001872856706099911
+              },
+              "estimated_errors": {
+                "max_phi_error_VT": 0.00037224791920172545,
+                "max_plus_relative_error": 0.0007666338824654795,
+                "max_minus_relative_error": 0.0014886255234134304,
+                "mid_current_relative_error": 0.0012485711373999406
+              },
+              "pair_pass": true,
+              "consecutive_passes": 2
+            }
+          ],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 0.0022812997922301292,
+          "solve_plus_selection_seconds": 6.408939698711038,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00016598304837545097,
+            "max_plus_relative_error": 0.00028700128384118173,
+            "max_minus_relative_error": 0.0005716421059769328,
+            "mid_current_absolute_error_A": 1.5353697049291705e-14,
+            "mid_current_relative_error": 0.0006206475012759782,
+            "exact_mid_current_A": 2.4738191997432215e-11,
+            "exact_current_quadrature_change_A": 3.554291694563791e-26
+          }
+        },
+        {
+          "policy": "uniform_finest",
+          "status": "ESTIMATED_ACCEPT",
+          "selected_index": 3,
+          "selected_grid": [
+            96,
+            48
+          ],
+          "visited_indices": [
+            3
+          ],
+          "attempted_solve_seconds": 5.169157799333334,
+          "attempted_cells": 4608,
+          "indicators": [],
+          "reference_access": "NONE_NUMERICAL_INPUTS_ONLY",
+          "certified_error_bound": false,
+          "training_qualified": false,
+          "selection_seconds": 2.8099864721298218e-05,
+          "solve_plus_selection_seconds": 5.169185899198055,
+          "exact_accuracy_pass": true,
+          "actual_errors": {
+            "max_phi_error_VT": 0.00016598304837545097,
+            "max_plus_relative_error": 0.00028700128384118173,
+            "max_minus_relative_error": 0.0005716421059769328,
+            "mid_current_absolute_error_A": 1.5353697049291705e-14,
+            "mid_current_relative_error": 0.0006206475012759782,
+            "exact_mid_current_A": 2.4738191997432215e-11,
+            "exact_current_quadrature_change_A": 3.554291694563791e-26
+          }
+        }
+      ],
+      "decisions_before_scoring_sha256": "318d3d1d3956928f11da5ccc404288bf9af417b8229ba2eeaa35e2bcae7855c5",
+      "decision_seconds": 0.002470999024808407,
+      "solve_identities": [
+        "de2baa7a8aa9278d24f58f67b3366ad3b8b4a797dde85b794dfde74721a9d6ff",
+        "7d5c8ebb2bdec7a2af73d6c7339a99594af0cfa608669a934ea35f9180d1969b",
+        "2457016192b31828ac06889616221e44e2f002515539900a72e6d8308b826781",
+        "0c3286f15a24c18042b8db524e80f62dd18869ba4373745e536312b77b49ce9d"
+      ]
+    }
+  ],
+  "held_out_policy_aggregate": [
+    {
+      "policy": "residual_only",
+      "scenarios": 8,
+      "estimated_accepts": 8,
+      "actual_accurate_accepts": 0,
+      "inaccurate_accepts": 8,
+      "unresolved": 0,
+      "total_attempted_solve_seconds": 1.13334790058434,
+      "total_selection_seconds": 0.0008547995239496231,
+      "total_solve_plus_selection_seconds": 1.1342027001082897,
+      "total_attempted_cells": 576
+    },
+    {
+      "policy": "current_mesh",
+      "scenarios": 8,
+      "estimated_accepts": 6,
+      "actual_accurate_accepts": 6,
+      "inaccurate_accepts": 0,
+      "unresolved": 2,
+      "total_attempted_solve_seconds": 26.751199801452458,
+      "total_selection_seconds": 0.0005136001855134964,
+      "total_solve_plus_selection_seconds": 26.75171340163797,
+      "total_attempted_cells": 24768
+    },
+    {
+      "policy": "field_controller",
+      "scenarios": 8,
+      "estimated_accepts": 6,
+      "actual_accurate_accepts": 6,
+      "inaccurate_accepts": 0,
+      "unresolved": 2,
+      "total_attempted_solve_seconds": 54.9612718001008,
+      "total_selection_seconds": 0.019897600635886192,
+      "total_solve_plus_selection_seconds": 54.98116940073669,
+      "total_attempted_cells": 48960
+    },
+    {
+      "policy": "uniform_finest",
+      "scenarios": 8,
+      "estimated_accepts": 8,
+      "actual_accurate_accepts": 8,
+      "inaccurate_accepts": 0,
+      "unresolved": 0,
+      "total_attempted_solve_seconds": 44.755827298387885,
+      "total_selection_seconds": 0.00027449894696474075,
+      "total_solve_plus_selection_seconds": 44.75610179733485,
+      "total_attempted_cells": 36864
+    }
+  ],
+  "campaign_directory": "results\\verification_v3\\campaigns\\41fda4e6c07d_51dbdf69c1e9",
+  "scientific_scope": "Forced analytic verification only; legacy charged-wall domain HOLD unchanged",
+  "cost_interpretation": "Single execution of each grid cached across policy replay; sum construction-plus-solve observed costs for all meshes a policy would require, including failed attempts. Selection/check overhead reported separately. These are deterministic retrospective replays of frozen prospective rules, not separate randomized wall-clock trials.",
+  "no_physical_training_qualification": true
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "records": 108,
+  "physical_scenarios": 36,
+  "neutral_analytical_qualified_records": 36,
+  "excluded_charged_wall_records": 72,
+  "excluded_unqualified_records": 72,
+  "legacy_failure_records": 18,
+  "data_mode": "local_only",
+  "experimental_observations": 0,
+  "simulator_truth_only": true,
+  "status": "PARTIAL_DOMAIN_QUALIFICATION",
+  "source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+  "explanation": "Original exports retain conservative exploratory metadata. This collection adds traceable qualification for neutral analytic cases only; no source result was overwritten.",
+  "qualification_rule": "Neutral wall, discrete PASS, analytical current and both full concentration/potential fields; no failed finest target admitted",
+  "sampling": "Full Cartesian legacy matrix; no failed historical scenarios dropped; no resampling",
+  "license": "UNRESOLVED_NOT_RELEASED",
+  "field_format": "NPZ compressed arrays, allow_pickle=False",
+  "units": "nm, V, mol/m3, A; fields [axial_cell, radial_cell]",
+  "round_trip": "Each export loaded with SHA256 validation before collection",
+  "resources": {
+    "small": "one bounded case <=648 cells",
+    "medium": "108-case original matrix",
+    "large": "not exposed; resource/domain gates required"
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "plan": {
+    "status": "PRESPECIFIED_SECONDARY_IF_TIME_PERMITS",
+    "repetitions": 3,
+    "seed": 20261121,
+    "cases": [
+      "v5_polynomial_01",
+      "v5_polynomial_08",
+      "v5_oscillatory_01",
+      "v5_oscillatory_08",
+      "v5_localized_01",
+      "v5_localized_08"
+    ],
+    "method": "randomize case-policy order per repeat; each policy performs its own new solves and stops numerically; no cached solve reuse",
+    "warmup": "one excluded12x6 polynomial solve; report attempted wall time and coverage, no equal-accuracy speedup"
+  },
+  "order": [
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_polynomial_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_localized_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 1,
+      "case": "v5_oscillatory_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_polynomial_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_localized_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 2,
+      "case": "v5_oscillatory_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_01",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_01",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_08",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_01",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_08",
+      "policy": "current_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_localized_08",
+      "policy": "uniform_finest"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_08",
+      "policy": "field_matched"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_polynomial_01",
+      "policy": "residual_only"
+    },
+    {
+      "repetition": 3,
+      "case": "v5_oscillatory_01",
+      "policy": "current_matched"
+    }
+  ],
+  "sources": {
+    "core_source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+    "families_source_sha256": "b842ed05dad23aae39462e5945151ede8f99b266c3fa2faadce748e97ef77c6f",
+    "source_aware_audit_source_sha256": "bdd579a3bfbb604186256423d1fae1a2191e7c4cdd6b8abecfb5d5c2691e8c5b",
+    "model": "axisym-forced-pnp-distinct-families-v1",
+    "forcing_quadrature": "cell-centre midpoint continuous analytic sources",
+    "boundaries": "end psi0/v q1; sidewall psi=v*x/L+w*sin\u00b2(pi*x/L), zero species flux; regular axis",
+    "solver": "unchanged core Newton with four continuation fractions; scaled residual2e-11; log bound30",
+    "driver_sha256": "b4b22cc629cbc87887fe88c155b713f9b4f84d7131670349051823b7c5a55612",
+    "matched_sha256": "05ae8da79f5db900cd2ae46c82fba0e0ab86bff2bb51e89be59f364544123d3d",
+    "accuracy_sha256": "cb4dd507015f0cc9b3b08fde7003e337f4a6bf0bad6522d4a87ba9200591bdbb",
+    "protocol_sha256": "bf8a486ee86b19e3d387b6c85a0fefa87e5cc4c8bdc99a7689e126d47e0871a0",
+    "environment": {
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "executable": "D:\\nanopore OS complete\\.venv\\Scripts\\python.exe",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "numpy": "2.3.2",
+      "scipy": "1.16.3"
+    }
+  }
+}

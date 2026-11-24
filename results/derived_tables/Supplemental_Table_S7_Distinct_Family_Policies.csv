@@ -1,0 +1,17 @@
+family,policy,scenarios,accurate,inaccurate,unresolved,attempted_cells,replayed_seconds
+ALL,residual_only,24,0,24,0,768,2.824027302674949
+ALL,current_matched,24,12,12,0,25344,25.06328560691327
+ALL,field_matched,24,24,0,0,77568,80.50287459976971
+ALL,uniform_finest,24,24,0,0,196608,276.70524219889194
+polynomial,residual_only,8,0,8,0,256,0.9501920994371176
+polynomial,current_matched,8,3,5,0,5376,5.748145502991974
+polynomial,field_matched,8,8,0,0,17664,16.43346970155835
+polynomial,uniform_finest,8,8,0,0,65536,91.67110069934279
+oscillatory,residual_only,8,0,8,0,256,0.9296856019645929
+oscillatory,current_matched,8,7,1,0,15616,14.839338703081012
+oscillatory,field_matched,8,8,0,0,38144,46.079445000737906
+oscillatory,uniform_finest,8,8,0,0,65536,99.69749499950558
+localized,residual_only,8,0,8,0,256,0.9441496012732387
+localized,current_matched,8,2,6,0,4352,4.475801400840282
+localized,field_matched,8,8,0,0,21760,17.989959897473454
+localized,uniform_finest,8,8,0,0,65536,85.33664650004357

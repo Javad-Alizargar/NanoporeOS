@@ -1,0 +1,8 @@
+{
+  "protocol_sha256": "bb71ddf21c968d100f467db01a3ed18b0574b99d797badc034428fab407d2eb5",
+  "identity": "5c5dd60a992edfb68a8217109eeabdde7c8a06762599ff5817ca4caa9c6be801",
+  "files": {
+    "result.json": "d50bd29c1f694b04477e8ba240e20b68c3ae979a77c1a55f51a4f9745b66805c",
+    "fields.npz": "cda26f3db2f75e99884209bf751c4141344b5e48f11f00862f5bfa80d66a598c"
+  }
+}

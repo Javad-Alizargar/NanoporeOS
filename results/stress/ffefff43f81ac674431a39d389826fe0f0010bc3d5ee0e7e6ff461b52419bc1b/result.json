@@ -1,0 +1,233 @@
+{
+  "status": "PASS",
+  "diagnostics": {
+    "coupled_residual_max": 1.927821848447615e-13,
+    "poisson_scaled": 1.6483535218000818e-15,
+    "plus_scaled": 1.927821848447615e-13,
+    "minus_scaled": 5.285415620454291e-16,
+    "poisson_integrated_charge_residual_C": 8.068421681693822e-33,
+    "species_max_local_imbalance_mol_s": [
+      1.6905719490978298e-27,
+      4.800493336176714e-30
+    ],
+    "species_global_imbalance_mol_s": [
+      6.964711474211071e-28,
+      4.32720526077901e-30
+    ],
+    "species_boundary_fluxes": [
+      {
+        "left_outward_mol_s": 1.85571839230418e-15,
+        "right_outward_mol_s": -1.8557183923034837e-15
+      },
+      {
+        "left_outward_mol_s": -1.013750513564437e-15,
+        "right_outward_mol_s": 1.013750513564441e-15
+      }
+    ],
+    "current_A": -2.7686166040024495e-10,
+    "section_currents_A": [
+      -2.768616604002445e-10,
+      -2.768616604002454e-10,
+      -2.7686166040024547e-10,
+      -2.7686166040024526e-10,
+      -2.768616604002456e-10,
+      -2.7686166040024537e-10,
+      -2.7686166040024516e-10,
+      -2.768616604002458e-10,
+      -2.7686166040024516e-10,
+      -2.7686166040024506e-10,
+      -2.768616604002452e-10,
+      -2.7686166040024557e-10,
+      -2.7686166040024516e-10,
+      -2.7686166040024547e-10,
+      -2.768616604002455e-10,
+      -2.7686166040024537e-10,
+      -2.7686166040024526e-10,
+      -2.7686166040024526e-10,
+      -2.768616604002458e-10,
+      -2.768616604002454e-10,
+      -2.7686166040024537e-10,
+      -2.7686166040024547e-10,
+      -2.7686166040024516e-10,
+      -2.7686166040024485e-10,
+      -2.7686166040024557e-10,
+      -2.7686166040024547e-10,
+      -2.7686166040024516e-10,
+      -2.7686166040024516e-10,
+      -2.7686166040024547e-10,
+      -2.76861660400246e-10,
+      -2.768616604002459e-10,
+      -2.7686166040024583e-10,
+      -2.7686166040024614e-10,
+      -2.7686166040024743e-10,
+      -2.7686166040025095e-10,
+      -2.768616604002897e-10,
+      -2.7686166040017774e-10
+    ],
+    "current_spread_A": 1.1197957542436612e-22,
+    "current_consistent": true,
+    "positive": true,
+    "min_concentration_mol_m3": 13.626964665658539,
+    "boundary_conditions": "end Dirichlet face values; axis/wall ion flux zero by construction",
+    "debye_length_nm": 1.7540938431046238,
+    "radial_cells_per_debye_length": 4.5105270251261755
+  },
+  "history": [
+    {
+      "fraction": 0.25,
+      "iteration": 0,
+      "residual": 0.39017534753402533,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 1,
+      "residual": 0.024482589823444978,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 2,
+      "residual": 0.0005674131783706855,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 3,
+      "residual": 2.7244723490999445e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.25,
+      "iteration": 4,
+      "residual": 4.8069738430928863e-14
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 0,
+      "residual": 0.39017534753402566,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 1,
+      "residual": 0.028023980095801454,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 2,
+      "residual": 0.0006907409220655233,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 3,
+      "residual": 3.7695396099371345e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.5,
+      "iteration": 4,
+      "residual": 8.636369123822311e-14
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 0,
+      "residual": 0.3901753475340261,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 1,
+      "residual": 0.03152578174658595,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 2,
+      "residual": 0.0008146386576599719,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 3,
+      "residual": 4.905963226151692e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 0.75,
+      "iteration": 4,
+      "residual": 1.3623270425431226e-13
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 0,
+      "residual": 0.3901753475340263,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 1,
+      "residual": 0.03489361464315947,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 2,
+      "residual": 0.0009328354142643116,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 3,
+      "residual": 6.032859507038941e-07,
+      "damping": 1.0
+    },
+    {
+      "fraction": 1.0,
+      "iteration": 4,
+      "residual": 1.927821848447615e-13
+    }
+  ],
+  "seconds": 0.409031399525702,
+  "scenario": {
+    "nx": 36,
+    "nr": 18,
+    "length_nm": 20.0,
+    "radius_nm": 7,
+    "salt_mM": 30,
+    "voltage_mV": 75,
+    "wall_offset_mV": -22,
+    "model": "axisym-pnp-ramp-offset-v1"
+  },
+  "identity": "ffefff43f81ac674431a39d389826fe0f0010bc3d5ee0e7e6ff461b52419bc1b",
+  "dataset_class": "exploratory_numerical_simulation",
+  "training_qualified": false,
+  "schema_version": "1.0",
+  "model_equations": "steady monovalent PNP; no flow",
+  "environment": {
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "executable": "D:\\nanopore OS complete\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "numpy": "2.3.2",
+    "scipy": "1.16.3"
+  },
+  "source_sha256": "55d473bb5b8b669001861bf073a0a4e223066007811e75a20b3083e9bafc00ea",
+  "units": {
+    "x_nm": "nm",
+    "r_nm": "nm",
+    "potential_V": "V",
+    "cplus_mol_m3": "mol/m^3",
+    "cminus_mol_m3": "mol/m^3"
+  },
+  "field_layout": "[axial_cell, radial_cell]",
+  "experimental_validation": "NOT_PERFORMED",
+  "unsupported": [
+    "fluid coupling",
+    "molecule feedback",
+    "physical time dependence",
+    "instrument calibration"
+  ],
+  "license": "UNRESOLVED: user approval required before redistribution"
+}

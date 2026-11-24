@@ -1,0 +1,92 @@
+{
+  "schema_version": "handoff-1.0",
+  "prepared_date": "2026-11-09",
+  "is_starter_not_existing_state": false,
+  "project_name": "NanoporeOS",
+  "project_root_windows": "D:\\nanopore OS complete",
+  "credential_directory": "apis",
+  "target_journal": "PeerJ Computer Science",
+  "provisional_article_type": "Research Article",
+  "manuscript_language": "English",
+  "preferred_manuscript_formats": [
+    "DOCX",
+    "PDF"
+  ],
+  "current_scientific_gate": "NUMERICAL_HOLD_CHARGED_WALL_CONTINUUM_DOMAIN",
+  "server_ip_user_supplied": "199.192.22.106",
+  "dns_host_label_user_supplied": "nanoporeos",
+  "fqdn": null,
+  "master_defaults": {
+    "PROJECT_TOTAL_API_BUDGET_USD": 5.0,
+    "OPENAI_PROJECT_SUBBUDGET_USD": 1.0,
+    "FINAL_REVIEW_AND_HANDOFF_RESERVE_USD": 0.5,
+    "MAX_RESERVED_COST_PER_REQUEST_USD": 0.25,
+    "MAX_TOTAL_ACTIVE_OI_SESSIONS": 4,
+    "codex_adaptation_total_active_ai_sessions": 4,
+    "MAX_ACTIVE_WORKERS": 3,
+    "DEFAULT_ACTIVE_WORKERS": 2,
+    "ALLOW_NESTED_WORKERS": false,
+    "MAX_WORKER_TASK_ATTEMPTS_PER_RUN": 20,
+    "MAX_CONCURRENT_PAID_REQUESTS": 3,
+    "MAX_PAID_REQUEST_ATTEMPTS_PER_RUN": 80,
+    "MAX_PAID_REQUEST_ATTEMPTS_PER_TASK": 12,
+    "MAX_REQUEST_RETRIES": 2,
+    "SPEND_WARNING_FRACTION": 0.7,
+    "STOP_NEW_TASKS_FRACTION": 0.85,
+    "DEFAULT_MAX_OUTPUT_TOKENS": 2000,
+    "LARGE_OUTPUT_TOKEN_CEILING": 6000,
+    "DEFAULT_WORKER_TIMEOUT_MINUTES": 20,
+    "MAX_AUTONOMOUS_RUN_MINUTES": 120,
+    "MAX_SIMULTANEOUS_HEAVY_ANALYSES": 1,
+    "MAX_TOTAL_NEW_DATA_DOWNLOAD_GB_PER_RUN": 2,
+    "MAX_NEW_DATASET_DOWNLOADS_PER_RUN": 10,
+    "DATA_MODE": "local_only",
+    "EXTERNAL_LLM_DATA_POLICY": "public_evidence_and_non_sensitive_summaries_only",
+    "AUTO_PRIVATE_GITHUB_PUSH": false,
+    "AUTO_PUBLIC_RELEASE": false,
+    "AUTO_PRODUCTION_DEPLOY": false
+  },
+  "accounting_note": "Do not initialize unknown historical usage to zero or reset a pre-existing ledger.",
+  "source_files_missing": [
+    "stage12_16_review_package.zip",
+    "coupled_2d_pnp_runs.csv",
+    "coupled_2d_pnp_runs.parquet"
+  ],
+  "api_key_file_aliases": {
+    "openai": "apis/chatgpt.txt",
+    "deepseek": "apis/deepseek.txt",
+    "ncbi": "apis/NCBI.txt",
+    "openalex": "apis/OPENALEX.txt",
+    "github": "apis/GITHUB_fine_grained 2.txt"
+  },
+  "unidentified_or_unneeded_key_files": [
+    "apis/Open Access API.txt",
+    "apis/Meta API.txt"
+  ],
+  "require_approval_for": [
+    "raw_data_download_mode_change",
+    "budget_increase",
+    "autonomy_limit_increase",
+    "remote_git_write",
+    "public_release_or_doi_deposit",
+    "production_deploy",
+    "manuscript_submission",
+    "payment"
+  ],
+  "do_not_require_micro_approval_for": [
+    "local_code",
+    "numerical_tests",
+    "local_application",
+    "literature_metadata",
+    "permitted_computations",
+    "drafting",
+    "local_rendering",
+    "continuing_after_internal_pass"
+  ],
+  "paid_API_enabled": false,
+  "historical_spending": "UNKNOWN",
+  "source_checkout_only": true,
+  "canonical_python": ".venv/Scripts/python.exe",
+  "active_priority": "FINISH_MANUSCRIPT_LOCALLY",
+  "server_work": "DEFERRED_UNTIL_USER_CONFIRMS_CAPACITY"
+}
