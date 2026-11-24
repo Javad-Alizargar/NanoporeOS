@@ -1,4 +1,4 @@
-method,test_scenarios,MAE_A,max_absolute_error_A,normalized_MAE,scope
+﻿method,test_scenarios,MAE_A,max_absolute_error_A,normalized_MAE,scope
 analytical,3,1.981786884241629e-24,4.963083675318166e-24,3.367988306466376e-15,Neutral analytical limit only; no general surrogate claim
 raw_linear_regression,3,6.17044344862935e-10,1.469456120240603e-09,1.048648648648634,Neutral analytical limit only; no general surrogate claim
 physical_feature_regression,3,1.7405258722469956e-24,4.446095792472524e-24,2.957972338722643e-15,Neutral analytical limit only; no general surrogate claim

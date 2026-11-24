@@ -1,4 +1,4 @@
-case,family,split,nx,nr,discrete_status,max_phi_error_VT,max_plus_relative_error,max_minus_relative_error,mid_current_absolute_error_A,mid_current_relative_error,exact_mid_current_A,exact_current_quadrature_change_A,all_budgets_pass
+﻿case,family,split,nx,nr,discrete_status,max_phi_error_VT,max_plus_relative_error,max_minus_relative_error,mid_current_absolute_error_A,mid_current_relative_error,exact_mid_current_A,exact_current_quadrature_change_A,all_budgets_pass
 v5_development_polynomial,polynomial,development,8,4,PASS,0.01612061756289007,0.012341852855243696,0.013099501870784902,8.440847629386894e-13,0.004414570046101757,-1.912042971623137e-10,5.169878828456423e-26,False
 v5_development_polynomial,polynomial,development,16,8,PASS,0.005827167401974753,0.005787298618276759,0.005059669314095627,2.414616256658709e-13,0.0012628462291351832,-1.912042971623137e-10,5.169878828456423e-26,False
 v5_development_polynomial,polynomial,development,32,16,PASS,0.001740248910673703,0.0019503083172600633,0.0017421901809465679,6.221263066843397e-14,0.00032537255486272644,-1.912042971623137e-10,5.169878828456423e-26,True

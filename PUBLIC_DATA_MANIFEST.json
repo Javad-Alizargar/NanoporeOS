@@ -189,78 +189,78 @@
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S10_Driven_Reference_Refinements.csv",
-      "bytes": 4106,
-      "sha256": "ac566f4b9cdb142127d72f63473ca7677d68bfd9120dc9710534a518abc20e2d"
+      "bytes": 4093,
+      "sha256": "c3c53f2097f7d67936760f6a2574ee6f837a040ed38b4a43c8799ea124bd3d4c"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S11_Driven_Candidate_Comparisons.csv",
-      "bytes": 811,
-      "sha256": "4c7143beabe31eeaa084824e246c884a18b6821020ed2f54bdb00b2d4682170a"
+      "bytes": 810,
+      "sha256": "b047c0c616999e96ba727c11284c7e72f0799135ff8593dc641658b085dcb0e7"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S12_Live_Policy_Timing.csv",
-      "bytes": 361,
-      "sha256": "a35aede540de3c3c3a7afc4a08288705f093681d4ed26d56dd2248369d487c24"
+      "bytes": 359,
+      "sha256": "c1555949017a017139f632a1a3dc0692888fde42223dacb3d3c0ac2ad2284262"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S1_Verification.csv",
-      "bytes": 567,
-      "sha256": "0b8a89bfb276157eb6f9477235fc9c2a8ced13e40788dc2e14059cb1f868f477"
+      "bytes": 563,
+      "sha256": "8a7850233179545dc7ceadbbcea50fc7e33f18bc1f42d06e898299d16b7e3ee8"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S2_Neutral_Baselines.csv",
-      "bytes": 509,
-      "sha256": "dddde22ff0bc0613f3760f3cc1f95d3094ff2aaea10b3fbc246b7f374ff74c36"
+      "bytes": 508,
+      "sha256": "121d58f3541d2e3950ec7c51dba56c861c0e65ebd667fcd6bc18751e8594a8d1"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S3_Attempt_Timing.csv",
       "bytes": 353,
-      "sha256": "1c4ab3c3ae6a4e5bc989532c5bbb79935f621493571a076ca2ce460777ec49cc"
+      "sha256": "1dc4b94db8c1720190c3e092d18e57c93a7f7ba40ad948614fdc27d8b6c3149b"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S5_Manufactured_Case_Errors.csv",
-      "bytes": 16851,
-      "sha256": "47ca9c823542b7ea64674919260552f272d9713c9cc75e0e826c57761d7ca2a7"
+      "bytes": 16773,
+      "sha256": "933f14a88c92f8cca195dfb1e8a13e21f16cea8a7aaea78b844f043ecd423626"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S6_Controller_Costs.csv",
-      "bytes": 735,
-      "sha256": "5cad3546ead5da83ce4c16e3bb332cecaad055b390244ca60f6e01382bb6d905"
+      "bytes": 729,
+      "sha256": "5f3769fe724b999f911bd4752f5ea329083777b379303daec60a370ec25ff675"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S7_Distinct_Family_Policies.csv",
-      "bytes": 1008,
-      "sha256": "e6e1b85705e547b9312091b314152ca812ac00a65b99ea7b529e09e5df004603"
+      "bytes": 994,
+      "sha256": "a4b27a6b6c09bf9ac768af1ce0860e2fa3d12d6183b43a2357cc1787a465e8e7"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S8_Distinct_Family_Pairs.csv",
-      "bytes": 1786,
-      "sha256": "2f92a56363a5f4f41218587ebe393270f5e061c52730401963b8d0b7bbe78680"
+      "bytes": 1764,
+      "sha256": "249cf69868ae4254865168e3ac09c8fc61b1a47eb65eff4f9047bc9e5c661336"
     },
     {
       "path": "results/derived_tables/Supplemental_Table_S9_Distinct_Family_Errors.csv",
-      "bytes": 28213,
-      "sha256": "f46fe95639d7b8462987c995c9b76d6a7a2919a1bccad1988c5b7bd917ac1307"
+      "bytes": 28080,
+      "sha256": "1a2e31217570e3aa58802278a4ba239cb6074586f0ba85b504947a006c5ec798"
     },
     {
       "path": "results/derived_tables/Table2_Acceptance_Policies.csv",
-      "bytes": 276,
-      "sha256": "7c2cb5f68b2a6c6d7ce3790c67732a6d96c76ae94821fb5c559f4bf539120a44"
+      "bytes": 274,
+      "sha256": "4248937c98212148f70ea01fd887812b177b15d7b6a45aa6995e652ad76ccfe6"
     },
     {
       "path": "results/derived_tables/Table3_Attempt_Timing.csv",
       "bytes": 133,
-      "sha256": "58206d8bd6764f6d7f782dd9731dc8a6782af06f77d9de3844f7143808514ce7"
+      "sha256": "c10f41aefaedbcb93313227a237b393e755cc0af4d1a8e17c0b6467051c05cc4"
     },
     {
       "path": "results/derived_tables/Table4_Controlled_Verification.csv",
-      "bytes": 338,
-      "sha256": "b1435a924a32f5167856b692e57652e57990e5b97ad510b01fa79124af981f1f"
+      "bytes": 332,
+      "sha256": "8968826ef5e05181e2561e44ab42285647045840aa7a05fbd362832fabc348d7"
     },
     {
       "path": "results/derived_tables/Table5_Matched_Function_Families.csv",
-      "bytes": 452,
-      "sha256": "c6afda81f84341dec77846e797824e3c050baa18598983708ad00e9e5dadf8f9"
+      "bytes": 442,
+      "sha256": "70d46571c510eca70b34bacd68fcd63c80430a1a8bcf13bb512bd018f483b602"
     },
     {
       "path": "results/driven_refinement_ordered/f83675e02d73a4a7/header.json",

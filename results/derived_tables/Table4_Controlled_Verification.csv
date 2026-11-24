@@ -1,4 +1,4 @@
-Set,Policy,Accurate (n/8),Inaccurate (n/8),Unresolved (n/8),Cells / finest
+﻿Set,Policy,Accurate (n/8),Inaccurate (n/8),Unresolved (n/8),Cells / finest
 First,Residual only,0,8,0,0.016
 First,Current mesh,6,0,2,0.672
 First,Field controller,6,0,2,1.328

@@ -1,4 +1,4 @@
-policy,attempts,unique_cases,accurate,inaccurate,unresolved,median_wall_seconds,total_wall_seconds
+﻿policy,attempts,unique_cases,accurate,inaccurate,unresolved,median_wall_seconds,total_wall_seconds
 residual_only,18,6,0,18,0,0.10983179975301027,1.9295358983799815
 current_matched,18,6,12,6,0,0.6540828999131918,15.249333999119699
 field_matched,18,6,18,0,0,2.3203012999147177,36.773332901299

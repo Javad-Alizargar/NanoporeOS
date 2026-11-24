@@ -1,4 +1,4 @@
-evaluation,policy,accurate,inaccurate,unresolved,scenarios,attempted_cells,cells_relative_to_finest,solve_plus_selection_seconds
+﻿evaluation,policy,accurate,inaccurate,unresolved,scenarios,attempted_cells,cells_relative_to_finest,solve_plus_selection_seconds
 First set / two pairs,residual_only,0,8,0,8,576,0.015625,1.1342027001082897
 First set / two pairs,current_mesh,6,0,2,8,24768,0.671875,26.75171340163797
 First set / two pairs,field_controller,6,0,2,8,48960,1.328125,54.98116940073669

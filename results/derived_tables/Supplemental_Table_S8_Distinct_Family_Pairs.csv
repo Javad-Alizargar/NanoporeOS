@@ -1,4 +1,4 @@
-case,family,current_accuracy,field_accuracy,current_grid,field_grid,current_cells,field_cells
+﻿case,family,current_accuracy,field_accuracy,current_grid,field_grid,current_cells,field_cells
 v5_polynomial_01,polynomial,False,True,"[16, 8]","[32, 16]",160,672
 v5_polynomial_02,polynomial,False,True,"[16, 8]","[64, 32]",160,2720
 v5_polynomial_03,polynomial,False,True,"[16, 8]","[64, 32]",160,2720

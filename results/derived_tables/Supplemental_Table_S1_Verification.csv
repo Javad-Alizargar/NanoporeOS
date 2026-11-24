@@ -1,7 +1,7 @@
-check,passes,denominator,unit,interpretation
+﻿check,passes,denominator,unit,interpretation
 Legacy reported convergence,90,108,mesh evaluations,Original update stopping criterion
-Legacy strict post-hoc audit,36,108,mesh evaluations,Stricter retrospective coupled audit
-Candidate strict discrete audit,108,108,mesh evaluations,Does not qualify continuum domain
-Candidate stress discrete audit,9,9,mesh evaluations,Predeclared off-grid cases
+Legacy strict post-hoc check,36,108,mesh evaluations,Stricter retrospective coupled check
+Candidate strict discrete check,108,108,mesh evaluations,Does not qualify continuum domain
+Candidate stress discrete check,9,9,mesh evaluations,Predeclared off-grid cases
 Original-mesh current criterion,36,36,physical scenarios,Current spread <=5%
 Original-mesh field criteria,24,36,physical scenarios,Field L2<=5%; max potential<=0.02VT

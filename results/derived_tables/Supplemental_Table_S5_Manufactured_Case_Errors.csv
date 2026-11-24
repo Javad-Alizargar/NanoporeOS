@@ -1,4 +1,4 @@
-evaluation,case,split,nx,nr,max_phi_error_VT,max_plus_relative_error,max_minus_relative_error,mid_current_absolute_error_A,mid_current_relative_error,exact_mid_current_A,exact_current_quadrature_change_A,all_budgets_pass
+﻿evaluation,case,split,nx,nr,max_phi_error_VT,max_plus_relative_error,max_minus_relative_error,mid_current_absolute_error_A,mid_current_relative_error,exact_mid_current_A,exact_current_quadrature_change_A,all_budgets_pass
 First set / two pairs,development_a,development,12,6,0.01119479283383673,0.015004566109376505,0.012228388699179527,5.388838345292622e-12,0.043202139894851624,-1.2473544964227124e-10,4.1359030627651384e-25,False
 First set / two pairs,development_a,development,24,12,0.0033696177249942227,0.004468769544783591,0.0038983920573755215,1.3233913024738949e-12,0.010609584574948408,-1.2473544964227124e-10,4.1359030627651384e-25,False
 First set / two pairs,development_a,development,48,24,0.000937130458512403,0.0012130145447686314,0.0010858844727692496,3.294122736617296e-13,0.0026408873708833455,-1.2473544964227124e-10,4.1359030627651384e-25,True

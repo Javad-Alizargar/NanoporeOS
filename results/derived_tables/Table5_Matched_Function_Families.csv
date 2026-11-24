@@ -1,4 +1,4 @@
-Family,Policy,Accurate,Inaccurate,Unresolved,Cells
+﻿Family,Policy,Accurate,Inaccurate,Unresolved,Cells
 Polynomial,Residual,0,8,0,256
 Polynomial,Current,3,5,0,"5,376"
 Polynomial,Fields,8,0,0,"17,664"
